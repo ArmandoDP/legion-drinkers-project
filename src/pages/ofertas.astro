@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+---
+
+<Layout
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider3.src,
+        content: {
+          title: "OFERTAS",
+          paragraph:
+            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+        },
+      }}
+    />
+    <ServiceCards
+      description="SERVICES"
+      title="The Service We Provide For You"
+      client:visible
+      cards={[
+        {
+          title: "Cyber - development",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Security",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Marketing",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Development",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Security",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Marketing",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+      ]}
+    />
+
+    <Hero
+      client:load
+      heroType="CarouselSlider"
+      data={[
+        {
+          id: "1",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 1",
+          description: "Descripción del Producto 1",
+          button: { text: "Comprar ahora", link: "/producto-1" },
+        },
+        {
+          id: "2",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 2",
+          description: "Descripción del Producto 2",
+          button: { text: "Comprar ahora", link: "/producto-2" },
+        },
+        {
+          id: "3",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 3",
+          description: "Descripción del Producto 3",
+          button: { text: "Comprar ahora", link: "/producto-3" },
+        },
+        {
+          id: "4",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 4",
+          description: "Descripción del Producto 4",
+          button: { text: "Comprar ahora", link: "/producto-4" },
+        },
+        {
+          id: "5",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 5",
+          description: "Descripción del Producto 5",
+          button: { text: "Comprar ahora", link: "/producto-5" },
+        },
+        {
+          id: "6",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 6",
+          description: "Descripción del Producto 6",
+          button: { text: "Comprar ahora", link: "/producto-1" },
+        },
+        {
+          id: "7",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 7",
+          description: "Descripción del Producto 7",
+          button: { text: "Comprar ahora", link: "/producto-2" },
+        },
+        {
+          id: "8",
+          image: "https://via.placeholder.com/150",
+          title: "Producto 8",
+          description: "Descripción del Producto 8",
+          button: { text: "Comprar ahora", link: "/producto-3" },
+        },
+      ]}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: InfiniteImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Lets make you Infinite!",
+        paragraph:
+          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: InfiniteImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Infinite Community",
+        paragraph:
+          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+      }}
+    />
+  </main>
+
+  <WAButton url="" />
+
+  <Footer />
+</Layout>

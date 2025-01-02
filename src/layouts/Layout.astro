@@ -6,36 +6,120 @@ import { Header } from "@modules/Header";
 import MetaConfig from "./MetaConfig.astro";
 
 interface Props {
-    title: string;
-    description: string;
-    overwritePreview?: string;
+  title: string;
+  description: string;
+  overwritePreview?: string;
 }
 
 const { title, description, overwritePreview } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-    <head>
-        <MetaConfig
-            title={title}
-            description={description}
-            preview={overwritePreview ? overwritePreview : PreviewPng.src}
-        />
-        <title>{title}</title>
-        <Global styles={NormalizeCSS} />
+<html lang="en" class="scrollbar-hide">
+  <head>
+    <MetaConfig
+      title={title}
+      description={description}
+      preview={overwritePreview ? overwritePreview : PreviewPng.src}
+    />
+    <title>{title}</title>
+    <Global styles={NormalizeCSS} />
 
-        <script>
-            /**
-             * Add class to transition "overflow element" on page load to make it prettier
-             */
-            document.addEventListener("DOMContentLoaded", () => {
-                document.body.classList.add("hide-overflow");
-            });
-        </script>
-    </head>
-    <body>
-        <Header client:load />
-        <slot />
-    </body>
+    <script>
+      /**
+       * Add class to transition "overflow element" on page load to make it prettier
+       */
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("hide-overflow");
+      });
+    </script>
+  </head>
+  <body>
+    <Header client:load />
+    <slot />
+    <style is:global>
+      /* CSS rules for the page scrollbar */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .mt-16 {
+        margin-top: 32px;
+      }
+      .mb-36 {
+        margin-bottom: 68px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary: #d87d4a;
+        --dark: #101010;
+        --evening: #0e0e0e;
+        --night: #000;
+        --gray: #f1f1f1;
+        --off-white: #fafafa;
+        --white: #fff;
+        --dim-white: rgb(255, 255, 255, 0.5);
+        --primary-light: #fbaf85;
+      }
+
+      .container {
+        width: 100%;
+        margin: auto;
+        padding: 0 16px;
+      }
+
+      @media only screen and (min-width: 960px) {
+        .container {
+          width: 1440px;
+        }
+      }
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+
+      /* Store items display */
+      .product-item-row {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 34px;
+      }
+      .product-item-row > div {
+        width: 100%;
+      }
+      @media only screen and (min-width: 1024px) {
+        .product-item-row > div {
+          width: 40%;
+        }
+
+        .product-item-row {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: center;
+          gap: 100px;
+        }
+
+        .product-item-row:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+      }
+    </style>
+  </body>
 </html>

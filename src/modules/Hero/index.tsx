@@ -9,6 +9,7 @@ import {
     ParallaxImage,
     type ParallaxImageProps,
 } from "./variants/ParallaxImage/ParallaxImage";
+import { CarouselSlider, type CarouselSliderProps } from "./variants/CarouselSlider/CarouselSlider";
 
 /**
  * to avoid passing wrong props to the component
@@ -29,7 +30,11 @@ type HeroProps =
     | {
           heroType: "ParallaxImage";
           data: ParallaxImageProps;
-      };
+    }
+    | {
+        heroType: "CarouselSlider";
+        data: CarouselSliderProps["content"];
+    };
 
 export const Hero: FC<HeroProps> = ({ heroType, data, ...rest }) => {
     /*
@@ -56,6 +61,14 @@ export const Hero: FC<HeroProps> = ({ heroType, data, ...rest }) => {
                 />
             );
             break;
+        case "CarouselSlider":
+            HeroTypeOutput = (
+                <CarouselSlider
+                    content={data as CarouselSliderProps["content"]}
+                    {...rest}
+                />
+            );
+            break;
         case "ParallaxImage":
             HeroTypeOutput = (
                 <ParallaxImage {...(data as ParallaxImageProps)} {...rest} />
@@ -63,7 +76,7 @@ export const Hero: FC<HeroProps> = ({ heroType, data, ...rest }) => {
     }
 
     const isFullWidth =
-        heroType === "fullPageSlider" || heroType === "ParallaxImage";
+        heroType === "fullPageSlider" || heroType === "ParallaxImage" || heroType === "CarouselSlider";
 
     return (
         <S.HeroWrapper $isFullWidth={isFullWidth}>

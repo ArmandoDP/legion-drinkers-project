@@ -4,94 +4,89 @@ import { Hero } from "@modules/Hero";
 import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import { Footer } from "@modules/Footer";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
 ---
 
-<Layout
-    title="Cybernetic | Homepage"
-    description="YOUR META DESCRIPTION FOR SEO"
->
-    <main class="page-content">
-        <Hero
-            heroType="ParallaxImage"
-            client:visible
-            data={{
-                image: HeroSlider3.src,
-                content: {
-                    title: "INFINITE",
-                    paragraph:
-                        "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
-                },
-            }}
-        />
-        <ServiceCards
-            description="SERVICES"
-            title="The Service We Provide For You"
-            client:visible
-            cards={[
-                {
-                    title: "Cyber - development",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-                {
-                    title: "Cyber - Security",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-                {
-                    title: "Cyber - Marketing",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-                {
-                    title: "Cyber - Development",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-                {
-                    title: "Cyber - Security",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-                {
-                    title: "Cyber - Marketing",
-                    description:
-                        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-                },
-            ]}
-        />
+<Layout title="Legion Drinkers" description="YOUR META DESCRIPTION FOR SEO">
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider3.src,
+        content: {
+          title: "¿QUIENES SOMOS?",
+          paragraph:
+            "En Legión Drinkers somos una empresa apasionada por ofrecer la mejor selección de vinos y licores en la zona metropolitana del Valle de Toluca, Estado de México. Nos enfocamos en brindar productos de alta calidad que enriquecen las experiencias de nuestros clientes.",
+        },
+      }}
+    />
 
-        <Hero
-            heroType="textImage"
-            client:visible
-            data={{
-                image: {
-                    src: InfiniteImg1.src,
-                    width: 590,
-                    height: 300,
-                    alt: "Hero Image",
-                },
-                title: "Lets make you Infinite!",
-                paragraph:
-                    "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
-            }}
-        />
-        <Hero
-            heroType="textImage"
-            client:visible
-            data={{
-                switchPlaces: true,
-                image: {
-                    src: InfiniteImg2.src,
-                    width: 590,
-                    height: 300,
-                    alt: "Hero Image",
-                },
-                title: "Infinite Community",
-                paragraph:
-                    "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
-            }}
-        />
-    </main>
-    <Footer />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: InfiniteImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Misión",
+        paragraph:
+          "Proveer una experiencia única y satisfactoria en la compra de vinos y licores, ofreciendo una amplia variedad de opciones, promociones exclusivas durante todo el año y un servicio personalizado que haga que cada visita sea memorable.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: InfiniteImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Visión",
+        paragraph:
+          "Convertirnos en líderes del mercado regional, expandiendo nuestra presencia a más localidades y llevando nuestra pasión por los vinos y licores a más clientes, siempre con un enfoque en la calidad, la innovación y la satisfacción de quienes confían en nosotros.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: InfiniteImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Compromiso con la comunidad",
+        paragraph:
+          "Nos enorgullece ser parte activa de nuestra comunidad, apoyando eventos locales, promoviendo el consumo responsable y colaborando con iniciativas que fomenten el desarrollo social y económico de la región.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: InfiniteImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Agradecimiento",
+        paragraph:
+          "Agradecemos la preferencia y confianza de nuestros clientes, quienes son el motor que nos impulsa a seguir creciendo. Nos comprometemos a ofrecerles siempre lo mejor en vinos y licores, acompañado de un servicio de excelencia.",
+      }}
+    />
+  </main>
+
+  <WAButton url="" />
+
+  <Footer />
 </Layout>

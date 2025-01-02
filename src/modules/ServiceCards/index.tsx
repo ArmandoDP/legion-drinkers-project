@@ -8,33 +8,28 @@ import { FadeIn } from "@utils/animations/FadeIn";
 type ServiceCards = {
     title?: string;
     description?: string;
-    cards?: {
-        title: string;
-        description: string;
-    }[];
 };
 
 export const ServiceCards: FC<ServiceCards> = ({
-    cards,
     description,
     title,
 }) => {
     // do not render if there are no cards
 
-    if (!cards || !cards.length) {
-        return null;
-    }
+    // if (!cards || !cards.length) {
+    //     return null;
+    // }
 
-    const cardsElements = cards.map((card, index) => {
-        return (
-            <FadeIn key={index}>
-                <TextBox>
-                    <h3>{card.title}</h3>
-                    <p>{card.description}</p>
-                </TextBox>
-            </FadeIn>
-        );
-    });
+    // const cardsElements = cards.map((card, index) => {
+    //     return (
+    //         <FadeIn key={index}>
+    //             <TextBox>
+    //                 <h3>{card.title}</h3>
+    //                 <p>{card.description}</p>
+    //             </TextBox>
+    //         </FadeIn>
+    //     );
+    // });
 
     return (
         <S.ServiceCardsStyled>
@@ -47,7 +42,7 @@ export const ServiceCards: FC<ServiceCards> = ({
                         </S.ServiceCardsHeading>
                     </FadeIn>
                 )}
-                <S.ServiceCardsGrid>{cardsElements}</S.ServiceCardsGrid>
+                {/* <S.ServiceCardsGrid>{cardsElements}</S.ServiceCardsGrid> */}
             </Container>
         </S.ServiceCardsStyled>
     );

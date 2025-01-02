@@ -1,0 +1,59 @@
+---
+import Button from "../../components/atoms/Button.astro";
+import headphone from "../../../public/assets/exported/headphone.png";
+import earphone from "../../../public/assets/exported/earphone.png";
+import speaker from "../../../public/assets/exported/speaker.png";
+
+import donjulio from "../../../public/assets/tequilas/donjulio.png";
+import bluelabel from "../../../public/assets/whiskys/bluelabel.png";
+import absolut from "../../../public/assets/vodkas/absolut.png";
+import bacardi from "../../../public/assets/rones/bacardi.png";
+
+import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
+---
+
+<div
+  class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 featured-products-section"
+>
+  <FeaturedProductCard image={donjulio} imageAlt="donjulio" title="TEQUILA">
+    <a href="/headphones"><Button>Shop</Button></a>
+  </FeaturedProductCard>
+
+  <FeaturedProductCard image={bluelabel} imageAlt="bluelabel" title="WHISKY">
+    <a href="/speakers"><Button>Shop</Button></a>
+  </FeaturedProductCard>
+
+  <FeaturedProductCard image={absolut} imageAlt="absolut" title="VODKA">
+    <a href="/earphones"><Button>Shop</Button></a>
+  </FeaturedProductCard>
+
+  <FeaturedProductCard image={bacardi} imageAlt="bacardi" title="RON">
+    <a href="/speakers"><Button>Shop</Button></a>
+  </FeaturedProductCard>
+</div>
+
+<style>
+  .featured-products-section {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: grid;
+    gap: 25px; /* Espaciado entre las tarjetas */
+  }
+
+  /* Ajusta el número de columnas según el tamaño de pantalla */
+  @media (min-width: 640px) {
+    .featured-products-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+    .featured-products-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1280px) {
+    .featured-products-section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

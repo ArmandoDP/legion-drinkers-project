@@ -4,26 +4,30 @@ import Layout from "../layouts/Layout.astro";
 import { Contact as ContactModule } from "@modules/Contact";
 import { Hero } from "@modules/Hero";
 import { Footer } from "@modules/Footer";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
 ---
 
 <Layout
-    title="Cybernetic | Homepage"
-    description="YOUR META DESCRIPTION FOR SEO"
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
 >
-    <main class="page-content">
-        <Hero
-            heroType="ParallaxImage"
-            client:load
-            data={{
-                image: HeroSlider1.src,
-                content: {
-                    title: "Contact",
-                    paragraph:
-                        "Get stuck or need help? Contact us and we will help you out!",
-                },
-            }}
-        />
-        <ContactModule client:load />
-    </main>
-    <Footer />
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:load
+      data={{
+        image: HeroSlider1.src,
+        content: {
+          title: "Contact",
+          paragraph:
+            "Get stuck or need help? Contact us and we will help you out!",
+        },
+      }}
+    />
+    <ContactModule client:load />
+  </main>
+
+  <WAButton url="" />
+
+  <Footer />
 </Layout>

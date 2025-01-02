@@ -1,7 +1,7 @@
 import { type FC } from "react";
 import PreviewPng from "./preview.webp";
 import HeroImg from "./hero-img.webp";
-import Logo from "./logo.webp";
+import Logo from "./logo.png";
 
 import HeroSlider1 from "./hero-slider-01.webp";
 import HeroSlider2 from "./hero-slider-02.webp";

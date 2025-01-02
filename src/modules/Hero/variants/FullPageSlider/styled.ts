@@ -14,7 +14,7 @@ export const FullPageSliderStyled = styled.div`
     position: relative;
 
     height: 100dvh;
-    min-height: 550px;
+    min-height: 100dvh;
 
     background: ${Theme.secondary};
     position: relative;
@@ -187,7 +187,7 @@ export const FullPageSliderSlideContentSubtitle = styled.p`
     line-height: 30px;
     font-weight: 900;
     letter-spacing: -1px;
-    color: ${Theme.primary};
+    color: ${Theme.yellow};
     margin-bottom: 40px;
 
     ${MediaQuery.max("xl")} {
