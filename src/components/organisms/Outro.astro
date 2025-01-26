@@ -7,29 +7,78 @@ import outroImg from "../../../public/assets/shared/desktop/image-best-gear.jpg"
 <div
   class="container flex flex-col-reverse lg:flex-row items-center lg:items-left justify-between outro"
 >
-  <div class="w-full flex flex-col justify-center gap-4">
-    <div class="w-full lg:w-[396px]">
-      <Text type="h3" className="text-center lg:text-left">
-        BRINGING YOU THE BEST AUDIO GEAR
-      </Text>
+  <section id="faq" class="faq-section">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-item">
+      <h3>¿Cuál es el mejor tequila para regalar?</h3>
+      <p>
+        El mejor tequila depende del gusto del destinatario. Para un regalo
+        especial, recomendamos un tequila añejo o extra añejo, como <strong
+          >Tequila Don Julio 1942</strong
+        > o <strong>Clase Azul Reposado</strong>, conocidos por su suavidad y
+        sabor excepcional.
+      </p>
     </div>
-    <div class="w-full lg:w-4/6">
-      <Text type="body" className="text-center lg:text-left">
-        Located at the heart of New York City, Audiophile is the premier store
-        for high end headphones, earphones, speakers, and audio accessories. We
-        have a large showroom and luxury demonstration rooms available for you
-        to browse and experience a wide range of our products. Stop by our store
-        to meet some of the fantastic people who make Audiophile the best place
-        to buy your portable audio equipment.
-      </Text>
+    <div class="faq-item">
+      <h3>¿Dónde comprar vinos y licores en [nombre de tu ciudad]?</h3>
+      <p>
+        En nuestras sucursales de <strong>[nombre del negocio]</strong>,
+        ofrecemos una amplia selección de vinos, tequilas, vodkas y más.
+        Contamos con 6 ubicaciones en [ciudad] y también ofrecemos pedidos
+        online.
+      </p>
     </div>
-  </div>
-  <Image class="mb-16 lg:mb-0" src={outroImg} alt="best-gear" />
+    <div class="faq-item">
+      <h3>¿Qué vinos maridan mejor con carne?</h3>
+      <p>
+        Para carnes rojas, recomendamos vinos tintos robustos como un <strong
+          >Cabernet Sauvignon</strong
+        > o un <strong>Malbec</strong>. Para carnes blancas, un vino blanco como <strong
+          >Chardonnay</strong
+        > es una excelente opción.
+      </p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Realizan entregas a domicilio?</h3>
+      <p>
+        Sí, ofrecemos entregas a domicilio rápidas en toda la ciudad. Para
+        pedidos superiores a $1,000, el envío es gratis.
+      </p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Aceptan métodos de pago electrónicos?</h3>
+      <p>
+        Claro, aceptamos tarjetas de crédito, débito, transferencias y pagos a
+        través de plataformas como PayPal y MercadoPago.
+      </p>
+    </div>
+  </section>
 </div>
 
 <style>
   .outro {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .faq-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+  }
+  .faq-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .faq-item p {
+    margin: 0.5rem 0 0;
+    color: #777;
   }
 </style>

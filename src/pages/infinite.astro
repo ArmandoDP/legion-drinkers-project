@@ -1,7 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
-import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
+import {
+  HeroSlider3,
+  InfiniteImg1,
+  InfiniteImg2,
+  UbiCrespa,
+  UbiStaCruz,
+  UbiCentro,
+  UbiOtzolo,
+  UbiPartidas,
+  UbiSanAntonio,
+} from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import { Footer } from "@modules/Footer";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
@@ -13,9 +23,9 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider3.src,
+        image: UbiCentro.src,
         content: {
-          title: "¿QUIENES SOMOS?",
+          title: "UBICACIONES",
           paragraph:
             "En Legión Drinkers somos una empresa apasionada por ofrecer la mejor selección de vinos y licores en la zona metropolitana del Valle de Toluca, Estado de México. Nos enfocamos en brindar productos de alta calidad que enriquecen las experiencias de nuestros clientes.",
         },
@@ -27,14 +37,22 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       client:visible
       data={{
         image: {
-          src: InfiniteImg1.src,
+          src: UbiCrespa.src,
           width: 590,
           height: 300,
           alt: "Hero Image",
+          link: "https://maps.app.goo.gl/B7WwaCbB2TeJv8VAA?g_set=ic",
         },
-        title: "Misión",
+        title: "📍Toluca",
         paragraph:
-          "Proveer una experiencia única y satisfactoria en la compra de vinos y licores, ofreciendo una amplia variedad de opciones, promociones exclusivas durante todo el año y un servicio personalizado que haga que cada visita sea memorable.",
+          "<strong>🏪 Legión Drinkers Suc. La Crespa</strong><br>50200, P.º Vicente Lombardo Toledano 805, Delegación San Mateo Otzacatipan, 50200 Toluca de Lerdo, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/B7WwaCbB2TeJv8VAA?g_set=ic",
+            variant: "secondary",
+          },
+        ],
       }}
     />
     <Hero
@@ -43,14 +61,21 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: InfiniteImg2.src,
+          src: UbiStaCruz.src,
           width: 590,
           height: 300,
           alt: "Hero Image",
         },
-        title: "Visión",
+        title: "📍Toluca",
         paragraph:
-          "Convertirnos en líderes del mercado regional, expandiendo nuestra presencia a más localidades y llevando nuestra pasión por los vinos y licores a más clientes, siempre con un enfoque en la calidad, la innovación y la satisfacción de quienes confían en nosotros.",
+          "<strong>🏪 Legión Drinkers Suc. Santa Cruz</strong><br>Río Papaloapan 10, Delegación Santa Cruz Atzcapotzaltongo, 50290 Santa Cruz Atzcapotzaltongo, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/T6iogmLcw5GsBCLCA?g_st=ic",
+            variant: "secondary",
+          },
+        ],
       }}
     />
     <Hero
@@ -58,14 +83,21 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       client:visible
       data={{
         image: {
-          src: InfiniteImg1.src,
+          src: UbiPartidas.src,
           width: 590,
           height: 300,
           alt: "Hero Image",
         },
-        title: "Compromiso con la comunidad",
+        title: "📍Lerma",
         paragraph:
-          "Nos enorgullece ser parte activa de nuestra comunidad, apoyando eventos locales, promoviendo el consumo responsable y colaborando con iniciativas que fomenten el desarrollo social y económico de la región.",
+          "<strong>🏪 Legión Drinkers Suc. Las Partidas</strong><br>Av. de las Partidas Manzana 028, Francisco I Madero, 52106 Lerma de Villada, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/xNdH8512geXWoKUHA?g_st=ic",
+            variant: "secondary",
+          },
+        ],
       }}
     />
     <Hero
@@ -74,14 +106,66 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: InfiniteImg2.src,
+          src: UbiSanAntonio.src,
           width: 590,
           height: 300,
           alt: "Hero Image",
         },
-        title: "Agradecimiento",
+        title: "📍Xonacatlan",
         paragraph:
-          "Agradecemos la preferencia y confianza de nuestros clientes, quienes son el motor que nos impulsa a seguir creciendo. Nos comprometemos a ofrecerles siempre lo mejor en vinos y licores, acompañado de un servicio de excelencia.",
+          "<strong>🏪 Legión Drinkers Suc Xonacatlan San Antonio (Crucero)</strong><br>Vicente Guerrero 115, Xonacatlan de Vicencio, 52060 Xonacatlán, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/zBctSe7tWoaJuJ2C8?g_st=ic",
+            variant: "secondary",
+          },
+        ],
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: UbiCentro.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "📍Xonacatlan",
+        paragraph:
+          "<strong>🏪 Legión Drinkers Suc Xonacatlan Centro</strong><br>Francisco I. Madero 17, Xonacatlan de Vicencio, 52060 Xonacatlán, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/VMD9gPMyJq1EH14t6?g_st=ic",
+            variant: "secondary",
+          },
+        ],
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: UbiStaCruz.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "📍Otzolotepec",
+        paragraph:
+          "<strong>🏪 Legión Drinkers Suc Villa Cuauhtemoc</strong><br>C. Benito Juárez 36, Villa Cuauhtemoc, 52080 Villa Cuauhtémoc, Méx.",
+        buttons: [
+          {
+            text: "Abrir en Google Maps",
+            link: "https://maps.app.goo.gl/GgoFXskKuAhtkv3v9?g",
+            variant: "secondary",
+          },
+        ],
       }}
     />
   </main>

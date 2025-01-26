@@ -9,6 +9,7 @@ import Footer from "../../components/organisms/Footer.astro";
 import Button from "../../components/atoms/Button.astro";
 import { data } from "../../utils/dummyData.js";
 import Input from "../../components/atoms/Input.astro";
+import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 
 export async function getStaticPaths() {
   return data.map((product) => {
@@ -25,94 +26,66 @@ const { name, description, price, features, image, includes, gallery, others } =
 
 <Layout title="Earphones">
   <Hero />
-
-  <div class="container back-btn">
+  <div class="container">
     <Button onClick="history.back()" color="rgba(0,0,0,.7)">Go back</Button>
   </div>
 </Layout>
 
-<div class="product-item-row container">
-  <div class="w-full flex flex-col justify-center gap-4">
-    <div class="w-full lg:w-[396px]">
-      <Text type="body" color={colors.primary}>NEW PRODUCT</Text>
+<!-- Primera parte de la vista -->
+<div class="container">
+  <div class="product-item-row">
+    <div class="product-details">
+      <Text type="body" color={colors.yellow}>NEW PRODUCT</Text>
+      <Text type="h3">{name}</Text>
+      <Text type="body">{description}</Text>
+      <Text type="h6" className="font-extrabold">{`$${price}`}</Text>
+      <div class="product-actions">
+        <Input type="counter" value={1} />
+        <Button type="secondary-inverted">COMPRAR AHORA</Button>
+      </div>
     </div>
-    <div class="w-full lg:w-[396px]">
-      <Text type="h3">
-        {name}
-      </Text>
-    </div>
-    <div class="w-full lg:w-4/6">
-      <Text type="body">
-        {description}
-      </Text>
-    </div>
-    <div class="w-full lg:w-4/6 mt-4 mb-4">
-      <Text type="h6" className=" font-extrabold">
-        {`$${price}`}
-      </Text>
-    </div>
-    <div class="flex gap-4">
-      <Input type="counter" value={1} />
-      <Button type="primary">ADD TO CART</Button>
-    </div>
-  </div>
-  <div>
-    <img class="mb-16 lg:mb-0" src={image.desktop} alt="best-gear" />
-  </div>
-</div>
-
-<div class="container features">
-  <div class="w-full flex flex-col justify-center gap-4">
-    <div class="w-full lg:w-[396px]">
-      <Text type="h5">FEATURES</Text>
-    </div>
-    <div class="w-full lg:w-5/6">
-      <Text type="body">
-        {features}
-      </Text>
-    </div>
-  </div>
-
-  <div class="w-full flex flex-col justify-center gap-4">
-    <div class="w-full lg:w-[396px]">
-      <Text type="h5">IN THE BOX</Text>
-    </div>
-    <div class="w-full lg:w-4/6">
-      <Text type="body">
-        {
-          includes.map((extra) => (
-            <div class="flex gap-4">
-              <Text type="body" color={colors.primary}>
-                {`${extra.quantity}x`}
-              </Text>
-              <Text type="body">{extra.item}</Text>
-            </div>
-          ))
-        }
-      </Text>
+    <div class="product-image">
+      <img src={image.desktop} alt="best-gear" />
     </div>
   </div>
 </div>
 
-<div class="container gallery">
-  <div style={{ backgroundImage: `url(${gallery.first.desktop})` }}></div>
-  <div style={{ backgroundImage: `url(${gallery.second.desktop})` }}></div>
-  <div style={{ backgroundImage: `url(${gallery.third.desktop})` }}></div>
+<!-- Segunda parte de la vista -->
+<div class="container features-product">
+  <div class="feature-details">
+    <Text type="h5">FEATURES</Text>
+    <Text type="body">{features}</Text>
+  </div>
+  <div class="feature-box">
+    <Text type="h5">IN THE BOX</Text>
+    <div class="box-list">
+      {
+        includes.map((extra) => (
+          <div class="includes-item">
+            <Text
+              type="body"
+              color={colors.yellow}
+            >{`${extra.quantity}x`}</Text>
+            <Text type="body">{extra.item}</Text>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </div>
 
-<div
-  class="container flex flex-wrap justify-between md:flex-nowrap gap-4 mt-16 mb-36"
->
+<!-- Tercera parte de la vista -->
+<div class="container others-section">
   {
     others.map((item) => (
-      <div class="flex flex-col gap-8 others w-full md:w-1/3 mb-12 md:mb-0">
+      <div class="others-item">
         <div class="img-wrapper">
           <img src={item.image.desktop} alt={item.slug} />
         </div>
-        <div class="flex flex-col gap-8 items-center details">
+        <div class="details">
           <Text type="h5">{item.name}</Text>
           <a href={`/products/${item.slug}`}>
-            <Button type="primary">SEE PRODUCT</Button>
+            <Button type="secondary-inverted">SEE PRODUCT</Button>
           </a>
         </div>
       </div>
@@ -120,101 +93,123 @@ const { name, description, price, features, image, includes, gallery, others } =
   }
 </div>
 
-<!-- Featured products -->
 <FeaturedProducts />
 
-<!-- Outro section -->
+<CategoryProducts />
+
 <Outro />
 
-<!-- Footer -->
 <Footer />
 
 <style>
-  .features,
-  .gallery {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .back-btn {
-    margin-top: 34px;
-    margin-bottom: 34px;
-  }
-  .hero {
-    height: 250px;
-  }
-  .product-item-row {
-    justify-content: space-between;
+  .container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .features {
+  .product-item-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+    text-align: justify;
+  }
+
+  .product-details {
+    flex: 1 1 100%;
+  }
+
+  @media (min-width: 768px) {
+    .product-details {
+      flex: 1 1 45%;
+    }
+  }
+
+  .product-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .features-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: justify;
+  }
+
+  .feature-details {
+    flex: 1 1 100%;
+  }
+
+  @media (min-width: 768px) {
+    .feature-details {
+      flex: 1 1 60%;
+    }
+    .feature-box {
+      flex: 1 1 30%;
+    }
+  }
+
+  .box-list {
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    row-gap: 10px;
+    column-gap: 15px;
+  }
+  .includes-item {
+    display: flex;
+    align-items: flex-start; /* Alineación a la izquierda */
+    gap: 0.9rem; /* Espaciado entre los elementos dentro del ítem */
   }
 
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
+  .others-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 9rem;
   }
 
-  .gallery > div:nth-child(1),
-  .gallery > div:nth-child(2),
-  .gallery > div:nth-child(3) {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 16px;
+  .others-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Asegúrate de que ocupe el 100% del contenedor */
   }
 
-  .gallery > div:nth-child(1),
-  .gallery > div:nth-child(2) {
-    min-height: 200.221px;
+  @media (min-width: 640px) {
+    .others-item {
+      flex: 1 1 calc(50% - 10px); /* 2 columnas en pantallas medianas */
+    }
   }
 
-  .gallery > div:nth-child(3) {
-    min-height: 418.221px;
+  @media (min-width: 1024px) {
+    .others-item {
+      flex: 1 1 calc(33.333% - 10px); /* 3 columnas en pantallas grandes */
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .others-item {
+      flex: 1 1 calc(25% - 10px); /* 4 columnas en pantallas extra grandes */
+    }
   }
 
   .img-wrapper img {
     width: 100%;
+    border-radius: 10px;
   }
-
-  @media only screen and (min-width: 1024px) {
-    .features {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .gallery > div:nth-child(1),
-    .gallery > div:nth-child(2),
-    .gallery > div:nth-child(3) {
-      min-height: 418.221px;
-    }
-
-    .features > div:nth-child(2) {
-      width: 60%;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .gallery > div:nth-child(1) {
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-    .gallery > div:nth-child(2) {
-      grid-column: 2/3;
-      grid-row: 1/3;
-    }
-    .gallery > div:nth-child(3) {
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
 </style>

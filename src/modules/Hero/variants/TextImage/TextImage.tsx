@@ -36,6 +36,7 @@ export const TextImage: FC<TextImageProps> = ({
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
+                link={image.link}
             />
         ) : (
             image && (

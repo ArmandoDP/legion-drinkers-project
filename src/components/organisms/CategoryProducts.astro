@@ -1,0 +1,86 @@
+---
+import Button from "@components/atoms/Button.astro";
+import FeaturedProductCard from "@components/molecules/FeaturedProductCard.astro";
+import Licor from "../../../public/assets/category-products/licor-category.png";
+import Brandy from "../../../public/assets/category-products/brandy-category.png";
+import Vino from "../../../public/assets/category-products/vino-category.png";
+import mezcal from "../../../public/assets/category-products/mezcal-category.png";
+---
+
+<div class="container">
+  <div class="featured-products-section">
+    <a href="/licor">
+      <FeaturedProductCard image={Licor} imageAlt="Licor" title="LICOR">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/brandy">
+      <FeaturedProductCard image={Brandy} imageAlt="brandy" title="BRANDY">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/vino">
+      <FeaturedProductCard image={Vino} imageAlt="vino" title="VINO">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/mezcal">
+      <FeaturedProductCard image={mezcal} imageAlt="MEZCAL" title="mezcal">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+  </div>
+</div>
+
+<div class="premium-categories">
+  <span>NO TE PIERDAS NUESTRAS PROMOCIONES</span>
+  <p>(Se actualizan cada mes)</p>
+</div>
+
+<style>
+  .featured-products-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas en pantallas grandes */
+    gap: 24px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Ajusta el número de columnas según el tamaño de pantalla */
+  @media (max-width: 1024px) {
+    .featured-products-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .featured-products-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .featured-products-section {
+      margin: 0 5px 40px 5px;
+      grid-template-columns: 1fr 1fr; /* 1 columna */
+    }
+  }
+  .premium-categories {
+    text-align: center;
+    margin: 70px 0 70px 0;
+  }
+  .premium-categories span {
+    font-size: 30px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    letter-spacing: 6px; /* Espaciado entre cada letra */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

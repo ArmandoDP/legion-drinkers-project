@@ -103,11 +103,11 @@ const SecondaryVariant = css`
     letter-spacing: 1px;
     font-weight: 500;
     border-radius: 50px;
-    background: ${Theme.tertiary};
-    color: ${Theme.primary};
+    background: ${Theme.yellow};
+    color: ${Theme.tertiary};
 
     &:hover {
-        background: transparent;
-        color: ${Theme.secondary};
+        background: ${Theme.tertiary};
+        color: ${Theme.yellow};
     }
 `;

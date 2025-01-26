@@ -4,56 +4,105 @@ import headphone from "../../../public/assets/exported/headphone.png";
 import earphone from "../../../public/assets/exported/earphone.png";
 import speaker from "../../../public/assets/exported/speaker.png";
 
-import donjulio from "../../../public/assets/tequilas/donjulio.png";
-import bluelabel from "../../../public/assets/whiskys/bluelabel.png";
-import absolut from "../../../public/assets/vodkas/absolut.png";
-import bacardi from "../../../public/assets/rones/bacardi.png";
+import tequila from "../../../public/assets/category-products/tequila-category.png";
+import whisky from "../../../public/assets/category-products/whisky-category.png";
+import vodka from "../../../public/assets/category-products/vodka-category.png";
+import ron from "../../../public/assets/category-products/ron-category.png";
 
 import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
 ---
 
-<div
-  class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 featured-products-section"
->
-  <FeaturedProductCard image={donjulio} imageAlt="donjulio" title="TEQUILA">
-    <a href="/headphones"><Button>Shop</Button></a>
-  </FeaturedProductCard>
-
-  <FeaturedProductCard image={bluelabel} imageAlt="bluelabel" title="WHISKY">
-    <a href="/speakers"><Button>Shop</Button></a>
-  </FeaturedProductCard>
-
-  <FeaturedProductCard image={absolut} imageAlt="absolut" title="VODKA">
-    <a href="/earphones"><Button>Shop</Button></a>
-  </FeaturedProductCard>
-
-  <FeaturedProductCard image={bacardi} imageAlt="bacardi" title="RON">
-    <a href="/speakers"><Button>Shop</Button></a>
-  </FeaturedProductCard>
+<div id="categorias" class="premium-categories">
+  <span>CATEGORIAS PREMIUM</span>
 </div>
 
+<div class="container">
+  <div class="featured-products-section">
+    <a href="/headphones">
+      <FeaturedProductCard image={tequila} imageAlt="donjulio" title="TEQUILA">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/earphones">
+      <FeaturedProductCard image={whisky} imageAlt="bluelabel" title="WHISKY">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/speakers">
+      <FeaturedProductCard image={vodka} imageAlt="absolut" title="VODKA">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+
+    <a href="/ron">
+      <FeaturedProductCard image={ron} imageAlt="bacardi" title="RON">
+        <Button type="third">Ver Más</Button>
+      </FeaturedProductCard>
+    </a>
+  </div>
+</div>
+
+<div class="premium-categories">
+  <span>OTRAS CATEGORIAS FAVORITAS</span>
+</div>
+---
 <style>
   .featured-products-section {
-    margin-top: 60px;
-    margin-bottom: 80px;
+    width: 100%;
     display: grid;
-    gap: 25px; /* Espaciado entre las tarjetas */
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas en pantallas grandes */
+    gap: 24px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
   }
 
   /* Ajusta el número de columnas según el tamaño de pantalla */
-  @media (min-width: 640px) {
-    .featured-products-section {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1024px) {
+  @media (max-width: 1024px) {
     .featured-products-section {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  @media (min-width: 1280px) {
+  @media (max-width: 768px) {
     .featured-products-section {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  @media (max-width: 480px) {
+    .featured-products-section {
+      margin: 0 5px 40px 5px;
+      grid-template-columns: 1fr 1fr; /* 1 columna */
+    }
+  }
+  .premium-categories {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 80px;
+  }
+  .premium-categories span {
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 </style>

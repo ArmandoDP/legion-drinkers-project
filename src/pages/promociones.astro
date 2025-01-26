@@ -1,0 +1,236 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import {
+  HeroSlider3,
+  InfiniteImg1,
+  InfiniteImg2,
+  promo1,
+  promo2,
+  promo3,
+  promo4,
+} from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+---
+
+<Layout
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider3.src,
+        content: {
+          title: "PROMOCIONES",
+          paragraph:
+            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+        },
+      }}
+    />
+    <ServiceCards
+      description="LEGION DRINKERS"
+      title="Nuestros Productos Al Alcance De Ti"
+      client:visible
+      cards={[
+        {
+          title: "Cyber - development",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Security",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Marketing",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Development",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Security",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+        {
+          title: "Cyber - Marketing",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+      ]}
+    />
+
+    <Hero
+      client:load
+      heroType="CarouselSlider"
+      data={[
+        {
+          id: "1",
+          image: "assets/tequilas/1800-cristalino.webp",
+          title: "Tequila 1800 Cristalino",
+          description:
+            "Aprovecha esta promoción y disfruta del suave Tequila 1800 Cristalino a precio especial.",
+          button: { text: "Comprar ahora", link: "/producto-1" },
+        },
+        {
+          id: "2",
+          image: "assets/tequilas/don-julio-blanco.webp",
+          title: "Don Julio Blanco",
+          description:
+            "No pierdas esta oferta exclusiva y disfruta de la pureza de Don Julio Blanco.",
+          button: { text: "Comprar ahora", link: "/producto-2" },
+        },
+        {
+          id: "3",
+          image: "assets/tequilas/maestro-dobel-diamante.webp",
+          title: "Maestro Dobel Diamante",
+          description:
+            "Descubre Maestro Dobel Diamante con descuento especial. Ideal para tequila premium.",
+          button: { text: "Comprar ahora", link: "/producto-3" },
+        },
+        {
+          id: "4",
+          image: "assets/whiskys/buchanans-12.webp",
+          title: "Buchanan's 12 Años",
+          description:
+            "Aprovecha y saborea Buchanan's 12 años con esta oferta limitada. ¡Calidad al mejor precio!",
+          button: { text: "Comprar ahora", link: "/producto-4" },
+        },
+        {
+          id: "5",
+          image: "assets/whiskys/buchanans-18.webp",
+          title: "Buchanan's 18 Años",
+          description:
+            "Disfruta de Buchanan's 18 años con descuento. Una experiencia premium para ti.",
+          button: { text: "Comprar ahora", link: "/producto-5" },
+        },
+        {
+          id: "6",
+          image: "assets/whiskys/jack-daniels-old-no7.webp",
+          title: "Jack Daniel's Old No. 7",
+          description:
+            "Prueba y disfruta Jack Daniel's Old No. 7 a precio especial. ¡Un sabor perfecto y unico!",
+          button: { text: "Comprar ahora", link: "/producto-6" },
+        },
+        {
+          id: "7",
+          image: "assets/rones/bacardi-blanco-1-75l.webp",
+          title: "Bacardí Blanco 1.75L",
+          description:
+            "Obtén Bacardí Blanco 1.75L con descuento y recibe otro. ¡Perfecto para tus reuniones!",
+          button: { text: "Comprar ahora", link: "/producto-7" },
+        },
+        {
+          id: "8",
+          image: "assets/rones/bacardi-anejo.webp",
+          title: "Bacardí Añejo",
+          description:
+            "Disfruta de Bacardí Añejo con oferta especial. Ideal para los amantes del ron y cocteleria.",
+          button: { text: "Comprar ahora", link: "/producto-8" },
+        },
+      ]}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: promo4.src,
+          width: 700,
+          height: 600,
+          alt: "Hero Image",
+        },
+        title: "Lets make you Infinite!",
+        paragraph:
+          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+        buttons: [
+          {
+            link: `/products/`, // Enlace dinámico
+            text: "¡Cotizar Ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: promo3.src,
+          width: 700,
+          height: 600,
+          alt: "Hero Image",
+        },
+        title: "Infinite Community",
+        paragraph:
+          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+        buttons: [
+          {
+            link: `/products/`, // Enlace dinámico
+            text: "¡Cotizar Ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: promo2.src,
+          width: 700,
+          height: 600,
+          alt: "Hero Image",
+        },
+        title: "Lets make you Infinite!",
+        paragraph:
+          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+        buttons: [
+          {
+            link: `/products/`, // Enlace dinámico
+            text: "¡Cotizar Ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: promo1.src,
+          width: 700,
+          height: 600,
+          alt: "Hero Image",
+        },
+        title: "Infinite Community",
+        paragraph:
+          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+        buttons: [
+          {
+            link: `/products/`, // Enlace dinámico
+            text: "¡Cotizar Ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+  </main>
+
+  <WAButton url="" />
+
+  <Footer />
+</Layout>

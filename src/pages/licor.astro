@@ -1,0 +1,166 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import {
+  HeroSlider3,
+  InfiniteImg1,
+  InfiniteImg2,
+  HeroSlider6,
+} from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+
+import { data } from "../utils/dummyData.js";
+import { colors } from "../design-system/colors.js";
+import Text from "../components/atoms/Text.astro";
+import Button from "../components/atoms/Button.astro";
+import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+---
+
+<Layout
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider6.src,
+        content: {
+          title: "LICORES",
+          paragraph:
+            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+        },
+      }}
+    />
+
+    <ServiceCards
+      description="LEGION DRINKERS"
+      title="Nuestros Productos Al Alcance De Ti"
+      client:visible
+      cards={[
+        {
+          title: "Cyber - development",
+          description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+        },
+      ]}
+    />
+
+    <div class="container">
+      <div class="product-spotlight-area">
+        <div class="product-spotlight-2">
+          <div class="flex flex-col">
+            <Text type="h3">TEQUILA HERRADURA</Text>
+            <a href="/products/zx7-speaker"
+              ><Button className="mt-7" type="secondary-inverted">
+                SEE PRODUCT
+              </Button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {
+      data
+        .filter(({ category }) => category === "licores")
+        .map(async (item) => {
+          return (
+            <Hero
+              heroType="textImage"
+              client:visible
+              data={{
+                image: {
+                  src: `${item.image.desktop}`,
+                  width: 590,
+                  height: 300,
+                  alt: "Hero Image",
+                },
+                title: `${item.name}`,
+                paragraph:
+                  "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+                buttons: [
+                  {
+                    link: `/products/${item.slug}`, // Enlace dinámico
+                    text: "Ver Producto", // Texto del botón
+                    variant: "secondary", // Variación del botón, si es necesario
+                  },
+                ],
+              }}
+            />
+          );
+        })
+    }
+
+    <!-- <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: InfiniteImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Lets make you Infinite!",
+        paragraph:
+          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+      }}
+    /> -->
+
+    <FeaturedProducts />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: InfiniteImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "¿Quieres Alguno En Especifico?",
+        paragraph:
+          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+        buttons: [
+          {
+            link: ``, // Enlace dinámico
+            text: "Descargar Catalogo Completo", // Texto del botón
+            variant: "primary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+  </main>
+
+  <WAButton url="" />
+
+  <Footer />
+</Layout>
+
+<style>
+  .product-spotlight-area {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .product-spotlight-2 {
+    width: 100%;
+    height: 300px;
+    border-radius: 35px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/assets/tequilas/tequila-ejemplo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 34px 124px;
+    grid-column: 1 / 3;
+    color: white;
+  }
+</style>

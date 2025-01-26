@@ -10,56 +10,46 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
 
 <div class="container">
   <div class="product-spotlight-area2">
-    <a href="/ofertas">
+    <a href="/promociones">
       <div class="product-spotlight-6"></div>
     </a>
-    <a href="/ofertas">
+    <a href="/promociones">
       <div class="product-spotlight-7"></div>
     </a>
-    <a href="/ofertas">
+    <a href="/promociones">
       <div class="product-spotlight-8"></div>
     </a>
   </div>
   <div class="product-spotlight-area">
+    <a class="product-spotlight-2" href="/promociones"></a>
+
     <div class="product-spotlight-1">
-      <div class="flex justify-center">
-        <Image class="product-spotlight-1-img" src={donjulio} alt="headphone" />
+      <div class="product-spotlight-image">
+        <Image
+          class="product-spotlight-img"
+          src={donjulio}
+          alt="Tequila Don Julio 70 Cristalino"
+        />
       </div>
-      <div class="flex flex-col gap-4 items-center lg:items-start">
-        <div class="w-[396px]">
-          <Text
-            className="text-center lg:text-left"
-            type="h1"
-            color={colors.white}
-          >
-            ZX9 SPEAKER
-          </Text>
+
+      <!-- Contenido -->
+      <div class="product-spotlight-content">
+        <div class="product-spotlight-title">
+          <h1>Tequila Don Julio 70 - 1942</h1>
         </div>
-        <div class="w-[349px]">
-          <Text
-            className="text-center lg:text-left"
-            type="body"
-            color={colors.white}
-          >
-            Experience natural, lifelike audio and exceptional build quality
-            made for the passionate music enthusiast.
-          </Text>
+        <div class="product-spotlight-description">
+          <p>
+            Descubre el equilibrio perfecto entre la tradición y la innovación
+            con el Tequila Don Julio 70 Cristalino. Este tequila premium ofrece
+            la suavidad de un añejo con la frescura de un blanco, gracias a su
+            triple destilación y filtrado único. Ideal para disfrutar en las
+            mejores ocasiones, ya sea solo, en las rocas o en un cóctel
+            sofisticado.
+          </p>
         </div>
-        <a href="/products/zx9-speaker"
-          ><Button className="mt-8" type="secondary-inverted">
-            SEE PRODUCT
-          </Button></a
-        >
-      </div>
-    </div>
-    <div class="product-spotlight-2">
-      <div class="flex flex-col">
-        <Text type="h3">ZX7 SPEAKER</Text>
-        <a href="/products/zx7-speaker"
-          ><Button className="mt-7" type="secondary-inverted">
-            SEE PRODUCT
-          </Button></a
-        >
+        <a href="/products/don-julio-70-cristalino">
+          <Button type="secondary">SEE PRODUCT</Button>
+        </a>
       </div>
     </div>
 
@@ -84,7 +74,7 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     width: 100%;
     height: auto;
     border-radius: 8px;
-    background: #f9dc22;
+    background: #2c3137;
     display: block;
     overflow: hidden;
     padding: 64px 24px;
@@ -92,14 +82,52 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
   .product-spotlight-2 {
     width: 100%;
     height: 300px;
-    border-radius: 8px;
-    background: url("/assets/exported/speaker-on-table-bg.png");
-    background-position-y: -750px;
+    background: url("assets/branding/destilado-banner.jpg");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; /* Asegura que la imagen cubra el contenedor */
     display: flex;
     align-items: center;
-    padding: 34px 124px;
+    justify-content: center; /* Centra el contenido dentro del área */
     grid-column: 1 / 3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  /* Responsividad */
+  @media (max-width: 1200px) {
+    .product-spotlight-2 {
+      background-size: contain; /* Asegura que la imagen se vea completa en pantallas más pequeñas */
+      height: 250px; /* Ajusta la altura */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .product-spotlight-2 {
+      height: 200px; /* Ajusta la altura en pantallas medianas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-spotlight-2 {
+      height: 150px; /* Ajusta la altura en pantallas pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-spotlight-2 {
+      height: 80px; /* Ajusta la altura para pantallas extra pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  .product-spotlight-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .product-spotlight-3 {
     width: 100%;
@@ -132,12 +160,6 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     justify-content: center;
     border-radius: 8px;
   }
-  .product-spotlight-1-img {
-    position: static;
-    width: 172.248px;
-    height: 207px;
-    margin-bottom: 24px;
-  }
   .product-spotlight-4 {
     width: 100%;
     height: 750px;
@@ -168,7 +190,7 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     width: 100%;
     height: 750px;
     border-radius: 8px;
-    background: url("/assets/ofertas/CERVEZA_VERTICAL.jpg");
+    background: url("/assets/promociones/promocion-enero-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,12 +199,21 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     align-items: center;
     padding: 34px 124px;
     grid-column: 1 / 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  .product-spotlight-6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .product-spotlight-7 {
     width: 100%;
     height: 750px;
     border-radius: 8px;
-    background: url("/assets/ofertas/CERVEZA_VERTICAL.jpg");
+    background: url("/assets/promociones/promocion-enero-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,12 +222,21 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     align-items: center;
     padding: 34px 124px;
     grid-column: 2 / 2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  .product-spotlight-7:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .product-spotlight-8 {
     width: 100%;
     height: 750px;
     border-radius: 8px;
-    background: url("/assets/ofertas/CERVEZA_VERTICAL.jpg");
+    background: url("/assets/promociones/promocion-enero-3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,8 +245,16 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     align-items: center;
     padding: 34px 124px;
     grid-column: 3 / 3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
   }
 
+  .product-spotlight-8:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
   @media only screen and (min-width: 1024px) {
     .product-spotlight-area {
       display: grid;
@@ -218,7 +266,7 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
-      margin: 64px 0px -30px 0px;
+      margin: 35px 0px -30px 0px;
     }
     .product-spotlight-1 {
       height: 560px;
@@ -240,12 +288,82 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     .product-spotlight-3 div:nth-child(2) {
       height: inherit;
     }
-    .product-spotlight-1-img {
-      position: relative;
-      bottom: -35px;
-      width: auto;
-      height: auto;
-      margin-bottom: 0;
+  }
+
+  //aqui empieza el product spotlight
+  .product-spotlight-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .product-spotlight-img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+  }
+
+  .product-spotlight-img:hover {
+    transform: scale(1.05);
+  }
+
+  .product-spotlight-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .product-spotlight-title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+
+  .product-spotlight-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  .product-spotlight-description {
+    padding-right: 60px;
+  }
+
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .product-spotlight-container {
+      flex-direction: row; /* En pantallas grandes, se alinean horizontalmente */
+      justify-content: space-between;
+    }
+
+    .product-spotlight-image {
+      text-align: left;
+    }
+
+    .product-spotlight-content {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .product-spotlight-title h1 {
+      font-size: 45px; /* Aumenta el tamaño del título en pantallas grandes */
+    }
+
+    .product-spotlight-description p {
+      font-size: 18px; /* Aumenta el tamaño de la descripción */
+    }
+
+    .product-spotlight-img {
+      width: 470px;
     }
   }
 </style>

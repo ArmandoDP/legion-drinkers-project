@@ -8,6 +8,7 @@ export type ParallaxImageProps = {
     content?: {
         title?: string;
         paragraph?: string;
+        link?: string;
     };
 };
 

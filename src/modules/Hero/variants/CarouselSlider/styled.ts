@@ -149,9 +149,9 @@ export const CarouselSliderSlideContent = styled.div`
 export const ProductGroup = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 10px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 20px 0;
 
     ${MediaQuery.max("lg")} {
@@ -163,9 +163,12 @@ export const ProductCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    margin: 10px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 
@@ -175,9 +178,13 @@ export const ProductCard = styled.div`
     }
 
     img {
-        max-width: 120px;
+        max-width: 340px;
         margin-bottom: 15px;
         border-radius: 8px;
+        
+        ${MediaQuery.max("lg")} {
+            max-width: 290px;
+        }
     }
 
     h3 {

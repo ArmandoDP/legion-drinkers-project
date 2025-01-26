@@ -36,18 +36,20 @@ export const CarouselSlider: FC<CarouselSliderProps> = ({ content }) => {
     for (let i = 0; i < content.length; i += 4) {
         groupedContent.push(content.slice(i, i + 4));
     }
+    
+    
 
     const slides = groupedContent.map((slide, index) => (
         <S.CarouselSliderSlide key={index}>
             <S.ProductGroup>
                 {slide.map((product) => (
                     <S.ProductCard key={product.id}>
-                        <img src={product.image} alt={product.title} />
-                        <h3>{product.title}</h3>
+                        <img style={{ width: "200%", height: "400px", objectFit: "contain" }} src={product.image} alt={product.title} />
+                        <h3 style={{ color: "black" }}>{product.title}</h3>
                         <p>{product.description}</p>
                         {product.button && product.button.text && product.button.link && (
                             <a href={product.button.link}>
-                                <button>{product.button.text}</button>
+                                <button style={{ backgroundColor: "#f9dc22", color:"black", border: "1px solid black", }}>{product.button.text}</button>
                             </a>
                         )}
                     </S.ProductCard>
@@ -96,3 +98,5 @@ export const CarouselSlider: FC<CarouselSliderProps> = ({ content }) => {
         </S.CarouselSliderStyled>
     );
 };
+
+

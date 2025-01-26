@@ -1,77 +1,170 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../../../public/assets/shared/desktop/logo.svg";
-import Text from "../atoms/Text.astro";
-import { colors } from "../../design-system/colors";
+import { Logo } from "@components/Logo";
 import facebook from "../../../public/assets/shared/desktop/icon-facebook.svg";
 import twitter from "../../../public/assets/shared/desktop/icon-twitter.svg";
 import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg";
 ---
 
 <footer class="footer">
-  <nav
-    class="container flex flex-col lg:flex-row items-center lg:justify-between gap-8"
-  >
-    <Image src={logo} alt="logo" />
-
-    <div
-      class="flex nav-links gap-8 lg:gap-12 flex-col lg:flex-row items-center lg:items-start mt-4 mb-4 lg:mt-0 lg:mb-0"
-    >
-      <a href="/"><Text type="subTitle">Home</Text></a>
-      <a href="/headphones"><Text type="subTitle">Headphones</Text></a>
-      <a href="/speakers"><Text type="subTitle">Speakers</Text></a>
-      <a href="/earphones"><Text type="subTitle">Earphones</Text></a>
+  <nav class="container">
+    <div class="logo">
+      <Logo />
+      <span>LEGION DRINKERSⓇ</span>
     </div>
+    <ul class="nav-links">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/headphones">Promos</a></li>
+      <li><a href="/speakers">Ofertas</a></li>
+      <li><a href="/earphones">Sucursales</a></li>
+      <li><a href="/earphones">Contacto</a></li>
+      <li><a href="/earphones">Atencion a clientes</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li>
+        <p style="font-weight: bold; color:#fff">Contacto</p>
+      </li>
+    </ul>
+    <ul class="nav-links">
+      <li>
+        <p>Linea de atencion al cliente</p>
+        <p>01 800 123 4567</p>
+        <p>Direccion: Toluca de lerdo</p>
+        <p>Colonia: del valle</p>
+      </li>
+      <li>
+        <p>Horario de atencion a clientes</p>
+        <p>Lunes a Viernes de 9:00 a 18:00</p>
+        <p>Sabados de 9:00 a 14:00</p>
+        <p>Domingos de 9:00 a 12:00</p>
+      </li>
+    </ul>
   </nav>
 
-  <div class="container flex flex-col lg:flex-row lg:justify-between">
-    <div class="w-full lg:w-[540px] flex flex-col gap-16">
-      <Text
-        type="body"
-        className="text-center lg:text-left"
-        color={colors.dimWhite}
-      >
-        Audiophile is an all in one stop to fulfill your audio needs. We're a
-        small team of music lovers and sound specialists who are devoted to
-        helping you get the most out of personal audio. Come and visit our demo
-        facility - we’re open 7 days a week.
-      </Text>
-      <Text
-        type="body"
-        className="text-center lg:text-left"
-        color={colors.dimWhite}
-      >
-        Copyright 2021. All Rights Reserved
-      </Text>
+  <div class="content">
+    <div class="description">
+      <p>Copyright 2021. All Rights Reserved</p>
     </div>
-    <div
-      class="w-full flex flex-col items-center lg:items-end gap-6 social-icons justify-center mt-8 lg:mt-0"
-    >
-      <div class="flex gap-6">
-        <Image src={facebook} alt="facebook-icon" />
-        <Image src={twitter} alt="twitter-icon" />
-        <Image src={instagram} alt="instagram-icon" />
-      </div>
-      <div>
-        <Text textAlign="center">
-          Built with ❤️ by <a
-            href="https://www.linkedin.com/in/austin-asoluka-415326155/"
-            >Austin Asoluka</a>
-        </Text>
+    <div class="social">
+      <div class="icons">
+        <a href="#"><Image src={facebook} alt="Facebook icon" /></a>
+        <a href="#"><Image src={twitter} alt="Twitter icon" /></a>
+        <a href="#"><Image src={instagram} alt="Instagram icon" /></a>
       </div>
     </div>
   </div>
 </footer>
 
 <style>
+  :root {
+    --night: #000; /* Background color */
+    --dim-white: #aaa; /* Text color */
+    --white: #fff;
+  }
+
   .footer {
     background-color: var(--night);
-    padding: 36px 0;
-    color: white;
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
   }
-  .footer > nav {
-    padding-top: 24px;
-    padding-bottom: 24px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dim-white);
+    letter-spacing: 5px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links a {
+    color: #f9dc22;
+    text-decoration: none;
+    font-weight: bold;
     text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--dim-white);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .description {
+    max-width: 600px;
+    font-size: 14px;
+    color: var(--dim-white);
+    text-align: center;
+  }
+
+  .description p {
+    color: #f9dc22;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav-links p {
+    color: var(--dim-white);
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .icons a img {
+    width: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  .icons a:hover img {
+    transform: scale(1.1);
+  }
+
+  .credit {
+    font-size: 12px;
+    color: var(--dim-white);
+  }
+
+  .credit a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .credit a:hover {
+    color: var(--dim-white);
   }
 </style>

@@ -11,22 +11,24 @@ export const Navigation: FC = () => {
             <S.NavigationListWrapper $isOpen={isOpen}>
                 <S.NavigationList>
                     <li>
+                        <a href="/">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="/promociones">PROMOS</a>
+                    </li>
+                    <li>
                         <a href="/ofertas">OFERTAS</a>
                     </li>
                     <li>
-                        <a href="/headphones">TEQUILA</a>
+                        <a href="#categorias">CATEGORIAS</a>
                     </li>
                     <li>
-                        <a href="/speakers">WHISKEY</a>
-                    </li>
-                    <li>
-                        <a href="/earphones">VODKA</a>
-                    </li>
-                    <li>
+                        {/* UBICACIONES */}
                         <a href="/infinite">NOSOTROS</a>
                     </li>
                     <li>
-                        <a href="/contact">CONTACTO</a>
+                        {/* INFORMATE */}
+                        <a href="/contacto">CONTACTO</a>
                     </li>
                 </S.NavigationList>
             </S.NavigationListWrapper>

@@ -6,9 +6,28 @@ import Logo from "./logo.png";
 import HeroSlider1 from "./hero-slider-01.webp";
 import HeroSlider2 from "./hero-slider-02.webp";
 import HeroSlider3 from "./hero-slider-03.webp";
+import HeroSlider4 from "./ejemplo1.gif";
+import HeroSlider5 from "./ejemplo2.png";
+import HeroSlider6 from "./ejemplo4.jpg";
+import HeroSlider7 from "./ejemplo5.png";
+import HeroSlider8 from "./ejemplo6.gif";
+import HeroSlider9 from "./ejemplo7.gif";
 
 import InfiniteImg1 from "./infinite-img-1.webp";
 import InfiniteImg2 from "./infinite-img-2.webp";
+
+import promo1 from "../../../public/assets/promociones/promocion-enero-1.jpg"
+import promo2 from "../../../public/assets/promociones/promocion-enero-2.jpg"
+import promo3 from "../../../public/assets/promociones/promocion-enero-3.jpg"
+import promo4 from "../../../public/assets/promociones/promocion-enero-4.jpg"
+
+import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
+import UbiStaCruz from "./ubicaciones/ubicacion-santa-cruz.jpg";
+import UbiPartidas from "./ubicaciones/ubicacion-las-partidas.jpg";
+import UbiSanAntonio from "./ubicaciones/ubicacion-san-antonio.jpg";
+import UbiCentro from "./ubicaciones/ubicacion-centro-xona.jpg";
+import UbiOtzolo from "./ubicaciones/ubicacion-otzolotepec.jpg";
+
 
 export const images = {
     preview: PreviewPng,
@@ -23,6 +42,7 @@ export type ImageProps = {
     width?: number | string;
     height?: number | string;
     loading?: "lazy" | "eager";
+    link?: string;
 };
 
 /**
@@ -36,6 +56,7 @@ export const Image: FC<ImageProps> = ({
     width,
     src,
     loading,
+    link,
     ...rest
 }) => {
     /**
@@ -48,7 +69,7 @@ export const Image: FC<ImageProps> = ({
     /**
      * this component should be able to use local images or images from external sources
      */
-    const image = srcLocal ? images[srcLocal] : { src, width, height };
+    const image = srcLocal ? images[srcLocal] : { src, width, height, };
 
     return (
         <img
@@ -68,6 +89,22 @@ export {
     HeroSlider1,
     HeroSlider2,
     HeroSlider3,
+    HeroSlider4,
+    HeroSlider5,
+    HeroSlider6,
+    HeroSlider7,
+    HeroSlider8,
+    HeroSlider9,
     InfiniteImg1,
     InfiniteImg2,
+    promo1,
+    promo2,
+    promo3,
+    promo4,
+    UbiCrespa,
+    UbiStaCruz,
+    UbiPartidas,
+    UbiSanAntonio,
+    UbiCentro,
+    UbiOtzolo,
 };

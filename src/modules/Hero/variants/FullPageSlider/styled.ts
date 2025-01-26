@@ -4,12 +4,10 @@ import { MediaQuery } from "@styles/mediaQuery";
 
 export const FullPageSliderStyled = styled.div`
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     margin: 0 auto;
     position: relative;
 
@@ -19,6 +17,22 @@ export const FullPageSliderStyled = styled.div`
     background: ${Theme.secondary};
     position: relative;
     overflow: hidden;
+
+    ${MediaQuery.max("xxl")}{
+        min-height: 115vh;
+    }
+
+    ${MediaQuery.max("xl")} {
+        min-height: 132vh;
+    }
+
+    ${MediaQuery.max("lg")} {
+        min-height: 100vh;
+    }
+    
+    ${MediaQuery.max("md")} {
+        min-height: 125vh;
+    }
 
     .swiper-pagination {
         position: absolute;

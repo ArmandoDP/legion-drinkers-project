@@ -1,7 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
-import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
+import {
+  HeroSlider3,
+  InfiniteImg1,
+  InfiniteImg2,
+  HeroSlider6,
+} from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import { Footer } from "@modules/Footer";
 
@@ -11,6 +16,7 @@ import Text from "../components/atoms/Text.astro";
 import Button from "../components/atoms/Button.astro";
 import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 ---
 
 <Layout
@@ -22,7 +28,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider3.src,
+        image: HeroSlider6.src,
         content: {
           title: "TEQUILAS",
           paragraph:
@@ -47,7 +53,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       <div class="product-spotlight-area">
         <div class="product-spotlight-2">
           <div class="flex flex-col">
-            <Text type="h3">ZX7 SPEAKER</Text>
+            <Text type="h3">TEQUILA HERRADURA</Text>
             <a href="/products/zx7-speaker"
               ><Button className="mt-7" type="secondary-inverted">
                 SEE PRODUCT
@@ -60,7 +66,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
 
     {
       data
-        .filter(({ category }) => category === "headphones")
+        .filter(({ category }) => category === "tequilas")
         .map(async (item) => {
           return (
             <Hero
@@ -80,7 +86,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
                   {
                     link: `/products/${item.slug}`, // Enlace dinámico
                     text: "Ver Producto", // Texto del botón
-                    variant: "primary", // Variación del botón, si es necesario
+                    variant: "secondary", // Variación del botón, si es necesario
                   },
                 ],
               }}
@@ -106,6 +112,8 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     /> -->
 
     <FeaturedProducts />
+
+    <CategoryProducts />
 
     <Hero
       heroType="textImage"
@@ -147,10 +155,11 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: url("/assets/home/desktop/image-hero.jpg");
-    background-position-y: -850px;
-    background-position-x: -900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/assets/tequilas/tequila-ejemplo2.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 34px 124px;

@@ -5,6 +5,8 @@ import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import { Footer } from "@modules/Footer";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import CategoryProducts from "@components/organisms/CategoryProducts.astro";
+import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
 ---
 
 <Layout
@@ -62,62 +64,162 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={[
         {
           id: "1",
-          image: "https://via.placeholder.com/150",
+          image: "/assets/licores/rancho-escondido-tamarindo.webp",
+          title: "Rancho Escondido Tamarindo",
+          description: "Licor de tamarindo con un toque mexicano",
+          button: { text: "Comprar ahora", link: "/producto-1" },
+        },
+        {
+          id: "2",
+          image: "/assets/licores/jagermeister.webp",
+          title: "Jägermeister",
+          description:
+            "El clásico licor herbal alemán, perfecto para cocteles únicos.",
+          button: { text: "Comprar ahora", link: "/producto-2" },
+        },
+        {
+          id: "3",
+          image: "/assets/licores/rompope-coronado.webp",
+          title: "Rompope Coronado Vainilla",
+          description: "Rompope tradicional con sabor a vainilla.",
+          button: { text: "Comprar ahora", link: "/producto-3" },
+        },
+        {
+          id: "4",
+          image: "/assets/rones/bacardi-raspberry.webp",
+          title: "Bacardí Raspberry",
+          description:
+            "Ron sabor frambuesa delicioso, perfecto para cócteles frutales.",
+          button: { text: "Comprar ahora", link: "/producto-4" },
+        },
+        {
+          id: "5",
+          image: "/assets/vodkas/smirnoff-normal.webp",
+          title: "Smirnoff Vodka Clásico",
+          description:
+            "Vodka puro, ideal para mezclar con tus bebidas favoritas.",
+          button: { text: "Comprar ahora", link: "/producto-5" },
+        },
+        {
+          id: "6",
+          image: "assets/vodkas/absolut-vodka-azul.webp",
+          title: "Absolut Vodka Azul",
+          description: "Vodka sueco de calidad premium, perfecto para todos.",
+          button: { text: "Comprar ahora", link: "/producto-6" },
+        },
+        {
+          id: "7",
+          image: "assets/vinos/dolce-amore.webp",
+          title: "Vino Dolce Amore",
+          description:
+            "Vino dulce con un sabor afrutado. Ideal para ocasiones especiales.",
+          button: { text: "Comprar ahora", link: "/producto-7" },
+        },
+        {
+          id: "8",
+          image: "assets/vinos/sweet-red-reservado.webp",
+          title: "Vino Sweet Red Reservado",
+          description:
+            "Vino tinto dulce y elegante, excelente para cenas románticas.",
+          button: { text: "Comprar ahora", link: "/producto-8" },
+        },
+      ]}
+    />
+
+    <Hero
+      client:load
+      heroType="GridProducts"
+      data={[
+        {
+          id: "1",
+          image: "assets/vinos/sangre-de-cristo.webp",
           title: "Producto 1",
           description: "Descripción del Producto 1",
           button: { text: "Comprar ahora", link: "/producto-1" },
         },
         {
           id: "2",
-          image: "https://via.placeholder.com/150",
+          image: "assets/vodkas/skyy.webp",
           title: "Producto 2",
           description: "Descripción del Producto 2",
           button: { text: "Comprar ahora", link: "/producto-2" },
         },
         {
           id: "3",
-          image: "https://via.placeholder.com/150",
+          image: "assets/tequilas/hornitos-plata.webp",
           title: "Producto 3",
           description: "Descripción del Producto 3",
           button: { text: "Comprar ahora", link: "/producto-3" },
         },
         {
           id: "4",
-          image: "https://via.placeholder.com/150",
+          image: "assets/tequilas/jose-cuervo-tradicional-plata.webp",
           title: "Producto 4",
           description: "Descripción del Producto 4",
           button: { text: "Comprar ahora", link: "/producto-4" },
         },
         {
           id: "5",
-          image: "https://via.placeholder.com/150",
+          image: "assets/rones/kraken.webp",
           title: "Producto 5",
           description: "Descripción del Producto 5",
           button: { text: "Comprar ahora", link: "/producto-5" },
         },
         {
           id: "6",
-          image: "https://via.placeholder.com/150",
+          image: "assets/rones/bacardi-coco.webp",
           title: "Producto 6",
           description: "Descripción del Producto 6",
           button: { text: "Comprar ahora", link: "/producto-1" },
         },
         {
           id: "7",
-          image: "https://via.placeholder.com/150",
+          image: "assets/licores/flamingo-curacao.webp",
           title: "Producto 7",
           description: "Descripción del Producto 7",
           button: { text: "Comprar ahora", link: "/producto-2" },
         },
         {
           id: "8",
-          image: "https://via.placeholder.com/150",
+          image: "assets/licores/baileys-original.webp",
           title: "Producto 8",
           description: "Descripción del Producto 8",
           button: { text: "Comprar ahora", link: "/producto-3" },
         },
+        // {
+        //   id: "9",
+        //   image: "https://via.placeholder.com/150",
+        //   title: "Producto 9",
+        //   description: "Descripción del Producto 9",
+        //   button: { text: "Comprar ahora", link: "/producto-4" },
+        // },
+        // {
+        //   id: "10",
+        //   image: "https://via.placeholder.com/150",
+        //   title: "Producto 10",
+        //   description: "Descripción del Producto 10",
+        //   button: { text: "Comprar ahora", link: "/producto-5" },
+        // },
+        // {
+        //   id: "11",
+        //   image: "https://via.placeholder.com/150",
+        //   title: "Producto 11",
+        //   description: "Descripción del Producto 11",
+        //   button: { text: "Comprar ahora", link: "/producto-1" },
+        // },
+        // {
+        //   id: "12",
+        //   image: "https://via.placeholder.com/150",
+        //   title: "Producto 12",
+        //   description: "Descripción del Producto 12",
+        //   button: { text: "Comprar ahora", link: "/producto-2" },
+        // },
       ]}
     />
+
+    <FeaturedProducts />
+
+    <CategoryProducts />
 
     <Hero
       heroType="textImage"

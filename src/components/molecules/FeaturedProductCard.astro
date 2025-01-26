@@ -5,8 +5,8 @@ const {
   image,
   imageAlt,
   title,
-  width = "122.947px",
-  height = "160px",
+  width = "130.947px",
+  height = "190px",
 } = Astro.props;
 ---
 
@@ -35,6 +35,27 @@ const {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
   }
 
+  @media (max-width: 1024px) {
+    .product-card {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-card {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .product-card:hover {
     transform: scale(1.05); /* Escalado suave */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
@@ -44,8 +65,8 @@ const {
     width: var(--width);
     height: var(--height);
     position: absolute;
-    top: -80px;
-    transition: transform 2s ease; /* Transición suave para la imagen */
+    top: -100px;
+    transition: transform 1s ease; /* Transición suave para la imagen */
   }
 
   .product-card:hover .item-image {

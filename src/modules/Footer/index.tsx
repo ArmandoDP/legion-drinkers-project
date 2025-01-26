@@ -14,6 +14,19 @@ export const Footer: FC = () => {
                         <p>© 2024 All rights reserved by codexcode.pl</p>
                     </S.FooterContent>
                 </S.FooterContainer>
+                        <S.FooterLink>
+                    <p>
+                        <p>links</p>
+                        <p>
+                            <a href="#">Privacy Policy</a> |{" "}
+                            <a href="#">Terms & Conditions</a> |{" "}
+                            <a href="#">Contact Us</a> |{" "}
+                            <a href="#">Support</a> |{" "}
+                            <a href="#">FAQ</a> |{" "}
+                            <a href="#">Careers</a> |{" "}
+                            </p>
+                        </p>
+                        </S.FooterLink>
                 <Socials />
             </Container>
         </S.FooterStyled>
