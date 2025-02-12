@@ -13,14 +13,15 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
       <span>LEGION DRINKERSⓇ</span>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/headphones">Promos</a></li>
-      <li><a href="/speakers">Ofertas</a></li>
-      <li><a href="/earphones">Sucursales</a></li>
-      <li><a href="/earphones">Contacto</a></li>
-      <li><a href="/earphones">Atencion a clientes</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="/promociones">Promos</a></li>
+      <li><a href="/ofertas">Ofertas</a></li>
+      <li><a href="/productos">Categorias</a></li>
+      <li><a href="/ubicaciones">ubicaciones</a></li>
+      <!-- <li><a href="/contacto">Contacto</a></li> -->
+      <li><a href="/nosotros">¿Quiénes somos?</a></li>
     </ul>
-    <ul class="nav-links">
+    <!-- <ul class="nav-links-center">
       <li>
         <p style="font-weight: bold; color:#fff">Contacto</p>
       </li>
@@ -28,9 +29,9 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
     <ul class="nav-links">
       <li>
         <p>Linea de atencion al cliente</p>
-        <p>01 800 123 4567</p>
+        <p>Telefono: 01 800 123 4567</p>
         <p>Direccion: Toluca de lerdo</p>
-        <p>Colonia: del valle</p>
+        <p>Colonia: San Mateo Oxtotitlan</p>
       </li>
       <li>
         <p>Horario de atencion a clientes</p>
@@ -38,12 +39,12 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
         <p>Sabados de 9:00 a 14:00</p>
         <p>Domingos de 9:00 a 12:00</p>
       </li>
-    </ul>
+    </ul> -->
   </nav>
 
   <div class="content">
     <div class="description">
-      <p>Copyright 2021. All Rights Reserved</p>
+      <p>Copyright 2025. All Rights Reserved</p>
     </div>
     <div class="social">
       <div class="icons">
@@ -85,12 +86,27 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
     letter-spacing: 5px;
   }
 
+  .nav-links-center {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   .nav-links {
     display: flex;
     gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .nav-links a {
@@ -100,6 +116,25 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
     text-transform: uppercase;
     font-size: 14px;
     transition: color 0.3s ease;
+  }
+
+  .nav-links p {
+    color: var(--dim-white);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links p {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links a {
+      font-size: 12px;
+    }
   }
 
   .nav-links a:hover {

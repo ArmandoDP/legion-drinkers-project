@@ -31,8 +31,8 @@ export const LogoStyled = styled.div`
         }
 
         img {
-            height: 90px;
-            width: 90px;
+            height: 150px;
+            width: 150px;
             object-fit: contain;
         }
     }

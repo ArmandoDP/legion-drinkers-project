@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
 import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
 import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
@@ -18,17 +18,17 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider3.src,
+        image: "public/assets/branding/Botellas-Frias.jpg",
         content: {
           title: "OFERTAS",
           paragraph:
-            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+            "Aprovecha nuestras ofertas y encuentra tus bebidas favoritas a precios increíbles. Calidad y ahorro en un solo lugar, con promociones que se renuevan para ti. ¡No te lo pierdas!",
         },
       }}
     />
     <ServiceCards
-      description="SERVICES"
-      title="The Service We Provide For You"
+      description="LEGION DRINKERS"
+      title="Las mejores ofertas solo las tiene la LEGION!!"
       client:visible
       cards={[
         {
@@ -67,7 +67,7 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           image: "/assets/licores/rancho-escondido-tamarindo.webp",
           title: "Rancho Escondido Tamarindo",
           description: "Licor de tamarindo con un toque mexicano",
-          button: { text: "Comprar ahora", link: "/producto-1" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
@@ -75,14 +75,14 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           title: "Jägermeister",
           description:
             "El clásico licor herbal alemán, perfecto para cocteles únicos.",
-          button: { text: "Comprar ahora", link: "/producto-2" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
           image: "/assets/licores/rompope-coronado.webp",
           title: "Rompope Coronado Vainilla",
           description: "Rompope tradicional con sabor a vainilla.",
-          button: { text: "Comprar ahora", link: "/producto-3" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
@@ -90,7 +90,7 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           title: "Bacardí Raspberry",
           description:
             "Ron sabor frambuesa delicioso, perfecto para cócteles frutales.",
-          button: { text: "Comprar ahora", link: "/producto-4" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-4" },
         },
         {
           id: "5",
@@ -98,14 +98,14 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           title: "Smirnoff Vodka Clásico",
           description:
             "Vodka puro, ideal para mezclar con tus bebidas favoritas.",
-          button: { text: "Comprar ahora", link: "/producto-5" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
         },
         {
           id: "6",
           image: "assets/vodkas/absolut-vodka-azul.webp",
           title: "Absolut Vodka Azul",
           description: "Vodka sueco de calidad premium, perfecto para todos.",
-          button: { text: "Comprar ahora", link: "/producto-6" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-6" },
         },
         {
           id: "7",
@@ -113,7 +113,7 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           title: "Vino Dolce Amore",
           description:
             "Vino dulce con un sabor afrutado. Ideal para ocasiones especiales.",
-          button: { text: "Comprar ahora", link: "/producto-7" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-7" },
         },
         {
           id: "8",
@@ -121,7 +121,7 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
           title: "Vino Sweet Red Reservado",
           description:
             "Vino tinto dulce y elegante, excelente para cenas románticas.",
-          button: { text: "Comprar ahora", link: "/producto-8" },
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-8" },
         },
       ]}
     />
@@ -133,128 +133,128 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
         {
           id: "1",
           image: "assets/vinos/sangre-de-cristo.webp",
-          title: "Producto 1",
-          description: "Descripción del Producto 1",
-          button: { text: "Comprar ahora", link: "/producto-1" },
+          title: "Vino Sangre de Cristo - Vino Tinto Premium",
+          description:
+            "Vino tinto premium con un sabor único y elegante, ideal para ocasiones especiales.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
           image: "assets/vodkas/skyy.webp",
-          title: "Producto 2",
-          description: "Descripción del Producto 2",
-          button: { text: "Comprar ahora", link: "/producto-2" },
+          title: "Vodka Skyy - Suavidad y Refrescante",
+          description:
+            "Vodka suave, perfecto para cócteles refrescantes o disfrutar solo.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
           image: "assets/tequilas/hornitos-plata.webp",
-          title: "Producto 3",
-          description: "Descripción del Producto 3",
-          button: { text: "Comprar ahora", link: "/producto-3" },
+          title: "Tequila Hornitos Plata - Auténtico Sabor Mexicano",
+          description:
+            "Tequila 100% puro de agave, ideal para disfrutar solo o en cócteles.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
           image: "assets/tequilas/jose-cuervo-tradicional-plata.webp",
-          title: "Producto 4",
-          description: "Descripción del Producto 4",
-          button: { text: "Comprar ahora", link: "/producto-4" },
+          title: "Tequila José Cuervo Tradicional Plata",
+          description:
+            "Tequila de calidad premium, suave y con sabor único. ¡Perfecto para celebraciones!",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-4" },
         },
         {
           id: "5",
           image: "assets/rones/kraken.webp",
-          title: "Producto 5",
-          description: "Descripción del Producto 5",
-          button: { text: "Comprar ahora", link: "/producto-5" },
+          title: "Ron Kraken - Sabor Intenso",
+          description:
+            "Ron oscuro con un sabor profundo y único, ideal para cócteles intensos.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
         },
         {
           id: "6",
           image: "assets/rones/bacardi-coco.webp",
-          title: "Producto 6",
-          description: "Descripción del Producto 6",
-          button: { text: "Comprar ahora", link: "/producto-1" },
+          title: "Ron Bacardi Coco - Sabor Tropical",
+          description:
+            "Ron Bacardi con un toque refrescante de coco, perfecto para cócteles tropicales.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "7",
           image: "assets/licores/flamingo-curacao.webp",
-          title: "Producto 7",
-          description: "Descripción del Producto 7",
-          button: { text: "Comprar ahora", link: "/producto-2" },
+          title: "Licor Flamingo Curacao - Toque Exótico",
+          description:
+            "Licor con sabor exótico ideal para cócteles frescos y coloridos.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
         },
         {
           id: "8",
           image: "assets/licores/baileys-original.webp",
-          title: "Producto 8",
-          description: "Descripción del Producto 8",
-          button: { text: "Comprar ahora", link: "/producto-3" },
+          title: "Baileys Original - Licor de Crema Irlandesa",
+          description:
+            "Licor cremoso y suave, perfecto para disfrutar solo o en cócteles.",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
         },
         // {
         //   id: "9",
         //   image: "https://via.placeholder.com/150",
         //   title: "Producto 9",
         //   description: "Descripción del Producto 9",
-        //   button: { text: "Comprar ahora", link: "/producto-4" },
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-4" },
         // },
         // {
         //   id: "10",
         //   image: "https://via.placeholder.com/150",
         //   title: "Producto 10",
         //   description: "Descripción del Producto 10",
-        //   button: { text: "Comprar ahora", link: "/producto-5" },
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
         // },
         // {
         //   id: "11",
         //   image: "https://via.placeholder.com/150",
         //   title: "Producto 11",
         //   description: "Descripción del Producto 11",
-        //   button: { text: "Comprar ahora", link: "/producto-1" },
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         // },
         // {
         //   id: "12",
         //   image: "https://via.placeholder.com/150",
         //   title: "Producto 12",
         //   description: "Descripción del Producto 12",
-        //   button: { text: "Comprar ahora", link: "/producto-2" },
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
         // },
       ]}
     />
 
     <FeaturedProducts />
 
-    <CategoryProducts />
+    <!-- <CategoryProducts /> -->
 
-    <Hero
-      heroType="textImage"
-      client:visible
-      data={{
-        image: {
-          src: InfiniteImg1.src,
-          width: 590,
-          height: 300,
-          alt: "Hero Image",
-        },
-        title: "Lets make you Infinite!",
-        paragraph:
-          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
-      }}
-    />
     <Hero
       heroType="textImage"
       client:visible
       data={{
         switchPlaces: true,
         image: {
-          src: InfiniteImg2.src,
-          width: 590,
-          height: 300,
-          alt: "Hero Image",
+          src: "assets/branding/Precio-mayoreo.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
         },
-        title: "Infinite Community",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
-          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
+        buttons: [
+          {
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
       }}
     />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
 
   <Footer />
 </Layout>

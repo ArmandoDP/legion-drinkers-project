@@ -8,6 +8,11 @@ import Button from "../atoms/Button.astro";
 import donjulio from "../../../public/assets/tequilas/donjulio.png";
 ---
 
+<div class="premium-categories">
+  <span>NO TE PIERDAS NUESTRAS PROMOCIONES</span>
+  <p>(Se actualizan cada mes)</p>
+</div>
+
 <div class="container">
   <div class="product-spotlight-area2">
     <a href="/promociones">
@@ -25,11 +30,13 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
 
     <div class="product-spotlight-1">
       <div class="product-spotlight-image">
-        <Image
-          class="product-spotlight-img"
-          src={donjulio}
-          alt="Tequila Don Julio 70 Cristalino"
-        />
+        <a href="/products/don-julio-70-cristalino">
+          <Image
+            class="product-spotlight-img"
+            src={donjulio}
+            alt="Tequila Don Julio 70 Cristalino"
+          />
+        </a>
       </div>
 
       <!-- Contenido -->
@@ -48,7 +55,7 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
           </p>
         </div>
         <a href="/products/don-julio-70-cristalino">
-          <Button type="secondary">SEE PRODUCT</Button>
+          <Button type="secondary">VER PRODUCTO</Button>
         </a>
       </div>
     </div>
@@ -338,6 +345,13 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     padding-right: 60px;
   }
 
+  @media screen and (max-width: 768px) {
+    .product-spotlight-description {
+      padding-right: 0;
+      text-align: justify;
+    }
+  }
+
   /* Responsive Design */
   @media (min-width: 768px) {
     .product-spotlight-container {
@@ -365,5 +379,16 @@ import donjulio from "../../../public/assets/tequilas/donjulio.png";
     .product-spotlight-img {
       width: 470px;
     }
+  }
+
+  .premium-categories {
+    text-align: center;
+    margin: 80px 0 70px 0;
+  }
+  .premium-categories span {
+    font-size: 30px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    letter-spacing: 6px; /* Espaciado entre cada letra */
   }
 </style>

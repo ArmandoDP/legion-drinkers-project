@@ -24,11 +24,11 @@ export const Navigation: FC = () => {
                     </li>
                     <li>
                         {/* UBICACIONES */}
-                        <a href="/infinite">NOSOTROS</a>
+                        <a href="/infinite">UBICACIONES</a>
                     </li>
                     <li>
                         {/* INFORMATE */}
-                        <a href="/contacto">CONTACTO</a>
+                        <a style={{ color: "#f9dc22" }} href="/nosotros">¿Quienes somos?</a>
                     </li>
                 </S.NavigationList>
             </S.NavigationListWrapper>

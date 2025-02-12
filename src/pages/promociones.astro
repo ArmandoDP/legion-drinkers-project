@@ -11,8 +11,25 @@ import {
   promo4,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import CategoryProducts from "@components/organisms/CategoryProducts.astro";
+
+export const metadata = {
+  title: "Promociones de Tequila - Legión Drinkers | Enfría tu motor", // Título de la página
+  description:
+    "Promociones exclusivas en tequila: Cuervo Tradicional, Gran Centenario, y más. Encuentra combos irresistibles y ahorra con Legión Drinkers.", // Meta descripción
+  keywords: [
+    "promociones tequila",
+    "tequila Cuervo",
+    "Gran Centenario ofertas",
+    "Legión Drinkers tequila",
+    "tequila precios",
+    "comprar tequila online",
+  ],
+  image: "/images/promo4.jpg", // Imagen destacada
+  url: "https://www.legiondrinkers.com/promociones-tequila", // URL específica de la página
+};
 ---
 
 <Layout
@@ -24,17 +41,17 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider3.src,
+        image: "assets/branding/Precio-mayoreo.jpg",
         content: {
           title: "PROMOCIONES",
           paragraph:
-            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+            "Descubre nuestras promociones exclusivas y encuentra tus productos favoritos con increíbles descuentos. Aprovecha esta oportunidad para disfrutar de calidad al mejor precio. ¡Actualizamos nuestras ofertas constantemente para ti!",
         },
       }}
     />
     <ServiceCards
       description="LEGION DRINKERS"
-      title="Nuestros Productos Al Alcance De Ti"
+      title="Los Mejores Productos y Ofertas Cerca de Ti"
       client:visible
       cards={[
         {
@@ -70,68 +87,100 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={[
         {
           id: "1",
-          image: "assets/tequilas/1800-cristalino.webp",
+          image: promo4.src,
           title: "Tequila 1800 Cristalino",
           description:
             "Aprovecha esta promoción y disfruta del suave Tequila 1800 Cristalino a precio especial.",
-          button: { text: "Comprar ahora", link: "/producto-1" },
+          button: { text: "¡Cotizar Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: "assets/tequilas/don-julio-blanco.webp",
+          image: promo3.src,
           title: "Don Julio Blanco",
           description:
             "No pierdas esta oferta exclusiva y disfruta de la pureza de Don Julio Blanco.",
-          button: { text: "Comprar ahora", link: "/producto-2" },
+          button: { text: "¡Cotizar Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
-          image: "assets/tequilas/maestro-dobel-diamante.webp",
+          image: promo2.src,
           title: "Maestro Dobel Diamante",
           description:
             "Descubre Maestro Dobel Diamante con descuento especial. Ideal para tequila premium.",
-          button: { text: "Comprar ahora", link: "/producto-3" },
+          button: { text: "¡Cotizar Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
-          image: "assets/whiskys/buchanans-12.webp",
+          image: promo1.src,
           title: "Buchanan's 12 Años",
           description:
             "Aprovecha y saborea Buchanan's 12 años con esta oferta limitada. ¡Calidad al mejor precio!",
-          button: { text: "Comprar ahora", link: "/producto-4" },
+          button: { text: "¡Cotizar Ahora!", link: "/producto-4" },
         },
         {
-          id: "5",
-          image: "assets/whiskys/buchanans-18.webp",
-          title: "Buchanan's 18 Años",
+          id: "1",
+          image: promo4.src,
+          title: "Tequila 1800 Cristalino",
           description:
-            "Disfruta de Buchanan's 18 años con descuento. Una experiencia premium para ti.",
-          button: { text: "Comprar ahora", link: "/producto-5" },
+            "Aprovecha esta promoción y disfruta del suave Tequila 1800 Cristalino a precio especial.",
+          button: { text: "¡Cotizar Ahora!", link: "/producto-1" },
         },
         {
-          id: "6",
-          image: "assets/whiskys/jack-daniels-old-no7.webp",
-          title: "Jack Daniel's Old No. 7",
+          id: "2",
+          image: promo3.src,
+          title: "Don Julio Blanco",
           description:
-            "Prueba y disfruta Jack Daniel's Old No. 7 a precio especial. ¡Un sabor perfecto y unico!",
-          button: { text: "Comprar ahora", link: "/producto-6" },
+            "No pierdas esta oferta exclusiva y disfruta de la pureza de Don Julio Blanco.",
+          button: { text: "¡Cotizar Ahora!", link: "/producto-2" },
         },
         {
-          id: "7",
-          image: "assets/rones/bacardi-blanco-1-75l.webp",
-          title: "Bacardí Blanco 1.75L",
+          id: "3",
+          image: promo2.src,
+          title: "Maestro Dobel Diamante",
           description:
-            "Obtén Bacardí Blanco 1.75L con descuento y recibe otro. ¡Perfecto para tus reuniones!",
-          button: { text: "Comprar ahora", link: "/producto-7" },
+            "Descubre Maestro Dobel Diamante con descuento especial. Ideal para tequila premium.",
+          button: { text: "¡Cotizar Ahora!", link: "/producto-3" },
         },
         {
-          id: "8",
-          image: "assets/rones/bacardi-anejo.webp",
-          title: "Bacardí Añejo",
+          id: "4",
+          image: promo1.src,
+          title: "Buchanan's 12 Años",
           description:
-            "Disfruta de Bacardí Añejo con oferta especial. Ideal para los amantes del ron y cocteleria.",
-          button: { text: "Comprar ahora", link: "/producto-8" },
+            "Aprovecha y saborea Buchanan's 12 años con esta oferta limitada. ¡Calidad al mejor precio!",
+          button: { text: "¡Cotizar Ahora!", link: "/producto-4" },
         },
+        // {
+        //   id: "5",
+        //   image: "assets/whiskys/buchanans-18.webp",
+        //   title: "Buchanan's 18 Años",
+        //   description:
+        //     "Disfruta de Buchanan's 18 años con descuento. Una experiencia premium para ti.",
+        //   button: { text: "¡Cotizar Ahora!", link: "/producto-5" },
+        // },
+        // {
+        //   id: "6",
+        //   image: "assets/whiskys/jack-daniels-old-no7.webp",
+        //   title: "Jack Daniel's Old No. 7",
+        //   description:
+        //     "Prueba y disfruta Jack Daniel's Old No. 7 a precio especial. ¡Un sabor perfecto y unico!",
+        //   button: { text: "¡Cotizar Ahora!", link: "/producto-6" },
+        // },
+        // {
+        //   id: "7",
+        //   image: "assets/rones/bacardi-blanco-1-75l.webp",
+        //   title: "Bacardí Blanco 1.75L",
+        //   description:
+        //     "Obtén Bacardí Blanco 1.75L con descuento y recibe otro. ¡Perfecto para tus reuniones!",
+        //   button: { text: "¡Cotizar Ahora!", link: "/producto-7" },
+        // },
+        // {
+        //   id: "8",
+        //   image: "assets/rones/bacardi-anejo.webp",
+        //   title: "Bacardí Añejo",
+        //   description:
+        //     "Disfruta de Bacardí Añejo con oferta especial. Ideal para los amantes del ron y cocteleria.",
+        //   button: { text: "¡Cotizar Ahora!", link: "/producto-8" },
+        // },
       ]}
     />
 
@@ -140,18 +189,18 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       client:visible
       data={{
         image: {
-          src: promo4.src,
+          src: promo4.src, // Ruta optimizada para la imagen
           width: 700,
           height: 600,
-          alt: "Hero Image",
+          alt: "Promoción de Tequilas y Combos - Legión Drinkers", // Descripción clara para SEO
         },
-        title: "Lets make you Infinite!",
+        title: "¡Enfría tu motor con nuestras promociones exclusivas!", // Título optimizado
         paragraph:
-          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+          "Descubre las mejores promociones de tequila: <strong>Cuervo Tradicional, Gran Centenario, y más. </strong>Visítanos para disfrutar de los <strong>mejores precios y combos en bebidas premium.</strong>", // Contenido descriptivo y relevante
         buttons: [
           {
-            link: `/products/`, // Enlace dinámico
-            text: "¡Cotizar Ahora!", // Texto del botón
+            link: "/products", // Enlace dinámico
+            text: "¡Cotizar Ahora!", // Llamado a la acción claro
             variant: "secondary", // Variación del botón, si es necesario
           },
         ],
@@ -164,19 +213,19 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: promo3.src,
+          src: promo3.src, // Asegúrate de reemplazar con la URL correcta
           width: 700,
           height: 600,
-          alt: "Hero Image",
+          alt: "Promoción de bebidas alcohólicas con precios especiales - Lubrica Mejor",
         },
-        title: "Infinite Community",
+        title: "Lubrica Mejor con Legión Drinkers",
         paragraph:
-          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+          "Descubre las mejores promociones en tus bebidas favoritas. Disfruta de <strong>Johnnie Walker Red Label, Bacardí Blanco y Torres 5</strong> a precios inigualables. ¡Haz que tu momento sea inolvidable!",
         buttons: [
           {
-            link: `/products/`, // Enlace dinámico
-            text: "¡Cotizar Ahora!", // Texto del botón
-            variant: "secondary", // Variación del botón, si es necesario
+            link: "/products/", // Enlace dinámico
+            text: "¡Consíguelo ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón
           },
         ],
       }}
@@ -187,19 +236,19 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       client:visible
       data={{
         image: {
-          src: promo2.src,
+          src: promo2.src, // Reemplaza con la URL correcta
           width: 700,
           height: 600,
-          alt: "Hero Image",
+          alt: "Promoción de Maestro Dobel Diamante con precio especial - Chécate el Aceite",
         },
-        title: "Lets make you Infinite!",
+        title: "Chécate el Aceite con Legión Drinkers",
         paragraph:
-          "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+          "Conquista la noche con el sabor único de <strong>Maestro Dobel Diamante.</strong> ¡Disfruta de este <strong>tequila premium</strong> a un precio exclusivo! Porque mereces lo mejor, siempre.",
         buttons: [
           {
-            link: `/products/`, // Enlace dinámico
-            text: "¡Cotizar Ahora!", // Texto del botón
-            variant: "secondary", // Variación del botón, si es necesario
+            link: "/products/", // Enlace dinámico
+            text: "¡Descúbrelo Ahora!", // Texto del botón
+            variant: "secondary", // Variación del botón
           },
         ],
       }}
@@ -211,26 +260,28 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: promo1.src,
+          src: promo1.src, // Reemplaza con la URL correcta de la imagen
           width: 700,
           height: 600,
-          alt: "Hero Image",
+          alt: "Promoción de cerveza Modelo con la frase '¿Te falta gasolina?' - Legión Drinkers",
         },
-        title: "Infinite Community",
+        title: "¿Te falta gasolina?",
         paragraph:
-          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+          "Recarga energías con una cerveza Modelo bien fría. Perfecta para cualquier ocasión y ahora con un precio irresistible. ¡Súmate a la Legión Drinkers y disfruta de lo mejor!",
         buttons: [
           {
-            link: `/products/`, // Enlace dinámico
-            text: "¡Cotizar Ahora!", // Texto del botón
-            variant: "secondary", // Variación del botón, si es necesario
+            link: "/products/", // Enlace dinámico
+            text: "¡Encuéntrala aquí!", // Texto del botón
+            variant: "secondary", // Variación del botón
           },
         ],
       }}
     />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
+
+  <CategoryProducts />
 
   <Footer />
 </Layout>

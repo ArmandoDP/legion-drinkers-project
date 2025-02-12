@@ -38,6 +38,8 @@ const PrimaryVariant = css`
     margin-top: 40px;
     transition: color 0.5s;
     transition-delay: 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
 
     ${MediaQuery.max("lg")} {
         font-size: 14px;
@@ -70,6 +72,8 @@ const PrimaryVariant = css`
 
     &:hover {
         color: ${Theme.secondary};
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
         &:before {
             width: 100%;
@@ -105,9 +109,14 @@ const SecondaryVariant = css`
     border-radius: 50px;
     background: ${Theme.yellow};
     color: ${Theme.tertiary};
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+
 
     &:hover {
         background: ${Theme.tertiary};
         color: ${Theme.yellow};
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 `;

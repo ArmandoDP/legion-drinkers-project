@@ -12,6 +12,16 @@ import HeroSlider6 from "./ejemplo4.jpg";
 import HeroSlider7 from "./ejemplo5.png";
 import HeroSlider8 from "./ejemplo6.gif";
 import HeroSlider9 from "./ejemplo7.gif";
+import WhiksyBanner from "./whisky-banner.webp";
+import VodkaBanner from "./vodka-banner-webp.png";
+import RonBanner from "./ron-banner.webp";
+import LicorBanner from "./licor-banner.webp";
+import BrandyBanner from "./brandy-banner.webp";
+import VinoBanner from "./vino-banner.webp";
+import BannerPrimero from "./Tarjeta-Presentacion.jpg"
+
+import ProductsSlider from "./ofertas-banner.webp"
+import SliderImage from "./slide-2.webp"
 
 import InfiniteImg1 from "./infinite-img-1.webp";
 import InfiniteImg2 from "./infinite-img-2.webp";
@@ -27,6 +37,7 @@ import UbiPartidas from "./ubicaciones/ubicacion-las-partidas.jpg";
 import UbiSanAntonio from "./ubicaciones/ubicacion-san-antonio.jpg";
 import UbiCentro from "./ubicaciones/ubicacion-centro-xona.jpg";
 import UbiOtzolo from "./ubicaciones/ubicacion-otzolotepec.jpg";
+import { GridProductsSlide } from '../../modules/Hero/variants/GridProducts/styled';
 
 
 export const images = {
@@ -107,4 +118,13 @@ export {
     UbiSanAntonio,
     UbiCentro,
     UbiOtzolo,
+    WhiksyBanner,
+    VodkaBanner,
+    RonBanner,
+    LicorBanner,
+    BrandyBanner,
+    VinoBanner,
+    ProductsSlider,
+    SliderImage,
+    BannerPrimero,
 };

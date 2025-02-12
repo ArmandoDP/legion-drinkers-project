@@ -3,7 +3,7 @@ import { HeroSlider1 } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Contact as ContactModule } from "@modules/Contact";
 import { Hero } from "@modules/Hero";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
 ---
 
@@ -16,9 +16,9 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:load
       data={{
-        image: HeroSlider1.src,
+        image: "public/assets/branding/Tarjeta-Presentacion.jpg",
         content: {
-          title: "Contact",
+          title: "Contacto",
           paragraph:
             "Get stuck or need help? Contact us and we will help you out!",
         },
@@ -27,7 +27,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     <ContactModule client:load />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
 
   <Footer />
 </Layout>

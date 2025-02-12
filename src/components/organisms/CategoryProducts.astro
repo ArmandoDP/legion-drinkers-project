@@ -5,9 +5,26 @@ import Licor from "../../../public/assets/category-products/licor-category.png";
 import Brandy from "../../../public/assets/category-products/brandy-category.png";
 import Vino from "../../../public/assets/category-products/vino-category.png";
 import mezcal from "../../../public/assets/category-products/mezcal-category.png";
+
+import { Hero } from "@modules/Hero";
 ---
 
-<div class="container">
+<div class="premium-categories">
+  <span>OTRAS CATEGORIAS FAVORITAS</span>
+</div>
+
+<Hero
+  client:load
+  heroType="CarouselCategory"
+  data={[
+    {
+      id: "1",
+      image: Brandy.src,
+      title: "",
+    },
+  ]}
+/>
+<!-- <div class="container">
   <div class="featured-products-section">
     <a href="/licor">
       <FeaturedProductCard image={Licor} imageAlt="Licor" title="LICOR">
@@ -28,17 +45,12 @@ import mezcal from "../../../public/assets/category-products/mezcal-category.png
     </a>
 
     <a href="/mezcal">
-      <FeaturedProductCard image={mezcal} imageAlt="MEZCAL" title="mezcal">
+      <FeaturedProductCard image={mezcal} imageAlt="MEZCAL" title="MEZCAL">
         <Button type="third">Ver Más</Button>
       </FeaturedProductCard>
     </a>
   </div>
-</div>
-
-<div class="premium-categories">
-  <span>NO TE PIERDAS NUESTRAS PROMOCIONES</span>
-  <p>(Se actualizan cada mes)</p>
-</div>
+</div> -->
 
 <style>
   .featured-products-section {
@@ -49,6 +61,7 @@ import mezcal from "../../../public/assets/category-products/mezcal-category.png
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 80px;
   }
 
   /* Ajusta el número de columnas según el tamaño de pantalla */
@@ -70,14 +83,29 @@ import mezcal from "../../../public/assets/category-products/mezcal-category.png
     }
   }
   .premium-categories {
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin: 70px 0 70px 0;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
   .premium-categories span {
-    font-size: 30px; /* Tamaño del texto */
+    font-size: 26px; /* Tamaño del texto */
     font-weight: bold;
-    color: #000; /* Color del texto */
-    letter-spacing: 6px; /* Espaciado entre cada letra */
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
   }
 
   html {

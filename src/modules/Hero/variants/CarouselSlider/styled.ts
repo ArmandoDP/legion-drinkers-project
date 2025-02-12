@@ -5,7 +5,7 @@ import { MediaQuery } from "@styles/mediaQuery";
 export const CarouselSliderStyled = styled.div`
     width: 100%;
     min-height: 457px;
-    padding: 80px 20px;
+    padding: 20px 20px;
     position: relative;
     overflow: hidden;
     display: flex;

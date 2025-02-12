@@ -7,7 +7,7 @@ import { MediaQuery } from "@styles/mediaQuery";
 
 export const TextImageStyled = styled.div`
     width: 100%;
-    text-align: justify;
+    text-align: left;
     margin: 50px 0;
     align-items: center;
     background: ${Theme.primary};
@@ -44,16 +44,6 @@ export const TextImage = styled(Image)`
     width: 100%;
     margin-bottom: 30px;
     min-height: 400px;
-    border-radius: 40px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
-    transition: transform 0.3s, box-shadow 0.3s;
-
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-
     object-fit: contain;
 
     ${MediaQuery.max("lg")} {

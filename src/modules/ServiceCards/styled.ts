@@ -15,7 +15,6 @@ export const ServiceCardsStyled = styled.section`
 export const ServiceCardsHeading = styled.div`
     color: ${Theme.secondary};
 
-    margin-bottom: 40px;
     max-width: 550px;
 
     p {

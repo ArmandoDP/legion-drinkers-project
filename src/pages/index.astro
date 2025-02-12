@@ -6,6 +6,9 @@ import {
   HeroSlider7,
   HeroSlider8,
   HeroSlider9,
+  ProductsSlider,
+  SliderImage,
+  BannerPrimero,
 } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
@@ -18,7 +21,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
 ---
 
 <Layout title="Legion Drinkers" description="YOUR META DESCRIPTION FOR SEO">
-  <main class="page-content">
+  <main id="inicio" class="page-content">
     <Hero
       client:load
       heroType="fullPageSlider"
@@ -26,35 +29,36 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
         {
           subtitle: "Legion Drinkers",
           title: "Promociones",
-          background: HeroSlider4.src,
+          background: BannerPrimero.src,
           paragraph:
-            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Descubre nuestras promociones exclusivas y encuentra tus productos favoritos con increíbles descuentos. Aprovecha esta oportunidad para disfrutar de calidad al mejor precio. ¡Actualizamos nuestras ofertas constantemente para ti!",
           button: {
-            text: "Get pro version",
-            link: "https://codexcode.store/themes/cybernetic-website-template",
+            text: "¡Promos Aquí!",
+            link: "/promociones",
           },
         },
-        {
-          subtitle: "Be Safe, Be Secure, Be Cybernetic",
-          title: "infinite",
-          background: HeroSlider9.src,
-          paragraph: "",
-          button: {
-            text: "Take a look",
-            link: "/infinite",
-          },
-        },
-        {
-          subtitle: "Legion Drinkers",
-          title: "Ofertas",
-          background: HeroSlider5.src,
-          paragraph:
-            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          button: {
-            text: "Get pro version",
-            link: "/ofertas",
-          },
-        },
+        // {
+        //   subtitle: "Legion Drinkers",
+        //   title: "Top de ventas",
+        //   background: SliderImage.src,
+        //   paragraph:
+        //     "Descubre los productos más codiciados y populares del momento. Desde los favoritos que nunca pasan de moda hasta las opciones más innovadoras que todos están buscando. ¡No te quedes fuera, conoce los productos que están arrasando entre nuestros clientes!",
+        //   button: {
+        //     text: "¡Descubrir Ahora!",
+        //     link: "/products/tequila-1800-cristalino",
+        //   },
+        // },
+        // {
+        //   subtitle: "Legion Drinkers",
+        //   title: "Ofertas",
+        //   background: ProductsSlider.src,
+        //   paragraph:
+        //     "Aprovecha nuestras ofertas y encuentra tus bebidas favoritas a precios increíbles. Calidad y ahorro en un solo lugar, con promociones que se renuevan para ti. ¡No te lo pierdas! En LEGION DRINKERS sabemos lo que quieres.",
+        //   button: {
+        //     text: "VER OFERTAS!",
+        //     link: "/ofertas",
+        //   },
+        // },
       ]}
     />
 
@@ -62,10 +66,34 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     <!-- Featured products -->
     <FeaturedProducts />
 
-    <CategoryProducts />
+    <!-- <CategoryProducts /> -->
 
     <!-- product spotlight section -->
     <ProductSpotlight />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: "public/assets/branding/Codigo-Honor.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
+        },
+        title: "¿Quieres Alguno En Especifico?",
+        paragraph:
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
+        buttons: [
+          {
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
 
     <!-- Outro section -->
     <Outro />

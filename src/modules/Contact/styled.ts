@@ -54,7 +54,38 @@ export const ContactBox = styled.div`
     margin: 40px 0;
     text-align: left;
 
+    img {
+            height: 34px;
+            width: 34px;
+            border-radius: 2px;
+        }
+
+    p {
+        margin: 0;
+        line-height: 1.6;
+    }
+    h4 {
+        color: #b8a31d;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
     ${MediaQuery.max("lg")} {
         grid-template-columns: 1fr;
     }
 `;
+
+export const StyleBox = styled.div`
+    border-radius: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+`;
+

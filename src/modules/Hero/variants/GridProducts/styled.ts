@@ -141,7 +141,7 @@ export const GridProductsSlideContent = styled.div`
 
         ${MediaQuery.max("lg")} {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 14px;
         }
     }
 `;
@@ -162,7 +162,7 @@ export const ProductGroup = styled.div`
 
     /* Ajuste para pantallas pequeñas (móviles) */
     ${MediaQuery.max("sm")} {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas más pequeñas en móviles */
+        grid-template-columns: repeat(1, 1fr); /* Columnas más pequeñas en móviles */
         gap: 10px;
     }
 `;
@@ -191,24 +191,30 @@ export const ProductCard = styled.div`
         max-width: 300px;
         margin-bottom: 15px;
         border-radius: 8px;
+
+        ${MediaQuery.max("lg")} {
+            max-width: 220px;
+        }
     }
 
     h3 {
         font-size: 1.2rem;
         margin: 10px 0;
+        text-align: center;
         color: ${Theme.primary};
 
         ${MediaQuery.max("lg")} {
             font-size: 1rem;
         }
         ${MediaQuery.max("sm")} {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             margin-bottom: 5px;
         }
     }
 
     p {
         font-size: 0.9rem;
+        text-align: center;
         color: ${Theme.secondary};
         margin-bottom: 15px;
 
@@ -216,7 +222,7 @@ export const ProductCard = styled.div`
             font-size: 0.8rem;
         }
         ${MediaQuery.max("sm")} {
-            font-size: 0.7rem;
+            font-size: 0.82rem;
         }
     }
 
@@ -234,11 +240,11 @@ export const ProductCard = styled.div`
         
         ${MediaQuery.max("lg")} {
             padding: 8px 16px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
         ${MediaQuery.max("sm")} {
             padding: 6px 12px;
-            font-size: 0.65rem;
+            font-size: 1rem;
         }
     }
 `;

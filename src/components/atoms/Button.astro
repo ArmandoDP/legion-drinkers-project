@@ -43,6 +43,10 @@ const { type, className, width, onClick, id } = Astro.props;
     border-radius: 50px;
     background: #f8dc23;
     color: #000000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
   }
   @media screen and (max-width: 768px) {
     .primary,
@@ -61,13 +65,22 @@ const { type, className, width, onClick, id } = Astro.props;
     height: 3rem;
     background: var(--primary);
     color: var(--white);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
   }
   .secondary {
     width: var(--width);
     height: 3rem;
+    padding: 12px 12px;
     flex-shrink: 0;
     border: 1px solid var(--night);
     color: var(--night);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
   }
   .third {
     min-width: 150px;
@@ -93,17 +106,25 @@ const { type, className, width, onClick, id } = Astro.props;
   }
   .primary:hover {
     background: var(--primary-light);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .secondary:hover {
     border: 1px solid var(--night);
     background: var(--night);
     color: var(--white);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .secondary-inverted:hover {
     background: #000000;
     color: #f8dc23;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   .tertiary:hover {
     color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 </style>

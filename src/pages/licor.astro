@@ -6,9 +6,10 @@ import {
   InfiniteImg1,
   InfiniteImg2,
   HeroSlider6,
+  LicorBanner,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 
 import { data } from "../utils/dummyData.js";
 import { colors } from "../design-system/colors.js";
@@ -27,11 +28,11 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider6.src,
+        image: LicorBanner.src,
         content: {
           title: "LICORES",
           paragraph:
-            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+            "Descubre nuestra amplia selección de licores para todos los gustos. Encuentra las mejores marcas, precios increíbles y ofertas exclusivas para disfrutar en cualquier ocasión. ¡Aprovecha nuestras promociones y haz de tus momentos algo especial!",
         },
       }}
     />
@@ -52,12 +53,12 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       <div class="product-spotlight-area">
         <div class="product-spotlight-2">
           <div class="flex flex-col">
-            <Text type="h3">TEQUILA HERRADURA</Text>
-            <a href="/products/zx7-speaker"
+            <!-- <Text type="h3">Licor Jägermeister</Text>
+            <a href="/products/licor-jagermeister"
               ><Button className="mt-7" type="secondary-inverted">
                 SEE PRODUCT
               </Button></a
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
                 },
                 title: `${item.name}`,
                 paragraph:
-                  "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+                  "Explora licores premium en nuestra pagina web. Encuentra opciones ideales para cócteles y combinados, perfectos para cualquier ocasión. ¡Descubre nuestros productos ahora!",
                 buttons: [
                   {
                     link: `/products/${item.slug}`, // Enlace dinámico
@@ -93,6 +94,73 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
           );
         })
     }
+
+    <div class="premium-categories">
+      <span>LICORES DESTACADOS</span>
+    </div>
+
+    <Hero
+      client:load
+      heroType="CarouselSlider"
+      data={[
+        {
+          id: "1",
+          image: "/assets/licores/hypnotiq-licor.webp",
+          title: "HPNOTIQ 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "2",
+          image: "/assets/licores/el-compadre.webp",
+          title: "EL COMPADRE 750 ml ",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "3",
+          image: "/assets/licores/nuvo-licor.webp",
+          title: "NUVO 700 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "4",
+          image: "/assets/licores/licor-43.webp",
+          title: "LICOR 43 700 ml ",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "5",
+          image: "/assets/licores/rancho-escondido-mago.webp",
+          title: "RANCHO ESCONDIDO MANGO 750 m",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "6",
+          image: "/assets/licores/rancho-escondido-silver.webp",
+          title: "RANCHO ESCONDIDO 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "7",
+          image: "/assets/licores/flamingo-curacao.webp",
+          title: "Flamingo CURACAO 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "8",
+          image: "/assets/licores/rompope-coronado.webp",
+          title: "ROMPOPE CORONADO  700ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+      ]}
+    />
 
     <!-- <Hero
       heroType="textImage"
@@ -118,26 +186,26 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: InfiniteImg2.src,
-          width: 590,
-          height: 300,
-          alt: "Hero Image",
+          src: "public/assets/branding/Codigo-Honor.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
         },
         title: "¿Quieres Alguno En Especifico?",
         paragraph:
-          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
           {
-            link: ``, // Enlace dinámico
-            text: "Descargar Catalogo Completo", // Texto del botón
-            variant: "primary", // Variación del botón, si es necesario
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
           },
         ],
       }}
     />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
 
   <Footer />
 </Layout>
@@ -152,8 +220,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("/assets/tequilas/tequila-ejemplo2.jpg");
+    background: url("assets/branding/licor-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -162,5 +229,30 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
     padding: 34px 124px;
     grid-column: 1 / 3;
     color: white;
+  }
+
+  .premium-categories {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 80px;
+  }
+  .premium-categories span {
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
   }
 </style>

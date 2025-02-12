@@ -2,8 +2,9 @@
 import { HeroSlider1 } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Nosotros as NosotrosModule } from "@modules/Nosotros";
+import { Contact as ContactModule } from "@modules/Contact";
 import { Hero } from "@modules/Hero";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
 ---
 
@@ -16,18 +17,20 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:load
       data={{
-        image: HeroSlider1.src,
+        image: "assets/branding/legion-brand.webp",
         content: {
-          title: "Contacto",
+          title: "¿QUIÉN ES LA LEGIÓN?",
           paragraph:
-            "Get stuck or need help? Contact us and we will help you out!",
+            "Somos una empresa especializada en la comercialización de vinos y licores en la zona metropolitana del Valle de Toluca, Estado de México, ofreciendo calidad y variedad para todos los gustos.",
         },
       }}
     />
+    <ContactModule client:load />
+
     <NosotrosModule client:load />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
 
   <Footer />
 </Layout>

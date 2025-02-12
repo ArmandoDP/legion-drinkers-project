@@ -4,19 +4,79 @@ import headphone from "../../../public/assets/exported/headphone.png";
 import earphone from "../../../public/assets/exported/earphone.png";
 import speaker from "../../../public/assets/exported/speaker.png";
 
+import Licor from "../../../public/assets/category-products/licor-category.png";
+import Brandy from "../../../public/assets/category-products/brandy-category.png";
+import Vino from "../../../public/assets/category-products/vino-category.png";
+import mezcal from "../../../public/assets/category-products/mezcal-category.png";
+
 import tequila from "../../../public/assets/category-products/tequila-category.png";
 import whisky from "../../../public/assets/category-products/whisky-category.png";
 import vodka from "../../../public/assets/category-products/vodka-category.png";
 import ron from "../../../public/assets/category-products/ron-category.png";
 
 import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
+import { Hero } from "@modules/Hero";
 ---
 
 <div id="categorias" class="premium-categories">
-  <span>CATEGORIAS PREMIUM</span>
+  <span>CATEGORIAS</span>
 </div>
 
-<div class="container">
+<Hero
+  client:load
+  heroType="CarouselCategory"
+  data={[
+    {
+      id: "1",
+      image: tequila.src,
+      title: "TEQUILA",
+      link: "/headphones",
+    },
+    {
+      id: "2",
+      image: whisky.src,
+      title: "WHISKY",
+      link: "/earphones",
+    },
+    {
+      id: "3",
+      image: vodka.src,
+      title: "VODKA",
+      link: "/speakers",
+    },
+    {
+      id: "4",
+      image: ron.src,
+      title: "RON",
+      link: "/ron",
+    },
+    {
+      id: "5",
+      image: Licor.src,
+      title: "LICOR",
+      link: "/licor",
+    },
+    {
+      id: "6",
+      image: Brandy.src,
+      title: "BRANDY",
+      link: "/brandy",
+    },
+    {
+      id: "7",
+      image: Vino.src,
+      title: "VINO",
+      link: "/vino",
+    },
+    {
+      id: "8",
+      image: mezcal.src,
+      title: "MEZCAL",
+      link: "/mezcal",
+    },
+  ]}
+/>
+<!-- <div class="container">
   <div class="featured-products-section">
     <a href="/headphones">
       <FeaturedProductCard image={tequila} imageAlt="donjulio" title="TEQUILA">
@@ -42,11 +102,7 @@ import FeaturedProductCard from "../molecules/FeaturedProductCard.astro";
       </FeaturedProductCard>
     </a>
   </div>
-</div>
-
-<div class="premium-categories">
-  <span>OTRAS CATEGORIAS FAVORITAS</span>
-</div>
+</div> -->
 ---
 <style>
   .featured-products-section {

@@ -6,9 +6,10 @@ import {
   InfiniteImg1,
   InfiniteImg2,
   HeroSlider6,
+  VinoBanner,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
-import { Footer } from "@modules/Footer";
+import Footer from "../components/organisms/Footer.astro";
 
 import { data } from "../utils/dummyData.js";
 import { colors } from "../design-system/colors.js";
@@ -28,11 +29,11 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider6.src,
+        image: VinoBanner.src,
         content: {
           title: "VINOS",
           paragraph:
-            "Infinite is a platform that allows you to create a unlimited space for your community. It is a place where you can share your thoughts, ideas, and experiences with like-minded people.",
+            "Descubre nuestra selección de vinos tintos, blancos, rosados y espumosos. Encuentra las mejores marcas y disfruta de ofertas exclusivas en vinos para cualquier ocasión. ¡Eleva tus momentos con el sabor único de nuestra variedad de vinos premium!",
         },
       }}
     />
@@ -53,12 +54,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       <div class="product-spotlight-area">
         <div class="product-spotlight-2">
           <div class="flex flex-col">
-            <Text type="h3">TEQUILA HERRADURA</Text>
-            <a href="/products/zx7-speaker"
+            <!-- <Text type="h3">2x Vino Tinto 4 Soles Afrutado</Text>
+            <a href="/products/vino-tinto-4-soles-afrutado"
               ><Button className="mt-7" type="secondary-inverted">
-                SEE PRODUCT
+                VER PRODUCTO
               </Button></a
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -81,7 +82,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
                 },
                 title: `${item.name}`,
                 paragraph:
-                  "Become a part of the Infinite community and start sharing your thoughts, ideas, and experiences with like-minded people.",
+                  "Descubre nuestra selección de vinos premium, desde tintos robustos hasta espumosos refrescantes. Encuentra el vino perfecto para cada ocasión en nuestra pagina web. ¡Explora nuestros productos ahora!",
                 buttons: [
                   {
                     link: `/products/${item.slug}`, // Enlace dinámico
@@ -113,7 +114,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 
     <FeaturedProducts />
 
-    <CategoryProducts />
+    <!-- <CategoryProducts /> -->
 
     <Hero
       heroType="textImage"
@@ -121,26 +122,26 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: InfiniteImg2.src,
-          width: 590,
-          height: 300,
-          alt: "Hero Image",
+          src: "public/assets/branding/Codigo-Honor.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
         },
         title: "¿Quieres Alguno En Especifico?",
         paragraph:
-          "with infinite dashboard you can easily manage your community, create posts, and interact with your followers.",
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
           {
-            link: ``, // Enlace dinámico
-            text: "Descargar Catalogo Completo", // Texto del botón
-            variant: "primary", // Variación del botón, si es necesario
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
           },
         ],
       }}
     />
   </main>
 
-  <WAButton url="" />
+  <WAButton url="https://wa.link/uen192" />
 
   <Footer />
 </Layout>
@@ -155,8 +156,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("/assets/tequilas/tequila-ejemplo2.jpg");
+    background: url("assets/branding/vino-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

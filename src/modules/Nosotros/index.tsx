@@ -9,7 +9,7 @@ export const Nosotros: FC = () => {
         <S.NosotrosStyled>
             <S.ContainerStyled>
                 <FadeIn delay={0.0}>
-                    <h1>Nosotros Somos</h1>
+                    <h1>Nosotros</h1>
                     <Image srcLocal="logo" alt="logo" />
                 </FadeIn>
                 <S.NosotrosBox>

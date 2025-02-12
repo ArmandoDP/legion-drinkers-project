@@ -86,6 +86,119 @@ export const data = [
           desktop: "/assets/whiskys/chivas-regal.jpg",
         },
       },
+      {
+        slug: "jack-daniels-apple",
+        name: "Jack Daniel's Apple",
+        image: {
+          mobile: "/assets/whiskys/jack-daniels-apple.webp",
+          tablet: "/assets/whiskys/jack-daniels-apple.webp",
+          desktop: "/assets/whiskys/jack-daniels-apple.webp"
+        },
+        seo: {
+          keywords: [
+            "Jack Daniel's Apple",
+            "Whisky sabor manzana",
+            "Whisky premium",
+            "Jack Daniel's precio",
+            "Whisky para cócteles",
+            "Compra whisky online",
+            "Mejores whiskys saborizados"
+          ],
+          title: "Jack Daniel's Apple - Whisky con Sabor a Manzana",
+          metaDescription:
+            "Descubre Jack Daniel's Apple, una mezcla perfecta de whisky Tennessee con un toque fresco y dulce de manzana verde. Ideal para cócteles o disfrutarlo solo."
+        }
+      },
+      {
+        slug: "buchanans-18-special-reserve",
+        name: "Buchanan's 18 Años Special Reserve",
+        image: {
+          mobile: "/assets/whiskys/buchanans-18.webp",
+          tablet: "/assets/whiskys/buchanans-18.webp",
+          desktop: "/assets/whiskys/buchanans-18.webp"
+        },
+        seo: {
+          keywords: [
+            "Buchanan's 18 Special Reserve",
+            "Whisky escocés premium",
+            "Whisky 18 años",
+            "Buchanan's precio",
+            "Whisky premium para regalo",
+            "Compra whisky online",
+            "Whisky de lujo"
+          ],
+          title: "Buchanan's 18 Special Reserve - Whisky Premium",
+          metaDescription:
+            "Buchanan's 18 Special Reserve es un whisky escocés de lujo con 18 años de envejecimiento. Suave y elegante, perfecto para celebraciones especiales."
+        }
+      },
+      {
+        slug: "johnnie-walker-red-label",
+        name: "Johnnie Walker Red Label",
+        image: {
+          mobile: "/assets/whiskys/jw-red-label.webp",
+          tablet: "/assets/whiskys/jw-red-label.webp",
+          desktop: "/assets/whiskys/jw-red-label.webp"
+        },
+        seo: {
+          keywords: [
+            "Johnnie Walker Red Label",
+            "Whisky escocés",
+            "Whisky asequible",
+            "JW Red Label precio",
+            "Whisky para cócteles",
+            "Compra whisky online",
+            "Mejores whiskys económicos"
+          ],
+          title: "Johnnie Walker Red Label - Whisky Escocés Versátil",
+          metaDescription:
+            "Johnnie Walker Red Label es un whisky escocés accesible y versátil, ideal para disfrutar en cócteles o en las rocas. Un clásico en cualquier ocasión."
+        }
+      },
+      {
+        slug: "black-white-whisky",
+        name: "Black & White Whisky",
+        image: {
+          mobile: "/assets/whiskys/black-&-white.webp",
+          tablet: "/assets/whiskys/black-&-white.webp",
+          desktop: "/assets/whiskys/black-&-white.webp"
+        },
+        seo: {
+          keywords: [
+            "Black & White Whisky",
+            "Whisky escocés",
+            "Whisky suave",
+            "Black & White precio",
+            "Whisky para mezclar",
+            "Compra whisky online",
+            "Mejores whiskys económicos"
+          ],
+          title: "Black & White Whisky - Suavidad y Tradición Escocesa",
+          metaDescription: "Black & White Whisky es un whisky escocés suave y equilibrado, perfecto para disfrutar solo o en cócteles. Un clásico con historia."
+        }
+      },
+      {
+        slug: "johnnie-walker-double-black",
+        name: "Johnnie Walker Double Black",
+        image: {
+          mobile: "/assets/whiskys/jw-double-black.webp",
+          tablet: "/assets/whiskys/jw-double-black.webp",
+          desktop: "/assets/whiskys/jw-double-black.webp"
+        },
+        seo: {
+          keywords: [
+            "Johnnie Walker Double Black",
+            "Whisky escocés ahumado",
+            "Whisky premium",
+            "JW Double Black precio",
+            "Whisky intenso",
+            "Compra whisky online",
+            "Mejores whiskys escoceses"
+          ],
+          title: "Johnnie Walker Double Black - Intensidad y Ahumado",
+          metaDescription: "Johnnie Walker Double Black es un whisky escocés con un perfil más intenso y ahumado, ideal para quienes buscan una experiencia más profunda y robusta."
+        }
+      }
     ],
   },
   {
@@ -236,6 +349,120 @@ export const data = [
             "Disfruta del Tequila José Cuervo Tradicional Plata, un tequila suave y fresco con notas cítricas y de agave. Perfecto para margaritas o disfrutarlo en las rocas.",
         }
       },
+      {
+        slug: "don-julio-blanco",
+        name: "Tequila Don Julio Blanco",
+        image: {
+          mobile: "/assets/tequilas/don-julio-blanco.webp",
+          tablet: "/assets/tequilas/don-julio-blanco.webp",
+          desktop: "/assets/tequilas/don-julio-blanco.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio Blanco",
+            "Tequila premium",
+            "Tequila blanco Don Julio",
+            "Don Julio Blanco precio",
+            "Mejores tequilas blancos",
+            "Compra tequila online"
+          ],
+          title: "Don Julio Blanco - La Esencia del Agave",
+          metaDescription:
+            "Disfruta del Tequila Don Julio Blanco, 100% agave azul, con notas cítricas y un final limpio. Perfecto para cócteles o disfrutarlo solo."
+        }
+      },
+      {
+        slug: "hornitos-plata",
+        name: "Tequila Hornitos Plata",
+        image: {
+          mobile: "/assets/tequilas/hornitos-plata.webp",
+          tablet: "/assets/tequilas/hornitos-plata.webp",
+          desktop: "/assets/tequilas/hornitos-plata.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Hornitos Plata",
+            "Tequila plata",
+            "Tequila Hornitos",
+            "Hornitos Plata precio",
+            "Compra tequila online",
+            "Tequila para cócteles"
+          ],
+          title: "Hornitos Plata - Tradición y Frescura",
+          metaDescription:
+            "El Tequila Hornitos Plata es perfecto para disfrutar en cócteles o solo. Elaborado 100% de agave azul, es una opción fresca y versátil."
+        }
+      },
+      {
+        slug: "maestro-dobel-diamante",
+        name: "Tequila Maestro Dobel Diamante",
+        image: {
+          mobile: "/assets/tequilas/maestro-dobel-diamante.webp",
+          tablet: "/assets/tequilas/maestro-dobel-diamante.webp",
+          desktop: "/assets/tequilas/maestro-dobel-diamante.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Maestro Dobel Diamante",
+            "Tequila premium",
+            "Tequila cristalino",
+            "Maestro Dobel Diamante precio",
+            "Compra tequila online",
+            "Mejores tequilas cristalinos"
+          ],
+          title: "Maestro Dobel Diamante - Innovación Cristalina",
+          metaDescription:
+            "Compra Maestro Dobel Diamante, el primer tequila cristalino del mundo. Suave, elegante y perfecto para ocasiones especiales."
+        },
+      },
+      {
+        slug: "campo-azul-reposado",
+        name: "Tequila Campo Azul Reposado",
+        image: {
+          mobile: "/assets/tequilas/campo-azul-reposado.webp",
+          tablet: "/assets/tequilas/campo-azul-reposado.webp",
+          desktop: "/assets/tequilas/campo-azul-reposado.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Campo Azul Reposado",
+            "Tequila reposado",
+            "Tequila suave",
+            "Compra tequila online",
+            "Campo Azul precio",
+            "Tequila premium",
+            "Mejores tequilas reposados",
+            "Tequila para regalo"
+          ],
+          title: "Campo Azul Reposado - Suavidad y Sabor Premium",
+          metaDescription:
+            "Descubre Campo Azul Reposado, un tequila con balance perfecto entre suavidad y robustez, ideal para cualquier ocasión."
+        }
+      },
+      {
+        slug: "tequila-1800-anejo",
+        name: "Tequila 1800 Añejo",
+        image: {
+          mobile: "/assets/tequilas/1800-anejo.webp",
+          tablet: "/assets/tequilas/1800-anejo.webp",
+          desktop: "/assets/tequilas/1800-anejo.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila 1800 Añejo",
+            "Tequila premium",
+            "Tequila añejo",
+            "1800 Añejo precio",
+            "Mejores tequilas añejos",
+            "Compra tequila cerca de mí",
+            "Tequila 1800",
+            "Tequila para regalo"
+          ],
+          title: "1800 Añejo - Elegancia y Tradición en Cada Botella",
+          metaDescription:
+            "El Tequila 1800 Añejo combina tradición y elegancia con un sabor rico en notas de roble, vainilla y especias. Perfecto para disfrutar solo o en las rocas."
+        }
+      },
     ],
   },
   {
@@ -316,6 +543,32 @@ export const data = [
         }
       },
       {
+        slug: "don-julio-1942",
+        name: "Tequila Don Julio 1942",
+        image: {
+          mobile: "/assets/tequilas/don-julio-1942.webp",
+          tablet: "/assets/tequilas/don-julio-1942.webp",
+          desktop: "/assets/tequilas/don-julio-1942.webp",
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio 1942",
+            "Tequila premium",
+            "Mejores tequilas",
+            "Tequila cerca de mí",
+            "Don Julio 1942 precio",
+            "Compra tequila online",
+            "Tequila para cócteles",
+            "Tequila añejo 1942",
+            "Tequila para regalo",
+            "Compra tequila online",
+          ],
+          title: "Don Julio 1942 - Tequila Premium de Tradición",
+          metaDescription:
+            "Compra el exclusivo Tequila Don Julio 1942, un añejo premium perfecto para ocasiones especiales. Descubre su sabor único con notas de caramelo, vainilla y roble.",
+        }
+      },
+      {
         slug: "hornitos-plata",
         name: "Tequila Hornitos Plata",
         image: {
@@ -358,7 +611,138 @@ export const data = [
           metaDescription:
             "Compra Maestro Dobel Diamante, el primer tequila cristalino del mundo. Suave, elegante y perfecto para ocasiones especiales."
         }
-      }
+      },
+      {
+        slug: "jose-cuervo-tradicional-plata",
+        name: "Tequila José Cuervo Tradicional Plata",
+        image: {
+          mobile: "/assets/tequilas/jose-cuervo-tradicional-plata.webp",
+          tablet: "/assets/tequilas/jose-cuervo-tradicional-plata.webp",
+          desktop: "/assets/tequilas/jose-cuervo-tradicional-plata.webp",
+        },
+        seo: {
+          keywords: [
+            "Tequila José Cuervo Tradicional Plata",
+            "Tequila premium",
+            "Mejores tequilas",
+            "Tequila cerca de mí",
+            "José Cuervo Tradicional Plata precio",
+            "Compra tequila online",
+            "Tequila para cócteles",
+            "Tequila blanco",
+            "Tequila para regalo",
+            "Mejores tequilas",
+            "Mejores tequilas para margaritas,",
+            "Compra tequila cerca de mí",
+            "Tequila José Cuervo Tradicional Plata precio",
+            "Tequila José Cuervo Tradicional Plata online",
+            "Tequila José Cuervo Tradicional Plata para regalo",
+          ],
+          title: "José Cuervo Tradicional Plata - Tequila Blanco Premium",
+          metaDescription:
+            "Disfruta del Tequila José Cuervo Tradicional Plata, un tequila suave y fresco con notas cítricas y de agave. Perfecto para margaritas o disfrutarlo en las rocas.",
+        }
+      },
+      {
+        slug: "campo-azul-reposado",
+        name: "Tequila Campo Azul Reposado",
+        image: {
+          mobile: "/assets/tequilas/campo-azul-reposado.webp",
+          tablet: "/assets/tequilas/campo-azul-reposado.webp",
+          desktop: "/assets/tequilas/campo-azul-reposado.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Campo Azul Reposado",
+            "Tequila reposado",
+            "Tequila suave",
+            "Compra tequila online",
+            "Campo Azul precio",
+            "Tequila premium",
+            "Mejores tequilas reposados",
+            "Tequila para regalo"
+          ],
+          title: "Campo Azul Reposado - Suavidad y Sabor Premium",
+          metaDescription:
+            "Descubre Campo Azul Reposado, un tequila con balance perfecto entre suavidad y robustez, ideal para cualquier ocasión."
+        }
+      },
+      {
+        slug: "tequila-1800-anejo",
+        name: "Tequila 1800 Añejo",
+        image: {
+          mobile: "/assets/tequilas/1800-anejo.webp",
+          tablet: "/assets/tequilas/1800-anejo.webp",
+          desktop: "/assets/tequilas/1800-anejo.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila 1800 Añejo",
+            "Tequila premium",
+            "Tequila añejo",
+            "1800 Añejo precio",
+            "Mejores tequilas añejos",
+            "Compra tequila cerca de mí",
+            "Tequila 1800",
+            "Tequila para regalo"
+          ],
+          title: "1800 Añejo - Elegancia y Tradición en Cada Botella",
+          metaDescription:
+            "El Tequila 1800 Añejo combina tradición y elegancia con un sabor rico en notas de roble, vainilla y especias. Perfecto para disfrutar solo o en las rocas."
+        }
+      },
+      {
+        slug: "don-julio-blanco",
+        name: "Tequila Don Julio Blanco",
+        image: {
+          mobile: "/assets/tequilas/donjulio.png",
+          tablet: "/assets/tequilas/donjulio.png",
+          desktop: "/assets/tequilas/donjulio.png"
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio Blanco",
+            "Tequila premium",
+            "Tequila blanco Don Julio",
+            "Don Julio Blanco precio",
+            "Mejores tequilas blancos",
+            "Compra tequila online"
+          ],
+          title: "Don Julio Blanco - La Esencia del Agave",
+          metaDescription:
+            "Disfruta del Tequila Don Julio Blanco, 100% agave azul, con notas cítricas y un final limpio. Perfecto para cócteles o disfrutarlo solo."
+        }
+      },
+      {
+        slug: "tequila-1800-cristalino",
+        name: "Tequila 1800 Cristalino",
+        image: {
+          mobile: "/assets/tequilas/1800-cristalino.webp",
+          tablet: "/assets/tequilas/1800-cristalino.webp",
+          desktop: "/assets/tequilas/1800-cristalino.webp",
+        },
+        seo: {
+          keywords: [
+            "Tequila 1800 Cristalino",
+            "Tequila premium",
+            "Mejores tequilas",
+            "Tequila cerca de mí",
+            "1800 Cristalino precio",
+            "Compra tequila online",
+            "Tequila para cócteles",
+            "Tequila añejo cristalino",
+            "Tequila para regalo",
+            " Mejores tequilas",
+            "Compra tequila cerca de mí",
+            "Tequila 1800 Cristalino precio",
+            "Tequila 1800 Cristalino online",
+            "Tequila 1800 Cristalino para regalo",
+          ],
+          title: "1800 Cristalino - Tequila Premium de Tradición",
+          metaDescription:
+            "Descubre el Tequila 1800 Cristalino, un tequila premium con un equilibrio perfecto de suavidad y complejidad. Notas de vainilla, caramelo y roble lo hacen ideal para celebraciones especiales.",
+        }
+      },
     ]
   },
   {
@@ -493,7 +877,129 @@ export const data = [
           metaDescription:
             "El Tequila 1800 Añejo combina tradición y elegancia con un sabor rico en notas de roble, vainilla y especias. Perfecto para disfrutar solo o en las rocas."
         }
-      }
+      },
+      {
+        slug: "hornitos-plata",
+        name: "Tequila Hornitos Plata",
+        image: {
+          mobile: "/assets/tequilas/hornitos-plata.webp",
+          tablet: "/assets/tequilas/hornitos-plata.webp",
+          desktop: "/assets/tequilas/hornitos-plata.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Hornitos Plata",
+            "Tequila plata",
+            "Tequila Hornitos",
+            "Hornitos Plata precio",
+            "Compra tequila online",
+            "Tequila para cócteles"
+          ],
+          title: "Hornitos Plata - Tradición y Frescura",
+          metaDescription:
+            "El Tequila Hornitos Plata es perfecto para disfrutar en cócteles o solo. Elaborado 100% de agave azul, es una opción fresca y versátil."
+        }
+      },
+      {
+        slug: "tequila-1800-cristalino",
+        name: "Tequila 1800 Cristalino",
+        image: {
+          mobile: "/assets/tequilas/1800-cristalino.webp",
+          tablet: "/assets/tequilas/1800-cristalino.webp",
+          desktop: "/assets/tequilas/1800-cristalino.webp",
+        },
+        seo: {
+          keywords: [
+            "Tequila 1800 Cristalino",
+            "Tequila premium",
+            "Mejores tequilas",
+            "Tequila cerca de mí",
+            "1800 Cristalino precio",
+            "Compra tequila online",
+            "Tequila para cócteles",
+            "Tequila añejo cristalino",
+            "Tequila para regalo",
+            " Mejores tequilas",
+            "Compra tequila cerca de mí",
+            "Tequila 1800 Cristalino precio",
+            "Tequila 1800 Cristalino online",
+            "Tequila 1800 Cristalino para regalo",
+          ],
+          title: "1800 Cristalino - Tequila Premium de Tradición",
+          metaDescription:
+            "Descubre el Tequila 1800 Cristalino, un tequila premium con un equilibrio perfecto de suavidad y complejidad. Notas de vainilla, caramelo y roble lo hacen ideal para celebraciones especiales.",
+        }
+      },
+      {
+        slug: "don-julio-blanco",
+        name: "Tequila Don Julio Blanco",
+        image: {
+          mobile: "/assets/tequilas/don-julio-blanco.webp",
+          tablet: "/assets/tequilas/don-julio-blanco.webp",
+          desktop: "/assets/tequilas/don-julio-blanco.webp"
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio Blanco",
+            "Tequila premium",
+            "Tequila blanco Don Julio",
+            "Don Julio Blanco precio",
+            "Mejores tequilas blancos",
+            "Compra tequila online"
+          ],
+          title: "Don Julio Blanco - La Esencia del Agave",
+          metaDescription:
+            "Disfruta del Tequila Don Julio Blanco, 100% agave azul, con notas cítricas y un final limpio. Perfecto para cócteles o disfrutarlo solo."
+        }
+      },
+      {
+        slug: "don-julio-1942",
+        name: "Tequila Don Julio 1942",
+        image: {
+          mobile: "/assets/tequilas/don-julio-1942.webp",
+          tablet: "/assets/tequilas/don-julio-1942.webp",
+          desktop: "/assets/tequilas/don-julio-1942.webp",
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio 1942",
+            "Tequila premium",
+            "Mejores tequilas",
+            "Tequila cerca de mí",
+            "Don Julio 1942 precio",
+            "Compra tequila online",
+            "Tequila para cócteles",
+            "Tequila añejo 1942",
+            "Tequila para regalo",
+            "Compra tequila online",
+          ],
+          title: "Don Julio 1942 - Tequila Premium de Tradición",
+          metaDescription:
+            "Compra el exclusivo Tequila Don Julio 1942, un añejo premium perfecto para ocasiones especiales. Descubre su sabor único con notas de caramelo, vainilla y roble.",
+        }
+      },
+      {
+        slug: "don-julio-blanco",
+        name: "Tequila Don Julio Blanco",
+        image: {
+          mobile: "/assets/tequilas/donjulio.png",
+          tablet: "/assets/tequilas/donjulio.png",
+          desktop: "/assets/tequilas/donjulio.png"
+        },
+        seo: {
+          keywords: [
+            "Tequila Don Julio Blanco",
+            "Tequila premium",
+            "Tequila blanco Don Julio",
+            "Don Julio Blanco precio",
+            "Mejores tequilas blancos",
+            "Compra tequila online"
+          ],
+          title: "Don Julio Blanco - La Esencia del Agave",
+          metaDescription:
+            "Disfruta del Tequila Don Julio Blanco, 100% agave azul, con notas cítricas y un final limpio. Perfecto para cócteles o disfrutarlo solo."
+        }
+      },
     ]
   },
   {
@@ -620,7 +1126,117 @@ export const data = [
           metaDescription:
             "Refresca tus cócteles con Absolut Citrus, un vodka premium con sabores cítricos intensos. Perfecto para margaritas, mojitos y más."
         }
-      }
+      },
+      {
+        slug: "oso-negro-vodka",
+        name: "Oso Negro Vodka",
+        image: {
+          mobile: "/assets/vodkas/oso-negro-vodka.webp",
+          tablet: "/assets/vodkas/oso-negro-vodka.webp",
+          desktop: "/assets/vodkas/oso-negro-vodka.webp"
+        },
+        seo: {
+          keywords: [
+            "Oso Negro Vodka",
+            "Vodka económico",
+            "Vodka para cócteles",
+            "Oso Negro precio",
+            "Vodka suave",
+            "Compra vodka online",
+            "Mejores vodkas baratos"
+          ],
+          title: "Oso Negro Vodka - Accesible y Versátil",
+          metaDescription: "Oso Negro Vodka es un vodka accesible y versátil, ideal para mezclar en cócteles o disfrutar solo. Una opción clásica y económica."
+        }
+      },
+      {
+        slug: "zaverich-vodka",
+        name: "Zaverich Vodka",
+        image: {
+          mobile: "/assets/vodkas/zaverich-vodka.webp",
+          tablet: "/assets/vodkas/zaverich-vodka.webp",
+          desktop: "/assets/vodkas/zaverich-vodka.webp"
+        },
+        seo: {
+          keywords: [
+            "Zaverich Vodka",
+            "Vodka mexicano",
+            "Vodka calidad-precio",
+            "Zaverich precio",
+            "Vodka para mezclar",
+            "Compra vodka online",
+            "Mejores vodkas accesibles"
+          ],
+          title: "Zaverich Vodka - Sabor y Calidad a Buen Precio",
+          metaDescription: "Zaverich Vodka es un vodka mexicano con un sabor limpio y equilibrado, perfecto para cócteles o tomarse solo."
+        }
+      },
+      {
+        slug: "absolut-raspberri",
+        name: "Absolut Raspberri",
+        image: {
+          mobile: "/assets/vodkas/absolut-raspberri.webp",
+          tablet: "/assets/vodkas/absolut-raspberri.webp",
+          desktop: "/assets/vodkas/absolut-raspberri.webp"
+        },
+        seo: {
+          keywords: [
+            "Absolut Raspberri",
+            "Vodka con sabor",
+            "Vodka frutal",
+            "Absolut Raspberri precio",
+            "Vodka premium",
+            "Compra vodka online",
+            "Mejores vodkas de sabores"
+          ],
+          title: "Absolut Raspberri - Vodka con un Toque Frutal",
+          metaDescription: "Absolut Raspberri es un vodka premium con un intenso sabor a frambuesa, perfecto para cócteles vibrantes y refrescantes."
+        }
+      },
+      {
+        slug: "smirnoff-vodka",
+        name: "Smirnoff Vodka",
+        image: {
+          mobile: "/assets/vodkas/smirnoff-normal.webp",
+          tablet: "/assets/vodkas/smirnoff-normal.webp",
+          desktop: "/assets/vodkas/smirnoff-normal.webp"
+        },
+        seo: {
+          keywords: [
+            "Smirnoff Vodka",
+            "Vodka clásico",
+            "Vodka triple destilado",
+            "Smirnoff precio",
+            "Vodka para mezclar",
+            "Compra vodka online",
+            "Mejores vodkas para cócteles"
+          ],
+          title: "Smirnoff Vodka - El Clásico de los Cócteles",
+          metaDescription: "Smirnoff Vodka es un vodka clásico, triple destilado y suave, ideal para preparar una gran variedad de cócteles."
+        }
+      },
+      {
+        slug: "skyy-vodka",
+        name: "Skyy Vodka",
+        image: {
+          mobile: "/assets/vodkas/skyy.webp",
+          tablet: "/assets/vodkas/skyy.webp",
+          desktop: "/assets/vodkas/skyy.webp"
+        },
+        seo: {
+          keywords: [
+            "Skyy Vodka",
+            "Vodka americano",
+            "Vodka premium",
+            "Skyy precio",
+            "Vodka para martinis",
+            "Compra vodka online",
+            "Mejores vodkas suaves"
+          ],
+          title: "Skyy Vodka - Suavidad y Pureza",
+          metaDescription: "Skyy Vodka es un vodka americano premium, reconocido por su suavidad y pureza, ideal para martinis y cócteles sofisticados."
+        }
+      },
     ]
   },
   {
@@ -674,47 +1290,72 @@ export const data = [
     ],
     others: [
       {
-        slug: "zaverich-vodka",
-        name: "Zaverich Vodka",
+        slug: "skyy-raspberry",
+        name: "Skyy Vodka Raspberry",
         image: {
-          mobile: "/assets/vodkas/zaverich-vodka.webp",
-          tablet: "/assets/vodkas/zaverich-vodka.webp",
-          desktop: "/assets/vodkas/zaverich-vodka.webp"
+          mobile: "/assets/vodkas/skyy-raspberry.webp",
+          tablet: "/assets/vodkas/skyy-raspberry.webp",
+          desktop: "/assets/vodkas/skyy-raspberry.webp"
         },
         seo: {
           keywords: [
-            "Zaverich Vodka",
-            "Vodka económico",
-            "Compra vodka",
-            "Vodka para fiestas",
-            "Vodka Zaverich precio",
-            "Mejores vodkas",
-            "Vodka cerca de mí"
+            "Skyy Vodka Raspberry",
+            "Vodka saborizado",
+            "Vodka frambuesa",
+            "Skyy Raspberry precio",
+            "Compra vodka online",
+            "Vodka para cócteles frutales",
+            "Vodka para fiestas"
           ],
-          metaDescription: 
-            "Prueba Zaverich Vodka, la mejor opción en sabor y precio. Ideal para cualquier ocasión. Encuéntralo cerca de ti o cómpralo online."
+          title: "Skyy Vodka Raspberry - Vodka Saborizado Premium",
+          metaDescription:
+            "Prueba Skyy Vodka Raspberry, un vodka premium con un toque dulce de frambuesa. Ideal para cócteles frutales y ocasiones especiales."
         }
       },
       {
-        slug: "absolut-raspberri",
-        name: "Absolut Raspberry",
+        slug: "smirnoff-tamarindo",
+        name: "Smirnoff Tamarindo",
         image: {
-          mobile: "/assets/vodkas/absolut-raspberri.webp",
-          tablet: "/assets/vodkas/absolut-raspberri.webp",
-          desktop: "/assets/vodkas/absolut-raspberri.webp"
+          mobile: "/assets/vodkas/smirnoff-tamarindo.webp",
+          tablet: "/assets/vodkas/smirnoff-tamarindo.webp",
+          desktop: "/assets/vodkas/smirnoff-tamarindo.webp"
         },
         seo: {
           keywords: [
-            "Absolut Raspberry",
-            "Vodka sabor frambuesa",
-            "Vodka premium",
-            "Absolut precio",
-            "Vodka Absolut Raspberry",
-            "Vodka para cócteles",
-            "Vodka cerca de mí"
+            "Smirnoff Tamarindo",
+            "Vodka sabor tamarindo",
+            "Smirnoff picante",
+            "Smirnoff Tamarindo precio",
+            "Compra vodka online",
+            "Vodka para fiestas",
+            "Mezcal con tamarindo"
           ],
-          metaDescription: 
-            "Descubre Absolut Raspberry, un vodka premium con el delicioso sabor de la frambuesa. Ideal para cócteles únicos y vibrantes."
+          title: "Smirnoff Tamarindo - Vodka con un Toque Picante",
+          metaDescription:
+            "Descubre Smirnoff Tamarindo, un vodka con un sabor intenso y picante que combina perfectamente con tus cócteles favoritos. ¡Ideal para sorprender a tus invitados!"
+        }
+      },
+      {
+        slug: "absolut-citron",
+        name: "Absolut Citrus",
+        image: {
+          mobile: "/assets/vodkas/absolut-citron.webp",
+          tablet: "/assets/vodkas/absolut-citron.webp",
+          desktop: "/assets/vodkas/absolut-citron.webp"
+        },
+        seo: {
+          keywords: [
+            "Absolut Citrus",
+            "Vodka cítrico",
+            "Vodka Absolut sabor",
+            "Absolut Citrus precio",
+            "Compra vodka online",
+            "Vodka para cócteles frescos",
+            "Vodka cítrico premium"
+          ],
+          title: "Absolut Citrus - Vodka con un Toque Fresco",
+          metaDescription:
+            "Refresca tus cócteles con Absolut Citrus, un vodka premium con sabores cítricos intensos. Perfecto para margaritas, mojitos y más."
         }
       },
       {
@@ -729,15 +1370,104 @@ export const data = [
           keywords: [
             "Oso Negro Vodka",
             "Vodka económico",
-            "Vodka para fiestas",
-            "Vodka Oso Negro precio",
+            "Vodka para cócteles",
+            "Oso Negro precio",
+            "Vodka suave",
             "Compra vodka online",
-            "Vodka cerca de mí"
+            "Mejores vodkas baratos"
           ],
-          metaDescription: 
-            "Oso Negro Vodka ofrece calidad y sabor a un precio increíble. Perfecto para reuniones y cócteles. Encuéntralo cerca de ti o cómpralo online."
+          title: "Oso Negro Vodka - Accesible y Versátil",
+          metaDescription: "Oso Negro Vodka es un vodka accesible y versátil, ideal para mezclar en cócteles o disfrutar solo. Una opción clásica y económica."
         }
-      }
+      },
+      {
+        slug: "zaverich-vodka",
+        name: "Zaverich Vodka",
+        image: {
+          mobile: "/assets/vodkas/zaverich-vodka.webp",
+          tablet: "/assets/vodkas/zaverich-vodka.webp",
+          desktop: "/assets/vodkas/zaverich-vodka.webp"
+        },
+        seo: {
+          keywords: [
+            "Zaverich Vodka",
+            "Vodka mexicano",
+            "Vodka calidad-precio",
+            "Zaverich precio",
+            "Vodka para mezclar",
+            "Compra vodka online",
+            "Mejores vodkas accesibles"
+          ],
+          title: "Zaverich Vodka - Sabor y Calidad a Buen Precio",
+          metaDescription: "Zaverich Vodka es un vodka mexicano con un sabor limpio y equilibrado, perfecto para cócteles o tomarse solo."
+        }
+      },
+      {
+        slug: "absolut-raspberri",
+        name: "Absolut Raspberri",
+        image: {
+          mobile: "/assets/vodkas/absolut-raspberri.webp",
+          tablet: "/assets/vodkas/absolut-raspberri.webp",
+          desktop: "/assets/vodkas/absolut-raspberri.webp"
+        },
+        seo: {
+          keywords: [
+            "Absolut Raspberri",
+            "Vodka con sabor",
+            "Vodka frutal",
+            "Absolut Raspberri precio",
+            "Vodka premium",
+            "Compra vodka online",
+            "Mejores vodkas de sabores"
+          ],
+          title: "Absolut Raspberri - Vodka con un Toque Frutal",
+          metaDescription: "Absolut Raspberri es un vodka premium con un intenso sabor a frambuesa, perfecto para cócteles vibrantes y refrescantes."
+        }
+      },
+      {
+        slug: "smirnoff-vodka",
+        name: "Smirnoff Vodka",
+        image: {
+          mobile: "/assets/vodkas/smirnoff-normal.webp",
+          tablet: "/assets/vodkas/smirnoff-normal.webp",
+          desktop: "/assets/vodkas/smirnoff-normal.webp"
+        },
+        seo: {
+          keywords: [
+            "Smirnoff Vodka",
+            "Vodka clásico",
+            "Vodka triple destilado",
+            "Smirnoff precio",
+            "Vodka para mezclar",
+            "Compra vodka online",
+            "Mejores vodkas para cócteles"
+          ],
+          title: "Smirnoff Vodka - El Clásico de los Cócteles",
+          metaDescription: "Smirnoff Vodka es un vodka clásico, triple destilado y suave, ideal para preparar una gran variedad de cócteles."
+        }
+      },
+      {
+        slug: "skyy-vodka",
+        name: "Skyy Vodka",
+        image: {
+          mobile: "/assets/vodkas/skyy.webp",
+          tablet: "/assets/vodkas/skyy.webp",
+          desktop: "/assets/vodkas/skyy.webp"
+        },
+        seo: {
+          keywords: [
+            "Skyy Vodka",
+            "Vodka americano",
+            "Vodka premium",
+            "Skyy precio",
+            "Vodka para martinis",
+            "Compra vodka online",
+            "Mejores vodkas suaves"
+          ],
+          title: "Skyy Vodka - Suavidad y Pureza",
+          metaDescription: "Skyy Vodka es un vodka americano premium, reconocido por su suavidad y pureza, ideal para martinis y cócteles sofisticados."
+        }
+      },
     ]
   },
   {
@@ -806,51 +1536,162 @@ export const data = [
             }
         },
         {
-            slug: "smirnoff-normal",
-            name: "Smirnoff Vodka Original",
-            image: {
-                mobile: "/assets/vodkas/smirnoff-normal.webp",
-                tablet: "/assets/vodkas/smirnoff-normal.webp",
-                desktop: "/assets/vodkas/smirnoff-normal.webp"
-            },
-            seo: {
-                keywords: [
-                    "Smirnoff Vodka Original",
-                    "Vodka Smirnoff precio",
-                    "Vodka premium",
-                    "Vodka para cocteles",
-                    "Compra vodka online",
-                    "Vodka cerca de mí",
-                    "Mejores vodkas"
-                ],
-                title: "Smirnoff Vodka Original - Clásico y Versátil",
-                metaDescription:
-                    "Descubre Smirnoff Vodka Original, un clásico mundial perfecto para cocteles o para disfrutar en las rocas. Calidad y sabor garantizados."
-            }
+          slug: "skyy-raspberry",
+          name: "Skyy Vodka Raspberry",
+          image: {
+            mobile: "/assets/vodkas/skyy-raspberry.webp",
+            tablet: "/assets/vodkas/skyy-raspberry.webp",
+            desktop: "/assets/vodkas/skyy-raspberry.webp"
+          },
+          seo: {
+            keywords: [
+              "Skyy Vodka Raspberry",
+              "Vodka saborizado",
+              "Vodka frambuesa",
+              "Skyy Raspberry precio",
+              "Compra vodka online",
+              "Vodka para cócteles frutales",
+              "Vodka para fiestas"
+            ],
+            title: "Skyy Vodka Raspberry - Vodka Saborizado Premium",
+            metaDescription:
+              "Prueba Skyy Vodka Raspberry, un vodka premium con un toque dulce de frambuesa. Ideal para cócteles frutales y ocasiones especiales."
+          }
         },
         {
-            slug: "skyy-vodka",
-            name: "Skyy Vodka",
-            image: {
-                mobile: "/assets/vodkas/skyy.webp",
-                tablet: "/assets/vodkas/skyy.webp",
-                desktop: "/assets/vodkas/skyy.webp"
-            },
-            seo: {
-                keywords: [
-                    "Skyy Vodka",
-                    "Vodka Skyy precio",
-                    "Vodka premium",
-                    "Vodka americano",
-                    "Compra Skyy Vodka online",
-                    "Vodka para cocteles",
-                    "Vodka cerca de mí"
-                ],
-                title: "Skyy Vodka - Vodka Premium Americano",
-                metaDescription:
-                    "Compra Skyy Vodka, un vodka premium americano de sabor suave y fresco. Ideal para cocteles modernos y clásicos."
-            }
-        }
+          slug: "smirnoff-tamarindo",
+          name: "Smirnoff Tamarindo",
+          image: {
+            mobile: "/assets/vodkas/smirnoff-tamarindo.webp",
+            tablet: "/assets/vodkas/smirnoff-tamarindo.webp",
+            desktop: "/assets/vodkas/smirnoff-tamarindo.webp"
+          },
+          seo: {
+            keywords: [
+              "Smirnoff Tamarindo",
+              "Vodka sabor tamarindo",
+              "Smirnoff picante",
+              "Smirnoff Tamarindo precio",
+              "Compra vodka online",
+              "Vodka para fiestas",
+              "Mezcal con tamarindo"
+            ],
+            title: "Smirnoff Tamarindo - Vodka con un Toque Picante",
+            metaDescription:
+              "Descubre Smirnoff Tamarindo, un vodka con un sabor intenso y picante que combina perfectamente con tus cócteles favoritos. ¡Ideal para sorprender a tus invitados!"
+          }
+        },
+        {
+          slug: "absolut-citron",
+          name: "Absolut Citrus",
+          image: {
+            mobile: "/assets/vodkas/absolut-citron.webp",
+            tablet: "/assets/vodkas/absolut-citron.webp",
+            desktop: "/assets/vodkas/absolut-citron.webp"
+          },
+          seo: {
+            keywords: [
+              "Absolut Citrus",
+              "Vodka cítrico",
+              "Vodka Absolut sabor",
+              "Absolut Citrus precio",
+              "Compra vodka online",
+              "Vodka para cócteles frescos",
+              "Vodka cítrico premium"
+            ],
+            title: "Absolut Citrus - Vodka con un Toque Fresco",
+            metaDescription:
+              "Refresca tus cócteles con Absolut Citrus, un vodka premium con sabores cítricos intensos. Perfecto para margaritas, mojitos y más."
+          }
+        },
+        {
+          slug: "oso-negro-vodka",
+          name: "Oso Negro Vodka",
+          image: {
+            mobile: "/assets/vodkas/oso-negro-vodka.webp",
+            tablet: "/assets/vodkas/oso-negro-vodka.webp",
+            desktop: "/assets/vodkas/oso-negro-vodka.webp"
+          },
+          seo: {
+            keywords: [
+              "Oso Negro Vodka",
+              "Vodka económico",
+              "Vodka para cócteles",
+              "Oso Negro precio",
+              "Vodka suave",
+              "Compra vodka online",
+              "Mejores vodkas baratos"
+            ],
+            title: "Oso Negro Vodka - Accesible y Versátil",
+            metaDescription: "Oso Negro Vodka es un vodka accesible y versátil, ideal para mezclar en cócteles o disfrutar solo. Una opción clásica y económica."
+          }
+        },
+        {
+          slug: "zaverich-vodka",
+          name: "Zaverich Vodka",
+          image: {
+            mobile: "/assets/vodkas/zaverich-vodka.webp",
+            tablet: "/assets/vodkas/zaverich-vodka.webp",
+            desktop: "/assets/vodkas/zaverich-vodka.webp"
+          },
+          seo: {
+            keywords: [
+              "Zaverich Vodka",
+              "Vodka mexicano",
+              "Vodka calidad-precio",
+              "Zaverich precio",
+              "Vodka para mezclar",
+              "Compra vodka online",
+              "Mejores vodkas accesibles"
+            ],
+            title: "Zaverich Vodka - Sabor y Calidad a Buen Precio",
+            metaDescription: "Zaverich Vodka es un vodka mexicano con un sabor limpio y equilibrado, perfecto para cócteles o tomarse solo."
+          }
+        },
+        {
+          slug: "absolut-raspberri",
+          name: "Absolut Raspberri",
+          image: {
+            mobile: "/assets/vodkas/absolut-raspberri.webp",
+            tablet: "/assets/vodkas/absolut-raspberri.webp",
+            desktop: "/assets/vodkas/absolut-raspberri.webp"
+          },
+          seo: {
+            keywords: [
+              "Absolut Raspberri",
+              "Vodka con sabor",
+              "Vodka frutal",
+              "Absolut Raspberri precio",
+              "Vodka premium",
+              "Compra vodka online",
+              "Mejores vodkas de sabores"
+            ],
+            title: "Absolut Raspberri - Vodka con un Toque Frutal",
+            metaDescription: "Absolut Raspberri es un vodka premium con un intenso sabor a frambuesa, perfecto para cócteles vibrantes y refrescantes."
+          }
+        },
+        {
+          slug: "smirnoff-vodka",
+          name: "Smirnoff Vodka",
+          image: {
+            mobile: "/assets/vodkas/smirnoff-normal.webp",
+            tablet: "/assets/vodkas/smirnoff-normal.webp",
+            desktop: "/assets/vodkas/smirnoff-normal.webp"
+          },
+          seo: {
+            keywords: [
+              "Smirnoff Vodka",
+              "Vodka clásico",
+              "Vodka triple destilado",
+              "Smirnoff precio",
+              "Vodka para mezclar",
+              "Compra vodka online",
+              "Mejores vodkas para cócteles"
+            ],
+            title: "Smirnoff Vodka - El Clásico de los Cócteles",
+            metaDescription: "Smirnoff Vodka es un vodka clásico, triple destilado y suave, ideal para preparar una gran variedad de cócteles."
+          }
+        },
     ]
   },
   {
@@ -970,7 +1811,126 @@ export const data = [
           metaDescription:
             "Johnnie Walker Red Label es un whisky escocés accesible y versátil, ideal para disfrutar en cócteles o en las rocas. Un clásico en cualquier ocasión."
         }
-      }
+      },
+      {
+        slug: "black-white-whisky",
+        name: "Black & White Whisky",
+        image: {
+          mobile: "/assets/whiskys/black-&-white.webp",
+          tablet: "/assets/whiskys/black-&-white.webp",
+          desktop: "/assets/whiskys/black-&-white.webp"
+        },
+        seo: {
+          keywords: [
+            "Black & White Whisky",
+            "Whisky escocés",
+            "Whisky suave",
+            "Black & White precio",
+            "Whisky para mezclar",
+            "Compra whisky online",
+            "Mejores whiskys económicos"
+          ],
+          title: "Black & White Whisky - Suavidad y Tradición Escocesa",
+          metaDescription: "Black & White Whisky es un whisky escocés suave y equilibrado, perfecto para disfrutar solo o en cócteles. Un clásico con historia."
+        }
+      },
+      {
+        slug: "johnnie-walker-double-black",
+        name: "Johnnie Walker Double Black",
+        image: {
+          mobile: "/assets/whiskys/jw-double-black.webp",
+          tablet: "/assets/whiskys/jw-double-black.webp",
+          desktop: "/assets/whiskys/jw-double-black.webp"
+        },
+        seo: {
+          keywords: [
+            "Johnnie Walker Double Black",
+            "Whisky escocés ahumado",
+            "Whisky premium",
+            "JW Double Black precio",
+            "Whisky intenso",
+            "Compra whisky online",
+            "Mejores whiskys escoceses"
+          ],
+          title: "Johnnie Walker Double Black - Intensidad y Ahumado",
+          metaDescription: "Johnnie Walker Double Black es un whisky escocés con un perfil más intenso y ahumado, ideal para quienes buscan una experiencia más profunda y robusta."
+        }
+      },
+      {
+        slug: "chivas-regal-12",
+        name: "Chivas Regal 12",
+        image: {
+          mobile: "/assets/whiskys/chivas-regal.jpg",
+          tablet: "/assets/whiskys/chivas-regal.jpg",
+          desktop: "/assets/whiskys/chivas-regal.jpg",
+        },
+      },
+      {
+        slug: "jack-daniels-honey",
+        name: "Jack Daniel's Honey",
+        image: {
+          mobile: "/assets/whiskys/jack-daniels-honey.webp",
+          tablet: "/assets/whiskys/jack-daniels-honey.webp",
+          desktop: "/assets/whiskys/jack-daniels-honey.webp"
+        },
+        seo: {
+          keywords: [
+            "Jack Daniel's Honey",
+            "Whisky con miel",
+            "Jack Daniel's precio",
+            "Compra whisky online",
+            "Jack Daniel's Honey en oferta",
+            "Whisky premium cerca de mí"
+          ],
+          title: "Jack Daniel's Honey - Whisky con Miel",
+          metaDescription:
+            "Disfruta del whisky Jack Daniel's Honey, una mezcla suave y dulce con notas de miel y roble. Perfecto para cócteles o para disfrutarlo solo."
+        }
+      },
+      {
+        slug: "passport-scotch",
+        name: "Passport Scotch",
+        image: {
+          mobile: "/assets/whiskys/passport-scotch.webp",
+          tablet: "/assets/whiskys/passport-scotch.webp",
+          desktop: "/assets/whiskys/passport-scotch.webp"
+        },
+        seo: {
+          keywords: [
+            "Passport Scotch",
+            "Whisky económico",
+            "Whisky Passport precio",
+            "Compra whisky online",
+            "Mejores whiskies baratos",
+            "Whisky Passport cerca de mí"
+          ],
+          title: "Passport Scotch - Whisky Escocés Asequible",
+          metaDescription:
+            "Passport Scotch, un whisky escocés suave y accesible, perfecto para mezclas y para disfrutar en cualquier ocasión. Descubre su versatilidad."
+        }
+      },
+      {
+        slug: "whisky-glenfiddich",
+        name: "Whisky Glenfiddich",
+        image: {
+          mobile: "/assets/whiskys/glenfiddich.webp",
+          tablet: "/assets/whiskys/glenfiddich.webp",
+          desktop: "/assets/whiskys/glenfiddich.webp"
+        },
+        seo: {
+          keywords: [
+            "Whisky Glenfiddich",
+            "Whisky escocés",
+            "Glenfiddich precio",
+            "Compra whisky online",
+            "Mejores whiskies escoceses",
+            "Whisky Glenfiddich cerca de mí"
+          ],
+          title: "Glenfiddich - Whisky Escocés Premium",
+          metaDescription:
+            "Experimenta el whisky Glenfiddich, un escocés premium con notas de frutas, vainilla y roble. Perfecto para conocedores y ocasiones especiales."
+        }
+      },
     ]
   },
   {
@@ -1084,7 +2044,103 @@ export const data = [
           metaDescription:
             "Experimenta el whisky Glenfiddich, un escocés premium con notas de frutas, vainilla y roble. Perfecto para conocedores y ocasiones especiales."
         }
-      }
+      },
+      {
+        slug: "buchanans-18-special-reserve",
+        name: "Buchanan's 18 Años Special Reserve",
+        image: {
+          mobile: "/assets/whiskys/buchanans-18.webp",
+          tablet: "/assets/whiskys/buchanans-18.webp",
+          desktop: "/assets/whiskys/buchanans-18.webp"
+        },
+        seo: {
+          keywords: [
+            "Buchanan's 18 Special Reserve",
+            "Whisky escocés premium",
+            "Whisky 18 años",
+            "Buchanan's precio",
+            "Whisky premium para regalo",
+            "Compra whisky online",
+            "Whisky de lujo"
+          ],
+          title: "Buchanan's 18 Special Reserve - Whisky Premium",
+          metaDescription:
+            "Buchanan's 18 Special Reserve es un whisky escocés de lujo con 18 años de envejecimiento. Suave y elegante, perfecto para celebraciones especiales."
+        }
+      },
+      {
+        slug: "johnnie-walker-red-label",
+        name: "Johnnie Walker Red Label",
+        image: {
+          mobile: "/assets/whiskys/jw-red-label.webp",
+          tablet: "/assets/whiskys/jw-red-label.webp",
+          desktop: "/assets/whiskys/jw-red-label.webp"
+        },
+        seo: {
+          keywords: [
+            "Johnnie Walker Red Label",
+            "Whisky escocés",
+            "Whisky asequible",
+            "JW Red Label precio",
+            "Whisky para cócteles",
+            "Compra whisky online",
+            "Mejores whiskys económicos"
+          ],
+          title: "Johnnie Walker Red Label - Whisky Escocés Versátil",
+          metaDescription:
+            "Johnnie Walker Red Label es un whisky escocés accesible y versátil, ideal para disfrutar en cócteles o en las rocas. Un clásico en cualquier ocasión."
+        }
+      },
+      {
+        slug: "jack-daniels-old-no-7",
+        name: "Jack Daniel's Old No. 7",
+        image: {
+          mobile: "/assets/whiskys/jack-daniels-old-no7.webp",
+          tablet: "/assets/whiskys/jack-daniels-old-no7.webp",
+          desktop: "/assets/whiskys/jack-daniels-old-no7.webp",
+        },
+      },
+      {
+        slug: "buchanans-deluxe-12",
+        name: "Buchanan's Deluxe 12",
+        image: {
+          mobile: "/assets/whiskys/buchanans-12.webp",
+          tablet: "/assets/whiskys/buchanans-12.webp",
+          desktop: "/assets/whiskys/buchanans-12.webp",
+        },
+      },
+      {
+        slug: "chivas-regal-12",
+        name: "Chivas Regal 12",
+        image: {
+          mobile: "/assets/whiskys/chivas-regal.jpg",
+          tablet: "/assets/whiskys/chivas-regal.jpg",
+          desktop: "/assets/whiskys/chivas-regal.jpg",
+        },
+      },
+      {
+        slug: "jack-daniels-apple",
+        name: "Jack Daniel's Apple",
+        image: {
+          mobile: "/assets/whiskys/jack-daniels-apple.webp",
+          tablet: "/assets/whiskys/jack-daniels-apple.webp",
+          desktop: "/assets/whiskys/jack-daniels-apple.webp"
+        },
+        seo: {
+          keywords: [
+            "Jack Daniel's Apple",
+            "Whisky sabor manzana",
+            "Whisky premium",
+            "Jack Daniel's precio",
+            "Whisky para cócteles",
+            "Compra whisky online",
+            "Mejores whiskys saborizados"
+          ],
+          title: "Jack Daniel's Apple - Whisky con Sabor a Manzana",
+          metaDescription:
+            "Descubre Jack Daniel's Apple, una mezcla perfecta de whisky Tennessee con un toque fresco y dulce de manzana verde. Ideal para cócteles o disfrutarlo solo."
+        }
+      },
     ]
   },
   {
@@ -1197,7 +2253,117 @@ export const data = [
           metaDescription:
             "Prueba el Bacardí Raspberry, un ron saborizado con notas frescas de frambuesa. Perfecto para cócteles frutales y refrescantes."
         }
-      }
+      },
+      {
+        slug: "kraken-ghost-white",
+        name: "Kraken Ghost White",
+        image: {
+          mobile: "/assets/rones/kraken-white.webp",
+          tablet: "/assets/rones/kraken-white.webp",
+          desktop: "/assets/rones/kraken-white.webp"
+        },
+        seo: {
+          keywords: [
+            "Kraken White",
+            "Ron blanco premium",
+            "Ron para cocteles",
+            "Kraken precio",
+            "Compra ron Kraken online",
+            "Ron Kraken para mojitos"
+          ],
+          title: "Kraken White - Ron Blanco Premium",
+          metaDescription:
+            "Kraken White es un ron blanco premium ideal para cocteles sofisticados. Compra online y disfruta su sabor único."
+        }
+      },
+      {
+        slug: "malibu",
+        name: "Malibu",
+        image: {
+          mobile: "/assets/rones/malibu.webp",
+          tablet: "/assets/rones/malibu.webp",
+          desktop: "/assets/rones/malibu.webp"
+        },
+        seo: {
+          keywords: [
+            "Malibu",
+            "Ron con coco",
+            "Cocteles tropicales",
+            "Malibu precio",
+            "Compra ron online",
+            "Ron para cocteles tropicales"
+          ],
+          title: "Malibu - Ron con Coco para Cocteles Tropicales",
+          metaDescription:
+            "Malibu, el ron con coco ideal para cocteles tropicales. Descubre su sabor dulce y suave. Compra online y disfruta en cualquier ocasión."
+        }
+      },
+      {
+        slug: "bacardi-coco",
+        name: "Bacardí Coco",
+        image: {
+          mobile: "/assets/rones/bacardi-coco.webp",
+          tablet: "/assets/rones/bacardi-coco.webp",
+          desktop: "/assets/rones/bacardi-coco.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Coco",
+            "Ron sabor coco",
+            "Mejores rones tropicales",
+            "Bacardí Coco precio",
+            "Ron Bacardí sabores",
+            "Compra ron tropical",
+            "Ron Bacardí Coco cerca de mí"
+          ],
+          metaDescription:
+            "Disfruta del Bacardí Coco, un ron tropical con un sabor refrescante y dulce a coco. Perfecto para cócteles exóticos o disfrutar en la playa."
+        }
+      },
+      {
+        slug: "capitan-morgan-spiced-gold",
+        name: "Capitán Morgan Spiced Gold",
+        image: {
+          mobile: "/assets/rones/capitan-morgan.webp",
+          tablet: "/assets/rones/capitan-morgan.webp",
+          desktop: "/assets/rones/capitan-morgan.webp"
+        },
+        seo: {
+          keywords: [
+            "Capitán Morgan Spiced Gold",
+            "Ron especiado",
+            "Ron para cócteles",
+            "Capitán Morgan precio",
+            "Ron premium",
+            "Compra Capitán Morgan",
+            "Capitán Morgan Spiced cerca de mí"
+          ],
+          metaDescription:
+            "Descubre Capitán Morgan Spiced Gold, un ron especiado con notas de vainilla, canela y roble. Perfecto para elevar cualquier cóctel o disfrutarlo solo."
+        }
+      },
+      {
+        slug: "bacardi-mango-chile",
+        name: "Bacardí Mango Chile",
+        image: {
+          mobile: "/assets/rones/bacardi-mango-chile.webp",
+          tablet: "/assets/rones/bacardi-mango-chile.webp",
+          desktop: "/assets/rones/bacardi-mango-chile.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Mango Chile",
+            "Ron con sabor a mango y chile",
+            "Ron Bacardí sabores",
+            "Bacardí Mango Chile precio",
+            "Ron exótico",
+            "Compra ron cerca de mí",
+            "Ron Bacardí Mango Chile online"
+          ],
+          metaDescription:
+            "Prueba Bacardí Mango Chile, un ron único con un toque picante y afrutado. Ideal para cócteles atrevidos y momentos especiales."
+        }
+      },
     ]
   },
   {
@@ -1273,6 +2439,75 @@ export const data = [
         }
       },
       {
+        slug: "bacardi-limon-verde",
+        name: "Bacardí Limón Verde",
+        image: {
+          mobile: "/assets/rones/bacardi-limon-verde.webp",
+          tablet: "/assets/rones/bacardi-limon-verde.webp",
+          desktop: "/assets/rones/bacardi-limon-verde.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Limón Verde",
+            "Ron Bacardí saborizado",
+            "Bacardí Limón precio",
+            "Ron sabor limón",
+            "Cócteles con Bacardí Limón",
+            "Compra Bacardí online",
+            "Ron Bacardí cerca de mí"
+          ],
+          title: "Bacardí Limón Verde - Ron Saborizado para Cócteles",
+          metaDescription:
+            "Disfruta del Bacardí Limón Verde, un ron saborizado perfecto para cócteles frescos y tropicales. Notas vibrantes de limón para tus mejores mezclas."
+        }
+      },
+      {
+        slug: "kraken",
+        name: "Kraken Black Spiced Rum",
+        image: {
+          mobile: "/assets/rones/kraken.webp",
+          tablet: "/assets/rones/kraken.webp",
+          desktop: "/assets/rones/kraken.webp"
+        },
+        seo: {
+          keywords: [
+            "Kraken Black Spiced Rum",
+            "Ron oscuro Kraken",
+            "Ron especiado premium",
+            "Kraken precio",
+            "Compra Kraken online",
+            "Ron para cócteles oscuros",
+            "Ron Kraken cerca de mí"
+          ],
+          title: "Kraken Black Spiced Rum - Ron Oscuro y Especiado",
+          metaDescription:
+            "Explora el sabor intenso del Kraken Black Spiced Rum, un ron oscuro con notas de especias y caramelo. Ideal para cócteles audaces o disfrutar solo."
+        }
+      },
+      {
+        slug: "bacardi-raspberry",
+        name: "Bacardí Raspberry",
+        image: {
+          mobile: "/assets/rones/bacardi-raspberry.webp",
+          tablet: "/assets/rones/bacardi-raspberry.webp",
+          desktop: "/assets/rones/bacardi-raspberry.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Raspberry",
+            "Ron Bacardí sabor frambuesa",
+            "Bacardí Raspberry precio",
+            "Ron saborizado para cócteles",
+            "Cócteles con Bacardí Raspberry",
+            "Compra Bacardí online",
+            "Ron Bacardí cerca de mí"
+          ],
+          title: "Bacardí Raspberry - Ron Saborizado con Frambuesa",
+          metaDescription:
+            "Prueba el Bacardí Raspberry, un ron saborizado con notas frescas de frambuesa. Perfecto para cócteles frutales y refrescantes."
+        }
+      },
+      {
         slug: "kraken-ghost-white",
         name: "Kraken Ghost White",
         image: {
@@ -1315,7 +2550,51 @@ export const data = [
           metaDescription:
             "Malibu, el ron con coco ideal para cocteles tropicales. Descubre su sabor dulce y suave. Compra online y disfruta en cualquier ocasión."
         }
-      }
+      },
+      {
+        slug: "bacardi-coco",
+        name: "Bacardí Coco",
+        image: {
+          mobile: "/assets/rones/bacardi-coco.webp",
+          tablet: "/assets/rones/bacardi-coco.webp",
+          desktop: "/assets/rones/bacardi-coco.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Coco",
+            "Ron sabor coco",
+            "Mejores rones tropicales",
+            "Bacardí Coco precio",
+            "Ron Bacardí sabores",
+            "Compra ron tropical",
+            "Ron Bacardí Coco cerca de mí"
+          ],
+          metaDescription:
+            "Disfruta del Bacardí Coco, un ron tropical con un sabor refrescante y dulce a coco. Perfecto para cócteles exóticos o disfrutar en la playa."
+        }
+      },
+      {
+        slug: "capitan-morgan-spiced-gold",
+        name: "Capitán Morgan Spiced Gold",
+        image: {
+          mobile: "/assets/rones/capitan-morgan.webp",
+          tablet: "/assets/rones/capitan-morgan.webp",
+          desktop: "/assets/rones/capitan-morgan.webp"
+        },
+        seo: {
+          keywords: [
+            "Capitán Morgan Spiced Gold",
+            "Ron especiado",
+            "Ron para cócteles",
+            "Capitán Morgan precio",
+            "Ron premium",
+            "Compra Capitán Morgan",
+            "Capitán Morgan Spiced cerca de mí"
+          ],
+          metaDescription:
+            "Descubre Capitán Morgan Spiced Gold, un ron especiado con notas de vainilla, canela y roble. Perfecto para elevar cualquier cóctel o disfrutarlo solo."
+        }
+      },
     ]
   },
   {
@@ -1373,6 +2652,73 @@ export const data = [
     ],
     others: [
       {
+        slug: "bacardi-carta-blanca",
+        name: "Bacardí Carta Blanca",
+        image: {
+          mobile: "/assets/rones/bacardi-carta-blanca.webp",
+          tablet: "/assets/rones/bacardi-carta-blanca.webp",
+          desktop: "/assets/rones/bacardi-carta-blanca.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Carta Blanca",
+            "Ron para cocteles",
+            "Ron ligero",
+            "Bacardí precio",
+            "Mejores rones para mojitos",
+            "Compra ron online"
+          ],
+          title: "Bacardí Carta Blanca - Ron Ligero Ideal para Cócteles",
+          metaDescription:
+            "Bacardí Carta Blanca es el ron ligero perfecto para mojitos y cocteles frescos. Compra online y descubre su calidad inigualable."
+        }
+      },
+      {
+        slug: "bacardi-limon-verde",
+        name: "Bacardí Limón Verde",
+        image: {
+          mobile: "/assets/rones/bacardi-limon-verde.webp",
+          tablet: "/assets/rones/bacardi-limon-verde.webp",
+          desktop: "/assets/rones/bacardi-limon-verde.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Limón Verde",
+            "Ron Bacardí saborizado",
+            "Bacardí Limón precio",
+            "Ron sabor limón",
+            "Cócteles con Bacardí Limón",
+            "Compra Bacardí online",
+            "Ron Bacardí cerca de mí"
+          ],
+          title: "Bacardí Limón Verde - Ron Saborizado para Cócteles",
+          metaDescription:
+            "Disfruta del Bacardí Limón Verde, un ron saborizado perfecto para cócteles frescos y tropicales. Notas vibrantes de limón para tus mejores mezclas."
+        }
+      },
+      {
+        slug: "malibu",
+        name: "Malibu",
+        image: {
+          mobile: "/assets/rones/malibu.webp",
+          tablet: "/assets/rones/malibu.webp",
+          desktop: "/assets/rones/malibu.webp"
+        },
+        seo: {
+          keywords: [
+            "Malibu",
+            "Ron con coco",
+            "Cocteles tropicales",
+            "Malibu precio",
+            "Compra ron online",
+            "Ron para cocteles tropicales"
+          ],
+          title: "Malibu - Ron con Coco para Cocteles Tropicales",
+          metaDescription:
+            "Malibu, el ron con coco ideal para cocteles tropicales. Descubre su sabor dulce y suave. Compra online y disfruta en cualquier ocasión."
+        }
+      },
+      {
         slug: "bacardi-coco",
         name: "Bacardí Coco",
         image: {
@@ -1417,27 +2763,73 @@ export const data = [
         }
       },
       {
-        slug: "bacardi-mango-chile",
-        name: "Bacardí Mango Chile",
+        slug: "kraken",
+        name: "Kraken Black Spiced Rum",
         image: {
-          mobile: "/assets/rones/bacardi-mango-chile.webp",
-          tablet: "/assets/rones/bacardi-mango-chile.webp",
-          desktop: "/assets/rones/bacardi-mango-chile.webp"
+          mobile: "/assets/rones/kraken.webp",
+          tablet: "/assets/rones/kraken.webp",
+          desktop: "/assets/rones/kraken.webp"
         },
         seo: {
           keywords: [
-            "Bacardí Mango Chile",
-            "Ron con sabor a mango y chile",
-            "Ron Bacardí sabores",
-            "Bacardí Mango Chile precio",
-            "Ron exótico",
-            "Compra ron cerca de mí",
-            "Ron Bacardí Mango Chile online"
+            "Kraken Black Spiced Rum",
+            "Ron oscuro Kraken",
+            "Ron especiado premium",
+            "Kraken precio",
+            "Compra Kraken online",
+            "Ron para cócteles oscuros",
+            "Ron Kraken cerca de mí"
           ],
+          title: "Kraken Black Spiced Rum - Ron Oscuro y Especiado",
           metaDescription:
-            "Prueba Bacardí Mango Chile, un ron único con un toque picante y afrutado. Ideal para cócteles atrevidos y momentos especiales."
+            "Explora el sabor intenso del Kraken Black Spiced Rum, un ron oscuro con notas de especias y caramelo. Ideal para cócteles audaces o disfrutar solo."
         }
-      }
+      },
+      {
+        slug: "bacardi-raspberry",
+        name: "Bacardí Raspberry",
+        image: {
+          mobile: "/assets/rones/bacardi-raspberry.webp",
+          tablet: "/assets/rones/bacardi-raspberry.webp",
+          desktop: "/assets/rones/bacardi-raspberry.webp"
+        },
+        seo: {
+          keywords: [
+            "Bacardí Raspberry",
+            "Ron Bacardí sabor frambuesa",
+            "Bacardí Raspberry precio",
+            "Ron saborizado para cócteles",
+            "Cócteles con Bacardí Raspberry",
+            "Compra Bacardí online",
+            "Ron Bacardí cerca de mí"
+          ],
+          title: "Bacardí Raspberry - Ron Saborizado con Frambuesa",
+          metaDescription:
+            "Prueba el Bacardí Raspberry, un ron saborizado con notas frescas de frambuesa. Perfecto para cócteles frutales y refrescantes."
+        }
+      },
+      {
+        slug: "kraken-ghost-white",
+        name: "Kraken Ghost White",
+        image: {
+          mobile: "/assets/rones/kraken-white.webp",
+          tablet: "/assets/rones/kraken-white.webp",
+          desktop: "/assets/rones/kraken-white.webp"
+        },
+        seo: {
+          keywords: [
+            "Kraken White",
+            "Ron blanco premium",
+            "Ron para cocteles",
+            "Kraken precio",
+            "Compra ron Kraken online",
+            "Ron Kraken para mojitos"
+          ],
+          title: "Kraken White - Ron Blanco Premium",
+          metaDescription:
+            "Kraken White es un ron blanco premium ideal para cocteles sofisticados. Compra online y disfruta su sabor único."
+        }
+      },
     ]
   },
   {
@@ -1552,7 +2944,30 @@ export const data = [
           metaDescription:
             "Descubre el Brandy Torres 5, un destilado español de calidad con notas de vainilla, frutos secos y caramelo. Perfecto para regalar o disfrutar en cualquier ocasión."
         }
-      }
+      },
+      {
+        slug: "brandy-don-pedro-gran-reserva-especial-750ml",
+        name: "Brandy Don Pedro Gran Reserva Especial 750ml",
+        image: {
+          mobile: "/assets/brandies/don-pedro-gran-reserva.webp",
+          tablet: "/assets/brandies/don-pedro-gran-reserva.webp",
+          desktop: "/assets/brandies/don-pedro-gran-reserva.webp"
+        },
+        seo: {
+          keywords: [
+            "Brandy Don Pedro Gran Reserva Especial",
+            "Brandy premium",
+            "Mejores brandies",
+            "Don Pedro Gran Reserva precio",
+            "Brandy para regalo",
+            "Compra brandy online",
+            "Brandy cerca de mí"
+          ],
+          title: "Don Pedro Gran Reserva - Brandy Premium",
+          metaDescription:
+            "Explora el sabor excepcional de Brandy Don Pedro Gran Reserva Especial 750ml. Perfecto para momentos especiales y como regalo elegante."
+        }
+      },
     ]
   },
   {
@@ -1669,6 +3084,28 @@ export const data = [
           title: "Hennessy Very Special Cognac - Exclusividad y Sabor",
           metaDescription:
             "Compra Hennessy Very Special Cognac, un destilado de lujo con aromas frutales y un toque de especias. Perfecto para ocasiones especiales y regalos exclusivos."
+        }
+      },
+      {
+        slug: "torres-alta-luz-cristalino",
+        name: "Torres Alta Luz Cristalino Brandy",
+        image: {
+          mobile: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp",
+          tablet: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp",
+          desktop: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp"
+        },
+        seo: {
+          keywords: [
+            "Torres Alta Luz Cristalino",
+            "Brandy premium",
+            "Brandy cristalino",
+            "Torres Alta Luz precio",
+            "Brandy español",
+            "Compra brandy online",
+            "Mejores brandys"
+          ],
+          title: "Torres Alta Luz Cristalino - Brandy de Elegancia y Pureza",
+          metaDescription: "Torres Alta Luz Cristalino es un brandy premium con un refinado proceso de filtrado, ofreciendo un sabor suave y sofisticado."
         }
       }
     ]
@@ -1798,7 +3235,29 @@ export const data = [
           metaDescription:
             "Compra Cognac Martell VSOP, un cognac de lujo con una mezcla armoniosa de frutas y especias. Ideal para disfrutar en las mejores ocasiones."
         }
-      }
+      },
+      {
+        slug: "torres-alta-luz-cristalino",
+        name: "Torres Alta Luz Cristalino Brandy",
+        image: {
+          mobile: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp",
+          tablet: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp",
+          desktop: "/assets/brandies/brandy-torres-alta-luz-cristalino.webp"
+        },
+        seo: {
+          keywords: [
+            "Torres Alta Luz Cristalino",
+            "Brandy premium",
+            "Brandy cristalino",
+            "Torres Alta Luz precio",
+            "Brandy español",
+            "Compra brandy online",
+            "Mejores brandys"
+          ],
+          title: "Torres Alta Luz Cristalino - Brandy de Elegancia y Pureza",
+          metaDescription: "Torres Alta Luz Cristalino es un brandy premium con un refinado proceso de filtrado, ofreciendo un sabor suave y sofisticado."
+        }
+      },
     ]
   },
   {
@@ -1914,7 +3373,28 @@ export const data = [
           title: "Vino Tinto Stella Rosa - Vino Dulce y Premium",
           metaDescription: "Compra el Vino Tinto Stella Rosa, un vino dulce y afrutado, perfecto para regalar o disfrutar en ocasiones especiales."
         }
-      }
+      },
+      {
+        slug: "vino-tinto-4-soles-afrutado",
+        name: "Vino tinto 4 Soles Afrutado",
+        image: {
+          mobile: "/assets/vinos/4-soles-afrutado.webp",
+          tablet: "/assets/vinos/4-soles-afrutado.webp",
+          desktop: "/assets/vinos/4-soles-afrutado.webp"
+        },
+        seo: {
+          keywords: [
+            "Vino tinto 4 Soles Afrutado",
+            "Vino tinto mexicano",
+            "Vino afrutado",
+            "Compra vino 4 Soles",
+            "Mejores vinos mexicanos"
+          ],
+          title: "4 Soles Afrutado - Vino Tinto Mexicano",
+          metaDescription:
+            "Disfruta el Vino tinto 4 Soles Afrutado, una opción ligera y refrescante ideal para maridar con platillos mexicanos y mediterráneos."
+        }
+      },
     ]
   },
   {
@@ -1993,6 +3473,27 @@ export const data = [
           title: "Dolce Amore - Vino Tinto Dulce y Aromático",
           metaDescription:
             "Prueba el Vino tinto Dolce Amore, un vino suave y dulce con notas de frutas rojas y un aroma embriagador. Perfecto para cualquier ocasión."
+        }
+      },
+      {
+        slug: "vino-tinto-sangre-de-cristo",
+        name: "Vino Tinto Sangre de Cristo",
+        image: {
+          mobile: "/assets/vinos/sangre-de-cristo.webp",
+          tablet: "/assets/vinos/sangre-de-cristo.webp",
+          desktop: "/assets/vinos/sangre-de-cristo.webp"
+        },
+        seo: {
+          keywords: [
+            "Vino Tinto Sangre de Cristo",
+            "Vino tinto de México",
+            "Vino para celebraciones",
+            "Vino tinto premium",
+            "Vino Sangre de Cristo precio",
+            "Vino tinto para cena"
+          ],
+          title: "Vino Tinto Sangre de Cristo - Vino Mexicano Exquisito",
+          metaDescription: "Disfruta del Vino Tinto Sangre de Cristo, un vino mexicano de alta calidad, ideal para acompañar carnes y celebraciones especiales."
         }
       },
       {
@@ -2141,6 +3642,27 @@ export const data = [
         },
       },
       {
+        slug: "vino-tinto-stella-rosa",
+        name: "Vino Tinto Stella Rosa",
+        image: {
+          mobile: "/assets/vinos/stella-rosa.webp",
+          tablet: "/assets/vinos/stella-rosa.webp",
+          desktop: "/assets/vinos/stella-rosa.webp"
+        },
+        seo: {
+          keywords: [
+            "Vino Tinto Stella Rosa",
+            "Vino tinto dulce",
+            "Vino tinto de calidad",
+            "Vino tinto para regalo",
+            "Vino tinto premium",
+            "Stella Rosa precio"
+          ],
+          title: "Vino Tinto Stella Rosa - Vino Dulce y Premium",
+          metaDescription: "Compra el Vino Tinto Stella Rosa, un vino dulce y afrutado, perfecto para regalar o disfrutar en ocasiones especiales."
+        }
+      },
+      {
         slug: "vino-tinto-dolce-amore",
         name: "Vino Tinto Dolce Amore",
         image: {
@@ -2286,7 +3808,139 @@ export const data = [
           metaDescription:
             "Jagermeister es un licor herbal único, ideal para shots o cócteles. Descubre su sabor inconfundible y disfruta de su tradición alemana.",
         }
-      }
+      },
+      {
+        slug: "hypnotiq-700ml",
+        name: "Hypnotiq 700ml",
+        image: {
+          mobile: "/assets/licores/hypnotiq-licor.webp",
+          tablet: "/assets/licores/hypnotiq-licor.webp",
+          desktop: "/assets/licores/hypnotiq-licor.webp"
+        },
+        seo: {
+          keywords: [
+            "Hypnotiq",
+            "Licor azul",
+            "Licor de frutas",
+            "Hypnotiq precio",
+            "Licor premium",
+            "Compra licor online",
+            "Mejores licores afrutados"
+          ],
+          title: "Hypnotiq 700ml - Un Licor Azul con Sabor Exótico",
+          metaDescription: "Hypnotiq es un licor azul vibrante con una mezcla de vodka, coñac y frutas tropicales, ideal para cócteles llamativos y refrescantes."
+        }
+      },
+      {
+        slug: "el-compadre-750ml",
+        name: "El Compadre 750ml",
+        image: {
+          mobile: "/assets/licores/el-compadre.webp",
+          tablet: "/assets/licores/el-compadre.webp",
+          desktop: "/assets/licores/el-compadre.webp"
+        },
+        seo: {
+          keywords: [
+            "El Compadre",
+            "Licor de caña",
+            "Licor económico",
+            "El Compadre precio",
+            "Bebida para mezclar",
+            "Compra licor online",
+            "Mejores licores baratos"
+          ],
+          title: "El Compadre 750ml - Tradición y Sabor a Buen Precio",
+          metaDescription: "El Compadre es un licor de caña con un sabor dulce y fuerte, perfecto para mezclar en cócteles o tomar solo con hielo."
+        }
+      },
+      {
+        slug: "nuvo-700ml",
+        name: "NUVO 700ml",
+        image: {
+          mobile: "/assets/licores/nuvo-licor.webp",
+          tablet: "/assets/licores/nuvo-licor.webp",
+          desktop: "/assets/licores/nuvo-licor.webp"
+        },
+        seo: {
+          keywords: [
+            "NUVO",
+            "Licor espumoso",
+            "Bebida de lujo",
+            "NUVO precio",
+            "Licor premium",
+            "Compra licor online",
+            "Mejores licores exclusivos"
+          ],
+          title: "NUVO 700ml - Licor Espumoso y Sofisticado",
+          metaDescription: "NUVO es un licor premium con burbujas y un toque frutal, ideal para celebraciones y cócteles sofisticados."
+        }
+      },
+      {
+        slug: "licor-43",
+        name: "Licor 43",
+        image: {
+          mobile: "/assets/licores/licor-43.webp",
+          tablet: "/assets/licores/licor-43.webp",
+          desktop: "/assets/licores/licor-43.webp"
+        },
+        seo: {
+          keywords: [
+            "Licor 43",
+            "Licor español",
+            "Licor de vainilla",
+            "Licor 43 precio",
+            "Bebida dulce",
+            "Compra licor online",
+            "Mejores licores para cócteles"
+          ],
+          title: "Licor 43 - Dulzura y Sabor Mediterráneo",
+          metaDescription: "Licor 43 es un licor español con notas de vainilla y especias, perfecto para cócteles dulces o para tomar solo con hielo."
+        }
+      },
+      {
+        slug: "rancho-escondido-mango",
+        name: "Rancho Escondido Mango",
+        image: {
+          mobile: "/assets/licores/Racho-Escondido-Mango.webp",
+          tablet: "/assets/licores/Racho-Escondido-Mango.webp",
+          desktop: "/assets/licores/Racho-Escondido-Mango.webp"
+        },
+        seo: {
+          keywords: [
+            "Rancho Escondido Mango",
+            "Licor de agave",
+            "Licor afrutado",
+            "Rancho Escondido precio",
+            "Bebida para shots",
+            "Compra licor online",
+            "Mejores licores mexicanos"
+          ],
+          title: "Rancho Escondido Mango - Sabor Tropical con Toque Mexicano",
+          metaDescription: "Rancho Escondido Mango es un licor de agave con un toque dulce y afrutado, ideal para shots o cócteles refrescantes."
+        }
+      },
+      {
+        slug: "rompope-coronado",
+        name: "Rompope Coronado",
+        image: {
+          mobile: "/assets/licores/rompope-coronado.webp",
+          tablet: "/assets/licores/rompope-coronado.webp",
+          desktop: "/assets/licores/rompope-coronado.webp"
+        },
+        seo: {
+          keywords: [
+            "Rompope Coronado",
+            "Licor cremoso",
+            "Bebida tradicional",
+            "Rompope precio",
+            "Licor mexicano",
+            "Compra licor online",
+            "Mejores licores dulces"
+          ],
+          title: "Rompope Coronado - Tradición y Sabor Cremoso",
+          metaDescription: "Rompope Coronado es un licor cremoso tradicional mexicano con un delicioso sabor a vainilla y especias, perfecto para postres y cócteles."
+        }
+      },
     ],
   },
   {
@@ -2422,7 +4076,117 @@ export const data = [
           metaDescription:
             "Disfruta del sabor único del Licor 43, una mezcla de cítricos y vainilla que eleva tus cócteles. Compra en línea y sorprende a tus invitados.",
         }
-      }
+      },
+      {
+        slug: "flamingo-curacao",
+        name: "Licor Flamingo Curacao",
+        image: {
+          mobile: "/assets/licores/flamingo-curacao.webp",
+          tablet: "/assets/licores/flamingo-curacao.webp",
+          desktop: "/assets/licores/flamingo-curacao.webp",
+        },
+        seo: {
+          keywords: [
+            "Licor Flamingo Curacao",
+            "Mejores licores",
+            "Licor para cócteles",
+            "Flamingo Curacao precio",
+            "Compra licor online",
+            "Licor para regalo"
+          ],
+          title: "Flamingo Curacao - Licor Perfecto para Cócteles",
+          metaDescription:
+            "Flamingo Curacao es un licor vibrante y dulce ideal para crear los mejores cócteles. Descubre su sabor único y dale un toque especial a tus bebidas.",
+        }
+      },
+      {
+        slug: "licor-rancho-escondido",
+        name: "Licor De Agave Rancho Escondido",
+        image: {
+          mobile: "/assets/licores/rancho-escondido.webp",
+          tablet: "/assets/licores/rancho-escondido.webp",
+          desktop: "/assets/licores/rancho-escondido.webp",
+        },
+        seo: {
+          keywords: [
+            "Licor De Agave Rancho Escondido",
+            "Licor de agave premium",
+            "Rancho Escondido precio",
+            "Compra licor de agave online",
+            "Mejores licores",
+            "Rancho Escondido licor mexicano"
+          ],
+          title: "Rancho Escondido - Licor de Agave Mexicano",
+          metaDescription:
+            "Descubre el Licor De Agave Rancho Escondido, una bebida con el auténtico sabor mexicano. Perfecto para celebraciones y cócteles especiales.",
+        }
+      },
+      {
+        slug: "nuvo-700ml",
+        name: "NUVO 700ml",
+        image: {
+          mobile: "/assets/licores/nuvo-licor.webp",
+          tablet: "/assets/licores/nuvo-licor.webp",
+          desktop: "/assets/licores/nuvo-licor.webp"
+        },
+        seo: {
+          keywords: [
+            "NUVO",
+            "Licor espumoso",
+            "Bebida de lujo",
+            "NUVO precio",
+            "Licor premium",
+            "Compra licor online",
+            "Mejores licores exclusivos"
+          ],
+          title: "NUVO 700ml - Licor Espumoso y Sofisticado",
+          metaDescription: "NUVO es un licor premium con burbujas y un toque frutal, ideal para celebraciones y cócteles sofisticados."
+        }
+      },
+      {
+        slug: "rompope-coronado",
+        name: "Rompope Coronado",
+        image: {
+          mobile: "/assets/licores/rompope-coronado.webp",
+          tablet: "/assets/licores/rompope-coronado.webp",
+          desktop: "/assets/licores/rompope-coronado.webp"
+        },
+        seo: {
+          keywords: [
+            "Rompope Coronado",
+            "Licor cremoso",
+            "Bebida tradicional",
+            "Rompope precio",
+            "Licor mexicano",
+            "Compra licor online",
+            "Mejores licores dulces"
+          ],
+          title: "Rompope Coronado - Tradición y Sabor Cremoso",
+          metaDescription: "Rompope Coronado es un licor cremoso tradicional mexicano con un delicioso sabor a vainilla y especias, perfecto para postres y cócteles."
+        }
+      },
+      {
+        slug: "rancho-escondido-mango",
+        name: "Rancho Escondido Mango",
+        image: {
+          mobile: "/assets/licores/Racho-Escondido-Mango.webp",
+          tablet: "/assets/licores/Racho-Escondido-Mango.webp",
+          desktop: "/assets/licores/Racho-Escondido-Mango.webp"
+        },
+        seo: {
+          keywords: [
+            "Rancho Escondido Mango",
+            "Licor de agave",
+            "Licor afrutado",
+            "Rancho Escondido precio",
+            "Bebida para shots",
+            "Compra licor online",
+            "Mejores licores mexicanos"
+          ],
+          title: "Rancho Escondido Mango - Sabor Tropical con Toque Mexicano",
+          metaDescription: "Rancho Escondido Mango es un licor de agave con un toque dulce y afrutado, ideal para shots o cócteles refrescantes."
+        }
+      },
     ],
   },
   {
@@ -2501,6 +4265,28 @@ export const data = [
         }
       },
       {
+        slug: "licor-rancho-escondido",
+        name: "Licor De Agave Rancho Escondido",
+        image: {
+          mobile: "/assets/licores/rancho-escondido.webp",
+          tablet: "/assets/licores/rancho-escondido.webp",
+          desktop: "/assets/licores/rancho-escondido.webp",
+        },
+        seo: {
+          keywords: [
+            "Licor De Agave Rancho Escondido",
+            "Licor de agave premium",
+            "Rancho Escondido precio",
+            "Compra licor de agave online",
+            "Mejores licores",
+            "Rancho Escondido licor mexicano"
+          ],
+          title: "Rancho Escondido - Licor de Agave Mexicano",
+          metaDescription:
+            "Descubre el Licor De Agave Rancho Escondido, una bebida con el auténtico sabor mexicano. Perfecto para celebraciones y cócteles especiales.",
+        }
+      },
+      {
         slug: "licor-agave-rancho-escondido-mango",
         name: "Rancho Escondido Mango",
         image: {
@@ -2541,6 +4327,96 @@ export const data = [
           title: "Rompope Coronado - El Sabor Tradicional",
           metaDescription:
             "Disfruta del Rompope Coronado, el clásico licor cremoso con el auténtico sabor mexicano. Perfecto para ocasiones especiales o como postre.",
+        }
+      },
+      {
+        slug: "baileys-original",
+        name: "Baileys Original",
+        image: {
+          mobile: "/assets/licores/baileys-original.webp",
+          tablet: "/assets/licores/baileys-original.webp",
+          desktop: "/assets/licores/baileys-original.webp",
+        },
+        seo: {
+          keywords: [
+            "Baileys Original",
+            "Licor de crema",
+            "Compra Baileys online",
+            "Baileys precio",
+            "Licor Baileys para postres",
+            "Cócteles con Baileys",
+            "Mejores licores",
+            "Baileys cerca de mí"
+          ],
+          title: "Baileys Original - Licor de Crema Premium",
+          metaDescription:
+            "Disfruta del clásico Baileys Original, el licor de crema perfecto para postres y cócteles. Compra en línea y eleva tus momentos especiales.",
+        }
+      },
+      {
+        slug: "licor-jagermeister",
+        name: "Licor Jagermeister",
+        image: {
+          mobile: "/assets/licores/jagermeister.webp",
+          tablet: "/assets/licores/jagermeister.webp",
+          desktop: "/assets/licores/jagermeister.webp",
+        },
+        seo: {
+          keywords: [
+            "Licor Jagermeister",
+            "Mejores licores",
+            "Jagermeister precio",
+            "Compra Jagermeister online",
+            "Licor para shots",
+            "Licor herbal premium"
+          ],
+          title: "Jagermeister - Licor Herbal Icónico",
+          metaDescription:
+            "Jagermeister es un licor herbal único, ideal para shots o cócteles. Descubre su sabor inconfundible y disfruta de su tradición alemana.",
+        }
+      },
+      {
+        slug: "el-compadre-750ml",
+        name: "El Compadre 750ml",
+        image: {
+          mobile: "/assets/licores/el-compadre.webp",
+          tablet: "/assets/licores/el-compadre.webp",
+          desktop: "/assets/licores/el-compadre.webp"
+        },
+        seo: {
+          keywords: [
+            "El Compadre",
+            "Licor de caña",
+            "Licor económico",
+            "El Compadre precio",
+            "Bebida para mezclar",
+            "Compra licor online",
+            "Mejores licores baratos"
+          ],
+          title: "El Compadre 750ml - Tradición y Sabor a Buen Precio",
+          metaDescription: "El Compadre es un licor de caña con un sabor dulce y fuerte, perfecto para mezclar en cócteles o tomar solo con hielo."
+        }
+      },
+      {
+        slug: "hypnotiq-700ml",
+        name: "Hypnotiq 700ml",
+        image: {
+          mobile: "/assets/licores/hypnotiq-licor.webp",
+          tablet: "/assets/licores/hypnotiq-licor.webp",
+          desktop: "/assets/licores/hypnotiq-licor.webp"
+        },
+        seo: {
+          keywords: [
+            "Hypnotiq",
+            "Licor azul",
+            "Licor de frutas",
+            "Hypnotiq precio",
+            "Licor premium",
+            "Compra licor online",
+            "Mejores licores afrutados"
+          ],
+          title: "Hypnotiq 700ml - Un Licor Azul con Sabor Exótico",
+          metaDescription: "Hypnotiq es un licor azul vibrante con una mezcla de vodka, coñac y frutas tropicales, ideal para cócteles llamativos y refrescantes."
         }
       },
     ],

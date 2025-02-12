@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Hero from "../../components/organisms/Hero.astro";
+import Hero2 from "../../components/organisms/Hero.astro";
 import { colors } from "../../design-system/colors.js";
 import Text from "../../components/atoms/Text.astro";
 import FeaturedProducts from "../../components/organisms/FeaturedProducts.astro";
@@ -10,6 +10,7 @@ import Button from "../../components/atoms/Button.astro";
 import { data } from "../../utils/dummyData.js";
 import Input from "../../components/atoms/Input.astro";
 import CategoryProducts from "@components/organisms/CategoryProducts.astro";
+import { Hero } from "@modules/Hero";
 
 export async function getStaticPaths() {
   return data.map((product) => {
@@ -24,11 +25,14 @@ const { name, description, price, features, image, includes, gallery, others } =
   Astro.props;
 ---
 
-<Layout title="Earphones">
-  <Hero />
-  <div class="container">
+<Layout
+  title="Legion Drinkers"
+  description="Legion Drinkers es una tienda de bebidas alcohólicas en línea."
+>
+  <Hero2 />
+  <!-- <div class="container">
     <Button onClick="history.back()" color="rgba(0,0,0,.7)">Go back</Button>
-  </div>
+  </div> -->
 </Layout>
 
 <!-- Primera parte de la vista -->
@@ -38,10 +42,13 @@ const { name, description, price, features, image, includes, gallery, others } =
       <Text type="body" color={colors.yellow}>NEW PRODUCT</Text>
       <Text type="h3">{name}</Text>
       <Text type="body">{description}</Text>
-      <Text type="h6" className="font-extrabold">{`$${price}`}</Text>
+      <br />
+      <!-- <Text type="h6" className="font-extrabold">{`$${price}`}</Text> -->
       <div class="product-actions">
         <Input type="counter" value={1} />
-        <Button type="secondary-inverted">COMPRAR AHORA</Button>
+        <a href="https://wa.link/uen192">
+          <Button type="secondary-inverted">¡Cotizar Ahora!</Button>
+        </a>
       </div>
     </div>
     <div class="product-image">
@@ -53,11 +60,11 @@ const { name, description, price, features, image, includes, gallery, others } =
 <!-- Segunda parte de la vista -->
 <div class="container features-product">
   <div class="feature-details">
-    <Text type="h5">FEATURES</Text>
+    <Text type="h5">Características</Text>
     <Text type="body">{features}</Text>
   </div>
   <div class="feature-box">
-    <Text type="h5">IN THE BOX</Text>
+    <Text type="h5">Que incluye</Text>
     <div class="box-list">
       {
         includes.map((extra) => (
@@ -74,8 +81,23 @@ const { name, description, price, features, image, includes, gallery, others } =
   </div>
 </div>
 
+<div id="categorias" class="premium-categories">
+  <span>RECOMENDADOS</span>
+</div>
+
 <!-- Tercera parte de la vista -->
-<div class="container others-section">
+<Hero
+  client:load
+  heroType="CarouselCategoryProducts"
+  data={others.map((item) => ({
+    image: item.image.desktop,
+    title: item.name,
+    link: "https://wa.link/uen192",
+    button: { text: "¡Cotizalo Ahora!", link: "https://wa.link/uen192" },
+  }))}
+/>
+
+<!-- <div class="container others-section">
   {
     others.map((item) => (
       <div class="others-item">
@@ -84,18 +106,18 @@ const { name, description, price, features, image, includes, gallery, others } =
         </div>
         <div class="details">
           <Text type="h5">{item.name}</Text>
-          <a href={`/products/${item.slug}`}>
-            <Button type="secondary-inverted">SEE PRODUCT</Button>
+          <a href="https://wa.link/uen192">
+            <Button type="secondary-inverted">¡Cotizar Ahora!</Button>
           </a>
         </div>
       </div>
     ))
   }
-</div>
+</div> -->
 
 <FeaturedProducts />
 
-<CategoryProducts />
+<!-- <CategoryProducts /> -->
 
 <Outro />
 
@@ -211,5 +233,30 @@ const { name, description, price, features, image, includes, gallery, others } =
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+  }
+
+  .premium-categories {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 80px;
+  }
+  .premium-categories span {
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
   }
 </style>
