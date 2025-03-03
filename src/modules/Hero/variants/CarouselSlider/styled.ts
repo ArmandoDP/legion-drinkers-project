@@ -12,6 +12,16 @@ export const CarouselSliderStyled = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    ${MediaQuery.max("lg")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("sm")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("xl")} {
+        padding: 0px;
+    }
 
     .swiper-pagination {
         position: absolute;
@@ -156,6 +166,10 @@ export const ProductGroup = styled.div`
 
     ${MediaQuery.max("lg")} {
         gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+    ${MediaQuery.max("sm")} {
+        grid-template-columns: 1fr;
     }
 `;
 
@@ -184,6 +198,15 @@ export const ProductCard = styled.div`
         
         ${MediaQuery.max("lg")} {
             max-width: 290px;
+            margin: none;
+        }
+        ${MediaQuery.max("xxl")} {
+            max-width: 310px;
+            margin: none;
+        }
+        ${MediaQuery.max("sm")} {
+            max-width: 320px;
+            margin: none;
         }
     }
 

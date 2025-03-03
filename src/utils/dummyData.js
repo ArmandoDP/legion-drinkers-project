@@ -1,8 +1,8 @@
 export const data = [
   {
     id: 1,
-    slug: "red-label-johnnie-walker",
-    name: "Red Label Whisky by Johnnie Walker",
+    slug: "black-label-johnnie-walker",
+    name: "Johnnie Walker Black Label 750 ml",
     image: {
       mobile: "/assets/whiskys/black-label.jpg",
       tablet: "/assets/whiskys/black-label.jpg",
@@ -203,8 +203,8 @@ export const data = [
   },
   {
     id: 2,
-    slug: "don-julio-70-cristalino",
-    name: "Tequila Don Julio 70 Cristalino",
+    slug: "don-julio-70-cristalino-700ml",
+    name: "Tequila Don Julio 70 Cristalino 700 ml",
     image: {
       mobile: "/assets/tequilas/donjulio.png",
       tablet: "/assets/tequilas/donjulio.png",
@@ -467,8 +467,8 @@ export const data = [
   },
   {
     id: 3,
-    slug: "tequila-1800-cristalino",
-    name: "Tequila 1800 Cristalino",
+    slug: "tequila-1800-cristalino-700ml",
+    name: "Tequila 1800 Cristalino 700 ml",
     image: {
       mobile: "/assets/tequilas/1800-cristalino.webp",
       tablet: "/assets/tequilas/1800-cristalino.webp",
@@ -747,8 +747,8 @@ export const data = [
   },
   {
     id: 2,
-    slug: "maestro-dobel-diamante",
-    name: "Tequila Maestro Dobel Diamante",
+    slug: "maestro-dobel-diamante-700ml",
+    name: "Tequila Maestro Dobel Diamante 700 ml",
     image: {
       mobile: "/assets/tequilas/maestro-dobel-diamante.webp",
       tablet: "/assets/tequilas/maestro-dobel-diamante.webp",
@@ -1004,8 +1004,8 @@ export const data = [
   },
   {
     id: 5,
-    slug: "absolut-vodka",
-    name: "Absolut Vodka",
+    slug: "absolut-vodka-750ml",
+    name: "Absolut Vodka 750 ml",
     image: {
       mobile: "/assets/vodkas/absolut-vodka-azul.webp",
       tablet: "/assets/vodkas/absolut-vodka-azul.webp",
@@ -1241,8 +1241,8 @@ export const data = [
   },
   {
     id: 6,
-    slug: "tanqueray-vodka",
-    name: "Tanqueray Vodka",
+    slug: "tanqueray-ginebra-750ml",
+    name: "Tanqueray 750 ml",
     image: {
       mobile: "/assets/vodkas/tanqueray-vodka.webp",
       tablet: "/assets/vodkas/tanqueray-vodka.webp",
@@ -1473,7 +1473,7 @@ export const data = [
   {
     id: 7,
     slug: "smirnoff-tamarindo",
-    name: "Smirnoff Tamarindo",
+    name: "Smirnoff Red X-1 750 ml",
     image: {
         mobile: "/assets/vodkas/smirnoff-tamarindo.webp",
         tablet: "/assets/vodkas/smirnoff-tamarindo.webp",
@@ -1696,8 +1696,8 @@ export const data = [
   },
   {
     id: 2,
-    slug: "buchanans-12-deluxe",
-    name: "Buchanan's 12 Años Deluxe",
+    slug: "buchanans-12-deluxe-750ml",
+    name: "Buchanan's 12 Años 750 ml",
     image: {
       mobile: "/assets/whiskys/buchanans-12.webp",
       tablet: "/assets/whiskys/buchanans-12.webp",
@@ -1935,43 +1935,43 @@ export const data = [
   },
   {
     id: 9,
-    slug: "buchannans-master",
-    name: "Buchanan's Master",
+    slug: "buchannans-18 años-700ml",
+    name: "Buchanan's 18 años 750 ml",
     image: {
-      mobile: "/assets/whiskys/buchanans-master.webp",
-      tablet: "/assets/whiskys/buchanans-master.webp",
-      desktop: "/assets/whiskys/buchanans-master.webp"
+      mobile: "/assets/whiskys/buchanans-18.webp",
+      tablet: "/assets/whiskys/buchanans-18.webp",
+      desktop: "/assets/whiskys/buchanans-18.webp"
     },
     category: "whiskys",
     categoryImage: {
-      mobile: "/assets/whiskys/buchanans-master.webp",
-      tablet: "/assets/whiskys/buchanans-master.webp",
-      desktop: "/assets/whiskys/buchanans-master.webp"
+      mobile: "/assets/whiskys/buchanans-18.webp",
+      tablet: "/assets/whiskys/buchanans-18.webp",
+      desktop: "/assets/whiskys/buchanans-18.webp"
     },
     new: true,
     price: 899,
     description:
-      "Buchanan's Master es una mezcla única de whiskies seleccionados a mano por el Master Blender, logrando un perfil de sabor balanceado con notas de frutas maduras, miel y un toque de humo. Ideal para disfrutar solo o con hielo.",
+      "Disfruta de la elegancia y suavidad de Buchanan's 18 Años, un whisky escocés premium con un añejamiento excepcional. Su sabor complejo y refinado lo convierte en la elección ideal para los conocedores del buen whisky.",
     features:
-      "Buchanan's Master es un whisky premium que destaca por su suavidad y profundidad de sabor. Con un equilibrio perfecto entre dulzura y un leve ahumado, este whisky es perfecto para cualquier ocasión especial o para disfrutar en un momento de relajación. Disponible en presentaciones de 750 ml.",
+      "Buchanan's 18 Años es una mezcla de los mejores whiskies escoceses añejados, ofreciendo notas de miel, frutos secos, madera y un toque ahumado. Su acabado es suave y persistente, ideal para disfrutarse solo o con un poco de agua para realzar sus sabores.",
     seo: {
       keywords: [
-        "Buchanan's Master",
-        "Whisky premium",
+        "Buchanan's 18 Años",
         "Whisky Buchanan's",
+        "Whisky premium",
+        "Buchanan's precio",
         "Compra whisky online",
-        "Buchanan's Master precio",
-        "Mejores whiskies",
-        "Whisky cerca de mí"
+        "Mejores whiskies escoceses",
+        "Buchanan's cerca de mí"
       ],
-      title: "Buchanan's Master - Whisky Premium de Tradición",
+      title: "Buchanan's 18 Años - Whisky Escocés Premium",
       metaDescription:
-        "Compra Buchanan's Master, un whisky premium con un sabor balanceado y suave, ideal para celebraciones y momentos especiales. Disponible online y en sucursales."
+        "Compra Buchanan's 18 Años, un whisky escocés premium con un sabor refinado y notas de miel, frutos secos y madera. Ideal para los amantes del buen whisky."
     },
     includes: [
       {
         quantity: 1,
-        item: "Botella de Buchanan's Master (750 ml)"
+        item: "Botella de Buchanan's 18 Años (750ml)"
       },
       {
         quantity: 1,
@@ -2145,43 +2145,43 @@ export const data = [
   },
   {
     id: 10,
-    slug: "bacardi-blanco-1-75l",
-    name: "Bacardí Blanco 1.75L",
+    slug: "bacardi-spiced-700ml",
+    name: "Bacardí Spiced 700 ml",
     image: {
-      mobile: "/assets/rones/bacardi-blanco-1-75l.webp",
-      tablet: "/assets/rones/bacardi-blanco-1-75l.webp",
-      desktop: "/assets/rones/bacardi-blanco-1-75l.webp"
+      mobile: "/assets/rones/bacardi-spiced.webp",
+      tablet: "/assets/rones/bacardi-spiced.webp",
+      desktop: "/assets/rones/bacardi-spiced.webp"
     },
     category: "ron",
     categoryImage: {
-      mobile: "/assets/rones/bacardi-blanco-1-75l.webp",
-      tablet: "/assets/rones/bacardi-blanco-1-75l.webp",
-      desktop: "/assets/rones/bacardi-blanco-1-75l.webp"
+      mobile: "/assets/rones/bacardi-spiced.webp",
+      tablet: "/assets/rones/bacardi-spiced.webp",
+      desktop: "/assets/rones/bacardi-spiced.webp"
     },
     new: true,
-    price: 419,
+    price: 439,
     description:
-      "Descubre el ron Bacardí Blanco en su presentación de 1.75L, ideal para tus mejores cócteles. Con su sabor limpio y suave, este ron es perfecto para mojitos, piñas coladas y otras bebidas refrescantes.",
+      "Descubre el ron Bacardí Spiced 1.75L, una mezcla única de rones añejos con especias naturales. Ideal para disfrutar solo o en cócteles como el Spiced Rum & Cola.",
     features:
-      "El Bacardí Blanco es un ron clásico, elaborado con una destilación única para obtener un sabor balanceado. Disfruta de notas sutiles de almendra, vainilla y frutas tropicales, que lo convierten en la base ideal para coctelería o disfrutarlo solo con hielo.",
+      "Bacardí Spiced es un ron con un toque de vainilla, canela y especias que le dan un sabor cálido y delicioso. Perfecto para aquellos que buscan una experiencia diferente, con notas de caramelo y un toque suave de especias, ideal para disfrutar con hielo o en cócteles.",
     seo: {
       keywords: [
-        "Bacardí Blanco 1.75L",
-        "Ron Bacardí Blanco",
-        "Ron para mojitos",
+        "Bacardí Spiced 1.75L",
+        "Ron Bacardí Spiced",
+        "Ron especiado",
         "Bacardí precio",
         "Compra ron online",
-        "Mejores rones blancos",
+        "Ron Spiced para cócteles",
         "Ron Bacardí cerca de mí"
       ],
-      title: "Bacardí Blanco 1.75L - Ron Clásico para Cócteles",
+      title: "Bacardí Spiced 1.75L - Ron Especiado para Cócteles",
       metaDescription:
-        "Compra Bacardí Blanco 1.75L, el ron perfecto para cócteles como mojitos y piñas coladas. Sabor limpio y suave con notas de almendra y frutas tropicales."
+        "Compra Bacardí Spiced 1.75L, un ron especiado con toques de vainilla, canela y caramelo. Perfecto para cócteles o disfrutarlo solo."
     },
     includes: [
       {
         quantity: 1,
-        item: "Botella de Bacardí Blanco (1.75L)"
+        item: "Botella de Bacardí Spiced (1.75L)"
       }
     ],
     others: [
@@ -2368,8 +2368,8 @@ export const data = [
   },
   {
     id: 11,
-    slug: "ron-zacapa-ambar-12-anos",
-    name: "Ron Zacapa Ámbar 12 años",
+    slug: "ron-zacapa-ambar-12-anos-750ml",
+    name: "Zacapa Gran Reserva 23 años 750 ml",
     image: {
       mobile: "/assets/rones/ron-zacapa-ambar-12.webp",
       tablet: "/assets/rones/ron-zacapa-ambar-12.webp",
@@ -2384,12 +2384,12 @@ export const data = [
     new: true,
     price: 799,
     description: 
-      "Disfruta del Ron Zacapa Ámbar 12 años, un ron añejado en el corazón de Guatemala, reconocido por su suavidad y complejidad. Ideal para disfrutar solo, en las rocas o en cocteles exclusivos.",
+      "Disfruta del Ron Zacapa Ámbar 23 años, un ron añejado en el corazón de Guatemala, reconocido por su suavidad y complejidad. Ideal para disfrutar solo, en las rocas o en cocteles exclusivos.",
     features:
-      "El Ron Zacapa Ámbar 12 años es envejecido mediante un sistema de solera con barricas de roble usadas previamente para whiskys y vinos de Jerez. Ofrece notas de caramelo, vainilla, especias y un toque ahumado.\n\nPerfecto para cenas elegantes, reuniones exclusivas o para regalar a los amantes del ron. Su presentación elegante lo convierte en una elección ideal para cualquier ocasión especial.",
+      "El Ron Zacapa Ámbar 23 años es envejecido mediante un sistema de solera con barricas de roble usadas previamente para whiskys y vinos de Jerez. Ofrece notas de caramelo, vainilla, especias y un toque ahumado.\n\nPerfecto para cenas elegantes, reuniones exclusivas o para regalar a los amantes del ron. Su presentación elegante lo convierte en una elección ideal para cualquier ocasión especial.",
     seo: {
       keywords: [
-        "Ron Zacapa Ámbar 12 años",
+        "Ron Zacapa Ámbar 23 años",
         "Ron premium",
         "Mejores rones",
         "Ron cerca de mí",
@@ -2398,9 +2398,9 @@ export const data = [
         "Ron para regalo",
         "Ron de Guatemala"
       ],
-      title: "Ron Zacapa Ámbar 12 años - Ron Premium Guatemalteco",
+      title: "Ron Zacapa Ámbar 23 años - Ron Premium Guatemalteco",
       metaDescription:
-        "Compra Ron Zacapa Ámbar 12 años, un ron guatemalteco premium con notas de caramelo, vainilla y especias. Perfecto para ocasiones especiales y cocteles sofisticados.",
+        "Compra Ron Zacapa Ámbar 23 años, un ron guatemalteco premium con notas de caramelo, vainilla y especias. Perfecto para ocasiones especiales y cocteles sofisticados.",
       locationTags: [
         "ron en Ciudad de México",
         "ron en Guadalajara",
@@ -2412,7 +2412,7 @@ export const data = [
     includes: [
       {
         quantity: 1,
-        item: "Botella de Ron Zacapa Ámbar 12 años (750 ml)"
+        item: "Botella de Ron Zacapa Ámbar 23 años (750 ml)"
       }
     ],
     others: [
@@ -2599,39 +2599,39 @@ export const data = [
   },
   {
     id: 12,
-    slug: "ron-bacardi-anejo-750ml",
-    name: "Ron Bacardí Añejo 750 ML",
+    slug: "ron-bacardi-solera-750ml",
+    name: "Bacardí Solera 750 ML",
     image: {
-      mobile: "/assets/rones/bacardi-anejo.webp",
-      tablet: "/assets/rones/bacardi-anejo.webp",
-      desktop: "/assets/rones/bacardi-anejo.webp"
+      mobile: "/assets/rones/bacardi-ron-solera.webp",
+      tablet: "/assets/rones/bacardi-ron-solera.webp",
+      desktop: "/assets/rones/bacardi-ron-solera.webp"
     },
     category: "ron",
     categoryImage: {
-      mobile: "/assets/rones/bacardi-anejo.webp",
-      tablet: "/assets/rones/bacardi-anejo.webp",
-      desktop: "/assets/rones/bacardi-anejo.webp"
+      mobile: "/assets/rones/bacardi-ron-solera.webp",
+      tablet: "/assets/rones/bacardi-ron-solera.webp",
+      desktop: "/assets/rones/bacardi-ron-solera.webp"
     },
     new: true,
     price: 549,
     description:
-      "Disfruta del Ron Bacardí Añejo 750 ML, un ron premium con un sabor balanceado y notas de caramelo, vainilla y roble. Ideal para cócteles clásicos o para disfrutar solo.",
+      "Disfruta del Ron Bacardí Solera 750 ML, un ron premium con un sabor balanceado y notas de caramelo, vainilla y roble. Ideal para cócteles clásicos o para disfrutar solo.",
     features:
-      "Ron Bacardí Añejo es elaborado a partir de una mezcla de rones envejecidos hasta por 3 años en barricas de roble. Este ron ofrece una experiencia única con su perfil suave y sofisticado, perfecto para elevar cualquier ocasión especial.\n\nDisponible en presentación de 750 ML, es ideal para preparar cócteles como Cuba Libre o Mojito, o para disfrutarlo solo con hielo.",
+      "Ron Bacardí Solera es elaborado con una mezcla de rones envejecidos en barricas de roble, lo que le da su perfil suave y refinado. Perfecto para cócteles como Cuba Libre o Mojito, o para disfrutarlo solo con hielo.",
     seo: {
       keywords: [
-        "Ron Bacardí Añejo 750 ML",
+        "Ron Bacardí Solera 750 ML",
         "Mejores rones",
         "Compra ron premium",
         "Ron Bacardí precio",
         "Ron añejo premium",
         "Ron cerca de mí",
-        "Ron Bacardí Añejo para cócteles",
+        "Ron Bacardí Solera para cócteles",
         "Ron Bacardí para regalo"
       ],
-      title: "Ron Bacardí Añejo 750 ML - Sabor y Tradición Premium",
+      title: "Ron Bacardí Solera 750 ML - Sabor y Tradición Premium",
       metaDescription:
-        "Compra Ron Bacardí Añejo 750 ML, un ron premium con un equilibrio perfecto de caramelo, vainilla y roble. Ideal para cócteles o disfrutarlo solo.",
+        "Compra Ron Bacardí Solera 750 ML, un ron premium con un equilibrio perfecto de caramelo, vainilla y roble. Ideal para cócteles o disfrutarlo solo.",
       locationTags: [
         "ron en Ciudad de México",
         "ron en Guadalajara",
@@ -2643,7 +2643,7 @@ export const data = [
     includes: [
       {
         quantity: 1,
-        item: "Botella de Ron Bacardí Añejo (750 ML)"
+        item: "Botella de Ron Bacardí Solera (750 ML)"
       },
       {
         quantity: 1,
@@ -2834,8 +2834,8 @@ export const data = [
   },
   {
     id: 13,
-    slug: "brandy-torres-10",
-    name: "Brandy Torres 10",
+    slug: "brandy-torres-10-700-ml",
+    name: "Brandy Torres 10 700 ml",
     image: {
       mobile: "/assets/brandies/torres-10.webp",
       tablet: "/assets/brandies/torres-10.webp",
@@ -2972,8 +2972,8 @@ export const data = [
   },
   {
     id: 13,
-    slug: "brandy-torres-20",
-    name: "Brandy Torres 20",
+    slug: "brandy-torres-20-700ml",
+    name: "Brandy Torres 20 700 ml",
     image: {
       mobile: "/assets/brandies/brandy-torres-20-700ml.webp",
       tablet: "/assets/brandies/brandy-torres-20-700ml.webp",
@@ -3112,8 +3112,8 @@ export const data = [
   },
   {
     id: 14,
-    slug: "brandy-torres-15",
-    name: "Brandy Torres 15",
+    slug: "brandy-torres-15-700ml",
+    name: "Brandy Torres 15 700 ml",
     image: {
       mobile: "/assets/brandies/brandy-torres-15.webp",
       tablet: "/assets/brandies/brandy-torres-15.webp",
@@ -3262,8 +3262,8 @@ export const data = [
   },
   {
     id: 15,
-    slug: "vino-tinto-dolce-amore",
-    name: "Vino Tinto Dolce Amore",
+    slug: "vino-tinto-dolce-amore-750ml",
+    name: "Vino Tinto Dolce Amore 750 ml",
     image: {
       mobile: "/assets/vinos/dolce-amore.webp",
       tablet: "/assets/vinos/dolce-amore.webp",
@@ -3399,58 +3399,50 @@ export const data = [
   },
   {
     id: 16,
-    slug: "vino-tinto-sweet-red-reservado",
-    name: "Vino tinto Sweet Red Reservado",
+    slug: "baileys-original-700ml",
+    name: "Baileys Original 700 ml",
     image: {
-      mobile: "/assets/vinos/sweet-red-reservado.webp",
-      tablet: "/assets/vinos/sweet-red-reservado.webp",
-      desktop: "/assets/vinos/sweet-red-reservado.webp"
+      mobile: "/assets/licores/baileys-original.webp",
+      tablet: "/assets/licores/baileys-original.webp",
+      desktop: "/assets/licores/baileys-original.webp"
     },
     category: "vinos",
     categoryImage: {
-      mobile: "/assets/vinos/sweet-red-reservado.webp",
-      tablet: "/assets/vinos/sweet-red-reservado.webp",
-      desktop: "/assets/vinos/sweet-red-reservado.webp"
+      mobile: "/assets/licores/baileys-original.webp",
+      tablet: "/assets/licores/baileys-original.webp",
+      desktop: "/assets/licores/baileys-original.webp"
     },
     new: true,
-    price: 399,
+    price: 379,
     description:
-      "Deléitate con el exquisito sabor del Vino tinto Sweet Red Reservado, un vino de cuerpo medio con notas de frutos rojos maduros y un toque dulce que lo hace perfecto para cualquier ocasión especial. Disfrútalo acompañado de tus platillos favoritos o simplemente solo.",
+      "Disfruta de la suavidad y el inconfundible sabor de Baileys Original en su presentación de 700ml. La crema irlandesa más famosa del mundo, perfecta para tomar sola, con hielo o en cócteles deliciosos.",
     features:
-      "El Vino tinto Sweet Red Reservado combina la suavidad y dulzura de los mejores vinos tintos. Producido con uvas seleccionadas, ofrece un perfil de sabor equilibrado con notas de cereza, frambuesa y un delicado aroma floral.\n\nIdeal para cenas románticas, reuniones familiares o como regalo especial. Este vino destaca por su presentación elegante y versatilidad, siendo la opción perfecta para los amantes del vino tinto.",
+      "Baileys Original combina la mejor crema de leche con whisky irlandés, cacao y vainilla para crear una textura cremosa y un sabor dulce y aterciopelado. Ideal para postres, cafés especiales o simplemente disfrutarlo solo con hielo.\n\nUn clásico infaltable en cualquier ocasión, Baileys es perfecto para reuniones, celebraciones o para consentirte con una bebida indulgente.",
     seo: {
       keywords: [
-        "Vino tinto Sweet Red Reservado",
-        "Vinos dulces",
-        "Vino tinto cerca de mí",
-        "Compra vino online",
-        "Vino tinto afrutado",
-        "Vino dulce recomendado",
-        "Mejores vinos tintos"
+        "Baileys Original 700ml",
+        "Licor de crema",
+        "Baileys precio",
+        "Baileys en café",
+        "Compra Baileys online",
+        "Licor cremoso",
+        "Baileys cerca de mí"
       ],
-      title: "Sweet Red Reservado - Vino Tinto Dulce y Elegante",
+      title: "Baileys Original 700ml - Crema Irlandesa Clásica",
       metaDescription:
-        "Compra el Vino tinto Sweet Red Reservado, una opción dulce y afrutada perfecta para toda ocasión. Descubre su sabor único con notas de frutos rojos y un toque floral.",
+        "Compra Baileys Original 700ml, la crema irlandesa perfecta para tomar sola, con hielo o en cócteles. Suave, dulce y deliciosa para cualquier ocasión.",
       locationTags: [
-        "vino tinto en Municipio",
-        "vino tinto en Ciudad de México",
-        "vino tinto en Guadalajara",
-        "vino tinto cerca de mí",
-        "vino en Estado de México"
+        "Baileys en Municipio",
+        "Baileys en Ciudad de México",
+        "Baileys en Guadalajara",
+        "Licor cerca de mí",
+        "Baileys en Estado de México"
       ]
     },
     includes: [
       {
         quantity: 1,
-        item: "Botella de Vino tinto Sweet Red Reservado (750 ml)"
-      },
-      {
-        quantity: 1,
-        item: "Etiqueta de calidad y autenticidad"
-      },
-      {
-        quantity: 1,
-        item: "Folleto con información sobre maridajes ideales"
+        item: "Botella de Baileys Original (700ml)"
       }
     ],
     others: [
@@ -3542,8 +3534,8 @@ export const data = [
   },
   {
     id: 17,
-    slug: "vino-tinto-4-soles-afrutado",
-    name: "Vino Tinto 4 Soles Afrutado",
+    slug: "vino-tinto-4-soles-afrutado-750ml",
+    name: "Vino Tinto 4 Soles Afrutado 750 ml",
     image: {
       mobile: "/assets/vinos/4-soles-afrutado.webp",
       tablet: "/assets/vinos/4-soles-afrutado.webp",
@@ -4190,7 +4182,7 @@ export const data = [
     ],
   },
   {
-    id: 2,
+    id: 20,
     slug: "licor-agave-rancho-escondido-tamarindo",
     name: "Licor Rancho Escondido Tamarindo",
     image: {
@@ -4420,5 +4412,386 @@ export const data = [
         }
       },
     ],
-},
+  },
+  {
+    id: 21,
+    slug: "mezcal-400-conejos-700ml",
+    name: "Mezcal 400 Conejos 700 ml",
+    image: {
+      mobile: "/assets/mezcales/400-conejos.webp",
+      tablet: "/assets/mezcales/400-conejos.webp",
+      desktop: "/assets/mezcales/400-conejos.webp",
+    },
+    category: "mezcal",
+    categoryImage: {
+      mobile:
+        "/assets/mezcales/400-conejos.webp",
+      tablet:
+        "/assets/mezcales/400-conejos.webp",
+      desktop:
+        "/assets/mezcales/400-conejos.webp",
+    },
+    new: true,
+    price: 199,
+    description:
+      "Disfruta del Mezcal 400 Conejos, un mezcal artesanal con notas ahumadas y dulces, ideal para degustar solo o en cocteles únicos.",
+    features:
+      "El Mezcal 400 Conejos ofrece un sabor auténtico y equilibrado, con notas ahumadas y dulces. Ideal para beber solo, en las rocas o como base para cocteles. Este mezcal es una excelente opción para quienes buscan una experiencia premium y tradicional.\n\nDisponible en presentación de 750 ml, es perfecto para cualquier ocasión, desde reuniones casuales hasta celebraciones especiales.",
+    seo: {
+      keywords: [
+        "Mezcal 400 Conejos",
+        "Mezcal artesanal",
+        "Mezcal premium",
+        "Mezcal cerca de mí",
+        "Mezcal 400 Conejos precio",
+        "Compra mezcal online",
+        "Mezcal para cocteles",
+        "Mezcal oaxaqueño",
+      ],
+      title: "Mezcal 400 Conejos - Mezcal Artesanal Premium",
+      metaDescription:
+        "Compra Mezcal 400 Conejos, un mezcal artesanal con notas ahumadas y dulces. Perfecto para cocteles o disfrutarlo solo. Pídelo ahora.",
+      locationTags: [
+        "mezcal en Municipio",
+        "mezcal en Ciudad de México",
+        "mezcal en Oaxaca",
+        "mezcal cerca de mí",
+        "mezcal en Estado de México"
+      ]
+    },
+    includes: [
+      {
+        quantity: 1,
+        item: "Botella de Mezcal 400 Conejos (750 ml)",
+      },
+    ],
+    others: [
+      {
+        slug: "el-compadre-750ml",
+        name: "El Compadre 750ml",
+        image: {
+          mobile: "/assets/licores/el-compadre.webp",
+          tablet: "/assets/licores/el-compadre.webp",
+          desktop: "/assets/licores/el-compadre.webp"
+        }
+      },
+      {
+        slug: "creyente-joven-750ml",
+        name: "Creyente Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/creyente-joven.webp",
+          tablet: "/assets/mezcales/creyente-joven.webp",
+          desktop: "/assets/mezcales/creyente-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-750ml",
+        name: "Rancho Escondido 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido.webp",
+          tablet: "/assets/licores/rancho-escondido.webp",
+          desktop: "/assets/licores/rancho-escondido.webp"
+        }
+      },
+      {
+        slug: "mitre-joven-750ml",
+        name: "Mitre Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/mitre-joven.webp",
+          tablet: "/assets/mezcales/mitre-joven.webp",
+          desktop: "/assets/mezcales/mitre-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-mango-750ml",
+        name: "Rancho Escondido Mango 750ml",
+        image: {
+          mobile: "/assets/licores/Racho-Escondido-Mango.webp",
+          tablet: "/assets/licores/Racho-Escondido-Mango.webp",
+          desktop: "/assets/licores/Racho-Escondido-Mango.webp"
+        }
+      },
+      {
+        slug: "monte-lobos-joven-750ml",
+        name: "Monte Lobos Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/monte-lobos.webp",
+          tablet: "/assets/mezcales/monte-lobos.webp",
+          desktop: "/assets/mezcales/monte-lobos.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-plata-750ml",
+        name: "Rancho Escondido Plata 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido-silver.webp",
+          tablet: "/assets/licores/rancho-escondido-silver.webp",
+          desktop: "/assets/licores/rancho-escondido-silver.webp"
+        }
+      },
+      {
+        slug: "ojo-de-tigre-joven-750ml",
+        name: "Ojo de Tigre Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/ojo-de-tigre.webp",
+          tablet: "/assets/mezcales/ojo-de-tigre.webp",
+          desktop: "/assets/mezcales/ojo-de-tigre.webp"
+        }
+      }
+    ]
+  },
+  {
+    id: 22,
+    slug: "rancho-escondido-750ml",
+    name: "Rancho Escondido 750ml",
+    image: {
+      mobile: "/assets/licores/rancho-escondido.webp",
+      tablet: "/assets/licores/rancho-escondido.webp",
+      desktop: "/assets/licores/rancho-escondido.webp",
+    },
+    category: "mezcal",
+    categoryImage: {
+      mobile:
+        "/assets/licores/rancho-escondido.webp",
+      tablet:
+        "/assets/licores/rancho-escondido.webp",
+      desktop:
+        "/assets/licores/rancho-escondido.webp",
+    },
+    new: true,
+    price: 199,
+    description:
+      "Disfruta de El Ranchito Escondido 750ml, un licor con un sabor auténtico y equilibrado, ideal para disfrutar solo o en tus cocteles favoritos.",
+    features:
+      "El Ranchito Escondido 750ml es un licor perfecto para cualquier ocasión. Su sabor suave y distintivo lo hace ideal para beber solo, con hielo o como base para cocteles. Elaborado con ingredientes de alta calidad, ofrece una experiencia única para los amantes de los licores.\n\nSu presentación de 750 ml es perfecta para compartir en reuniones y celebraciones especiales.",
+    seo: {
+      keywords: [
+        "Licor El Ranchito Escondido",
+        "Licor suave",
+        "Licor artesanal",
+        "Licor cerca de mí",
+        "Licor El Ranchito Escondido precio",
+        "Compra licor online",
+        "Licor para cocteles",
+        "El Ranchito Escondido 750ml",
+      ],
+      title: "El Ranchito Escondido 750ml - Licor Artesanal y Equilibrado",
+      metaDescription:
+        "Compra El Ranchito Escondido 750ml, un licor de sabor auténtico y equilibrado, ideal para disfrutar solo o en cocteles. Pídelo ahora.",
+      locationTags: [
+        "licor en Municipio",
+        "licor en Ciudad de México",
+        "licor en Oaxaca",
+        "licor cerca de mí",
+        "licor en Estado de México"
+      ]
+    },
+    includes: [
+      {
+        quantity: 1,
+        item: "Botella de Rancho Escondido (750 ml)",
+      },
+    ],
+    others: [
+      {
+        slug: "mezcal-400-conejos",
+        name: "Mezcal 400 Conejos",
+        image: {
+          mobile: "/assets/mezcales/400-conejos.webp",
+          tablet: "/assets/mezcales/400-conejos.webp",
+          desktop: "/assets/mezcales/400-conejos.webp"
+        }
+      },
+      {
+        slug: "creyente-joven-750ml",
+        name: "Creyente Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/creyente-joven.webp",
+          tablet: "/assets/mezcales/creyente-joven.webp",
+          desktop: "/assets/mezcales/creyente-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-750ml",
+        name: "Rancho Escondido 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido.webp",
+          tablet: "/assets/licores/rancho-escondido.webp",
+          desktop: "/assets/licores/rancho-escondido.webp"
+        }
+      },
+      {
+        slug: "mitre-joven-750ml",
+        name: "Mitre Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/mitre-joven.webp",
+          tablet: "/assets/mezcales/mitre-joven.webp",
+          desktop: "/assets/mezcales/mitre-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-mango-750ml",
+        name: "Rancho Escondido Mango 750ml",
+        image: {
+          mobile: "/assets/licores/Racho-Escondido-Mango.webp",
+          tablet: "/assets/licores/Racho-Escondido-Mango.webp",
+          desktop: "/assets/licores/Racho-Escondido-Mango.webp"
+        }
+      },
+      {
+        slug: "monte-lobos-joven-750ml",
+        name: "Monte Lobos Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/monte-lobos.webp",
+          tablet: "/assets/mezcales/monte-lobos.webp",
+          desktop: "/assets/mezcales/monte-lobos.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-plata-750ml",
+        name: "Rancho Escondido Plata 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido-silver.webp",
+          tablet: "/assets/licores/rancho-escondido-silver.webp",
+          desktop: "/assets/licores/rancho-escondido-silver.webp"
+        }
+      },
+      {
+        slug: "ojo-de-tigre-joven-750ml",
+        name: "Ojo de Tigre Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/ojo-de-tigre.webp",
+          tablet: "/assets/mezcales/ojo-de-tigre.webp",
+          desktop: "/assets/mezcales/ojo-de-tigre.webp"
+        }
+      }
+    ]
+  },
+  {
+    id: 22,
+    slug: "ojo-de-tigre-joven-750ml",
+    name: "Ojo de Tigre Joven 750 ml",
+    image: {
+      mobile: "/assets/mezcales/ojo-de-tigre.webp",
+      tablet: "/assets/mezcales/ojo-de-tigre.webp",
+      desktop: "/assets/mezcales/ojo-de-tigre.webp",
+    },
+    category: "mezcal",
+    categoryImage: {
+      mobile:
+        "/assets/mezcales/ojo-de-tigre.webp",
+      tablet:
+        "/assets/mezcales/ojo-de-tigre.webp",
+      desktop:
+        "/assets/mezcales/ojo-de-tigre.webp",
+    },
+    new: true,
+    price: 199,
+    description:
+      "Disfruta de Ojo de Tigre Joven 750ml, un mezcal artesanal de origen mexicano con un balance perfecto entre suavidad y notas ahumadas, ideal para degustar solo o en cocteles.",
+    features:
+      "Ojo de Tigre Joven 750ml es un mezcal premium elaborado con una mezcla única de agave Espadín y Tobalá. Su sabor equilibrado y ligeramente ahumado lo hace ideal para tomar solo, en las rocas o como base para cocteles innovadores. \n\nPerfecto para cualquier ocasión, desde reuniones con amigos hasta celebraciones especiales, este mezcal ofrece una experiencia auténtica y sofisticada.",
+    seo: {
+      keywords: [
+        "Mezcal Ojo de Tigre",
+        "Mezcal artesanal",
+        "Mezcal premium",
+        "Mezcal cerca de mí",
+        "Mezcal Ojo de Tigre precio",
+        "Compra mezcal online",
+        "Mezcal para cocteles",
+        "Mezcal Ojo de Tigre Joven 750ml",
+      ],
+      title: "Ojo de Tigre Joven 750ml - Mezcal Artesanal Premium",
+      metaDescription:
+        "Compra Ojo de Tigre Joven 750ml, un mezcal artesanal con notas ahumadas y balanceadas. Perfecto para cocteles o para disfrutarlo solo. Pídelo ahora.",
+      locationTags: [
+        "mezcal en Municipio",
+        "mezcal en Ciudad de México",
+        "mezcal en Oaxaca",
+        "mezcal cerca de mí",
+        "mezcal en Estado de México"
+      ]
+    },
+    includes: [
+      {
+        quantity: 1,
+        item: "Botella de Mezcal Ojo de Tigre Joven (750 ml)",
+      },
+    ],
+    others: [
+      {
+        slug: "el-compadre-750ml",
+        name: "El Compadre 750ml",
+        image: {
+          mobile: "/assets/licores/el-compadre.webp",
+          tablet: "/assets/licores/el-compadre.webp",
+          desktop: "/assets/licores/el-compadre.webp"
+        }
+      },
+      {
+        slug: "creyente-joven-750ml",
+        name: "Creyente Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/creyente-joven.webp",
+          tablet: "/assets/mezcales/creyente-joven.webp",
+          desktop: "/assets/mezcales/creyente-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-750ml",
+        name: "Rancho Escondido 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido.webp",
+          tablet: "/assets/licores/rancho-escondido.webp",
+          desktop: "/assets/licores/rancho-escondido.webp"
+        }
+      },
+      {
+        slug: "mitre-joven-750ml",
+        name: "Mitre Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/mitre-joven.webp",
+          tablet: "/assets/mezcales/mitre-joven.webp",
+          desktop: "/assets/mezcales/mitre-joven.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-mango-750ml",
+        name: "Rancho Escondido Mango 750ml",
+        image: {
+          mobile: "/assets/licores/Racho-Escondido-Mango.webp",
+          tablet: "/assets/licores/Racho-Escondido-Mango.webp",
+          desktop: "/assets/licores/Racho-Escondido-Mango.webp"
+        }
+      },
+      {
+        slug: "monte-lobos-joven-750ml",
+        name: "Monte Lobos Joven 750ml",
+        image: {
+          mobile: "/assets/mezcales/monte-lobos.webp",
+          tablet: "/assets/mezcales/monte-lobos.webp",
+          desktop: "/assets/mezcales/monte-lobos.webp"
+        }
+      },
+      {
+        slug: "rancho-escondido-plata-750ml",
+        name: "Rancho Escondido Plata 750ml",
+        image: {
+          mobile: "/assets/licores/rancho-escondido-silver.webp",
+          tablet: "/assets/licores/rancho-escondido-silver.webp",
+          desktop: "/assets/licores/rancho-escondido-silver.webp"
+        }
+      },
+      {
+        slug: "mezcal-400-conejos",
+        name: "Mezcal 400 Conejos",
+        image: {
+          mobile: "/assets/mezcales/400-conejos.webp",
+          tablet: "/assets/mezcales/400-conejos.webp",
+          desktop: "/assets/mezcales/400-conejos.webp"
+        }
+      },
+    ]
+  },
 ];

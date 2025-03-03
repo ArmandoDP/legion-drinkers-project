@@ -13,6 +13,16 @@ export const GridProductsStyled = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    ${MediaQuery.max("lg")} {
+        padding: 5px;
+    }
+    ${MediaQuery.max("sm")} {
+        padding: 5px;
+    }
+    ${MediaQuery.max("xl")} {
+        padding: 5px;
+    }
+
     .swiper-pagination {
         position: absolute;
         bottom: 30px;
@@ -188,28 +198,28 @@ export const ProductCard = styled.div`
     }
 
     img {
-        max-width: 300px;
+        max-width: 340px;
         margin-bottom: 15px;
         border-radius: 8px;
-
+        
         ${MediaQuery.max("lg")} {
-            max-width: 220px;
+            max-width: 290px;
+            margin: none;
+        }
+        ${MediaQuery.max("xxl")} {
+            max-width: 310px;
+            margin: none;
+        }
+        ${MediaQuery.max("sm")} {
+            max-width: 320px;
+            margin: none;
         }
     }
 
     h3 {
         font-size: 1.2rem;
         margin: 10px 0;
-        text-align: center;
         color: ${Theme.primary};
-
-        ${MediaQuery.max("lg")} {
-            font-size: 1rem;
-        }
-        ${MediaQuery.max("sm")} {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
     }
 
     p {

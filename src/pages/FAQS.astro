@@ -1,0 +1,38 @@
+---
+import { HeroSlider1, BannerPrincipal } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Nosotros as NosotrosModule } from "@modules/Nosotros";
+import { Contact as ContactModule } from "@modules/Contact";
+import { Hero } from "@modules/Hero";
+import Footer from "../components/organisms/Footer.astro";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import Outro from "@components/organisms/Outro.astro";
+---
+
+<Layout
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:load
+      data={{
+        image: BannerPrincipal.src,
+        content: {
+          title: "FAQS",
+          paragraph:
+            "Somos una empresa especializada en la comercialización de vinos y licores en la zona metropolitana del Valle de Toluca, Estado de México, ofreciendo calidad y variedad para todos los gustos.",
+        },
+      }}
+    />
+    <!-- <ContactModule client:load /> -->
+
+    <!-- <NosotrosModule client:load /> -->
+    <Outro />
+  </main>
+
+  <WAButton url="https://wa.link/uen192" />
+
+  <Footer />
+</Layout>

@@ -33,6 +33,7 @@ export const TextImageContainer = styled(Container)<{
                 order: 2;
             }
         `}
+
 `;
 
 export const TextImageFigure = styled.figure`

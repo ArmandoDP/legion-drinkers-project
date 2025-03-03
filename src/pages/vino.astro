@@ -7,6 +7,7 @@ import {
   InfiniteImg2,
   HeroSlider6,
   VinoBanner,
+  BannerPrincipal,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import Footer from "../components/organisms/Footer.astro";
@@ -29,9 +30,9 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: VinoBanner.src,
+        image: BannerPrincipal.src,
         content: {
-          title: "VINOS",
+          title: "VINO / LICOR",
           paragraph:
             "Descubre nuestra selección de vinos tintos, blancos, rosados y espumosos. Encuentra las mejores marcas y disfruta de ofertas exclusivas en vinos para cualquier ocasión. ¡Eleva tus momentos con el sabor único de nuestra variedad de vinos premium!",
         },
@@ -96,6 +97,73 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
         })
     }
 
+    <div class="premium-categories">
+      <span>VINOS Y LICORES</span>
+    </div>
+
+    <Hero
+      client:load
+      heroType="CarouselSlider"
+      data={[
+        {
+          id: "1",
+          image: "/assets/licores/hypnotiq-licor.webp",
+          title: "HPNOTIQ 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "2",
+          image: "/assets/vinos/finca-las-moras-cabernet-750ml.webp",
+          title: "V.T. FINCA LAS MORAS CABERNET 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "3",
+          image: "/assets/licores/jagermeister.webp",
+          title: "JAGERMEISTER 700 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "4",
+          image: "/assets/vinos/sweet-red-reservado.webp",
+          title: "V.T. RESERVADO DULCE TINTO 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "5",
+          image: "/assets/licores/licor-43.webp",
+          title: "LICOR 43 700 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "6",
+          image: "/assets/vinos/lambrusco.webp",
+          title: "V.T. RIUNITE LAMBRUSCO 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "7",
+          image: "/assets/licores/nuvo-licor.webp",
+          title: "NUVO 700 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+        {
+          id: "8",
+          image: "/assets/vinos/moet-chandon-brut-imperial-750ml.webp",
+          title: "MOET & CHANDON BRUT IMPERIAL 750 ml",
+          description: "",
+          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+        },
+      ]}
+    />
+
     <!-- <Hero
       heroType="textImage"
       client:visible
@@ -122,12 +190,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: "public/assets/branding/Codigo-Honor.jpg",
+          src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
           height: 500,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¿Quieres Alguno En Especifico?",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
           "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
@@ -156,7 +224,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: url("assets/branding/vino-banner.jpg");
+    background: url("assets/branding/vino-licor-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,5 +233,58 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     padding: 34px 124px;
     grid-column: 1 / 3;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .product-spotlight-2 {
+      background-size: contain; /* Asegura que la imagen se vea completa en pantallas más pequeñas */
+      height: 250px; /* Ajusta la altura */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .product-spotlight-2 {
+      height: 200px; /* Ajusta la altura en pantallas medianas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-spotlight-2 {
+      height: 150px; /* Ajusta la altura en pantallas pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-spotlight-2 {
+      height: 80px; /* Ajusta la altura para pantallas extra pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  .premium-categories {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 80px;
+  }
+  .premium-categories span {
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
   }
 </style>

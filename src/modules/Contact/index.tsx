@@ -3,10 +3,10 @@ import * as S from "./styled";
 import { TextBox } from "@components/textBox";
 import { FadeIn } from "@utils/animations/FadeIn";
 import { Image } from "@static/images";
-import facebook from "../../../public/assets/shared/desktop/icon-facebook-dark.svg";
-import twitter from "../../../public/assets/shared/desktop/icon-twitter-dark.svg";
-import instagram from "../../../public/assets/shared/desktop/icon-instagram-dark.svg";
-import whatsapp from "../../../public/assets/shared/desktop/icon-whatsapp-dark.svg";
+// import facebook from "../../../public/assets/shared/desktop/icon-facebook.svg";
+// import twitter from "../../../public/assets/shared/desktop/icon-twitter-dark.svg";
+// import instagram from "../../../public/assets/shared/desktop/icon-instagram-dark.svg";
+// import whatsapp from "../../../public/assets/shared/desktop/icon-whatsapp.svg";
 
 export const Contact: FC = () => {
     return (
@@ -72,10 +72,10 @@ export const Contact: FC = () => {
                             <h3>SIGUENOS EN NUESTRAS REDES</h3>
                             <p>¿Tienes alguna consulta o sugerencia? ¡No dudes en escribirnos! ¡Tu opinión es fundamental para mejorar nuestro servicio!</p>
                             <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
-                                <a style={{ marginRight: "10px" }} href="https://www.facebook.com/share/15djqTjvwY/?mibextid=wwXIfr"><Image src={facebook.src} alt="Facebook icon" /></a>
+                                <a style={{ marginRight: "10px" }} href="https://www.facebook.com/share/12EzfqLicBs/?mibextid=wwXIfr"><img src="/assets/shared/desktop/icon-facebook.svg" alt="Facebook icon" /></a>
                                 {/* <a href="https://www.x.com/legion-drinkers"><Image src={twitter.src} alt="Twitter icon" /></a> */}
                                 {/* <a href="https://www.instagram.com/legion-drinkers"><Image src={instagram.src} alt="Instagram icon" /></a> */}
-                                <a href="https://wa.link/uen192"><Image src={whatsapp.src} alt="Whatsapp icon" /></a>
+                                <a href="https://wa.link/uen192"><img src="/assets/shared/desktop/icon-whatsapp.svg" alt="Whatsapp icon" /></a>
                             </div>
                         </TextBox>
                     </FadeIn>

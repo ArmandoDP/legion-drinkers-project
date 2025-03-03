@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
-import { HeroSlider3, InfiniteImg1, InfiniteImg2 } from "@static/images";
+import {
+  HeroSlider3,
+  InfiniteImg1,
+  InfiniteImg2,
+  FondoDrinkers,
+  BannerPrincipal,
+} from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
@@ -18,7 +24,7 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: "public/assets/branding/Botellas-Frias.jpg",
+        image: BannerPrincipal.src,
         content: {
           title: "OFERTAS",
           paragraph:
@@ -64,67 +70,69 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       data={[
         {
           id: "1",
-          image: "/assets/licores/rancho-escondido-tamarindo.webp",
-          title: "Rancho Escondido Tamarindo",
-          description: "Licor de tamarindo con un toque mexicano",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+          image: "/assets/ofertas/Febrero/absolut-elyx.webp",
+          title: "Absolut Elyx 750 ml",
+          description: "Vodka premium, ultra suave, destilado en cobre.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: "/assets/licores/jagermeister.webp",
-          title: "Jägermeister",
-          description:
-            "El clásico licor herbal alemán, perfecto para cocteles únicos.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
+          image: "/assets/ofertas/Febrero/almave-blanco-sin-alcohol.webp",
+          title: "Almave Blanco 700 ml",
+          description: "Tequila sin alcohol, mismo sabor, cero grados.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
-          image: "/assets/licores/rompope-coronado.webp",
-          title: "Rompope Coronado Vainilla",
-          description: "Rompope tradicional con sabor a vainilla.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
+          image: "/assets/ofertas/Febrero/buchanans-pineapple-750ml.webp",
+          title: "Buchanan’s Pineapple 750 ml",
+          description: "Whisky con piña, dulce y suave.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
-          image: "/assets/rones/bacardi-raspberry.webp",
-          title: "Bacardí Raspberry",
-          description:
-            "Ron sabor frambuesa delicioso, perfecto para cócteles frutales.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-4" },
+          image: "/assets/ofertas/Febrero/jw-black-ruby-750ml.webp",
+          title: "Johnnie Walker Black Ruby 750 ml",
+          description: "Edición especial, mezcla rica e intensa.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-4" },
         },
-        {
-          id: "5",
-          image: "/assets/vodkas/smirnoff-normal.webp",
-          title: "Smirnoff Vodka Clásico",
-          description:
-            "Vodka puro, ideal para mezclar con tus bebidas favoritas.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
-        },
-        {
-          id: "6",
-          image: "assets/vodkas/absolut-vodka-azul.webp",
-          title: "Absolut Vodka Azul",
-          description: "Vodka sueco de calidad premium, perfecto para todos.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-6" },
-        },
-        {
-          id: "7",
-          image: "assets/vinos/dolce-amore.webp",
-          title: "Vino Dolce Amore",
-          description:
-            "Vino dulce con un sabor afrutado. Ideal para ocasiones especiales.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-7" },
-        },
-        {
-          id: "8",
-          image: "assets/vinos/sweet-red-reservado.webp",
-          title: "Vino Sweet Red Reservado",
-          description:
-            "Vino tinto dulce y elegante, excelente para cenas románticas.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-8" },
-        },
+        // {
+        //   id: "5",
+        //   image: "/assets/vodkas/smirnoff-normal.webp",
+        //   title: "Smirnoff Vodka Clásico",
+        //   description:
+        //     "Vodka puro, ideal para mezclar con tus bebidas favoritas.",
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
+        // },
+        // {
+        //   id: "6",
+        //   image: "assets/vodkas/absolut-vodka-azul.webp",
+        //   title: "Absolut Vodka Azul",
+        //   description: "Vodka sueco de calidad premium, perfecto para todos.",
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-6" },
+        // },
+        // {
+        //   id: "7",
+        //   image: "assets/vinos/dolce-amore.webp",
+        //   title: "Vino Dolce Amore",
+        //   description:
+        //     "Vino dulce con un sabor afrutado. Ideal para ocasiones especiales.",
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-7" },
+        // },
+        // {
+        //   id: "8",
+        //   image: "assets/vinos/sweet-red-reservado.webp",
+        //   title: "Vino Sweet Red Reservado",
+        //   description:
+        //     "Vino tinto dulce y elegante, excelente para cenas románticas.",
+        //   button: { text: "¡Cotizalo Ahora!", link: "/producto-8" },
+        // },
       ]}
     />
+
+    <div class="premium-categories">
+      <span>OFERTAS LEGENDARIAS</span>
+    </div>
 
     <Hero
       client:load
@@ -132,68 +140,61 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       data={[
         {
           id: "1",
-          image: "assets/vinos/sangre-de-cristo.webp",
-          title: "Vino Sangre de Cristo - Vino Tinto Premium",
-          description:
-            "Vino tinto premium con un sabor único y elegante, ideal para ocasiones especiales.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+          image: "/assets/ofertas/Febrero/jim-beam-peach-700ml.webp",
+          title: "Jim Beam Peach 700 ml",
+          description: "Bourbon infusionado con durazno, suave y afrutado.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: "assets/vodkas/skyy.webp",
-          title: "Vodka Skyy - Suavidad y Refrescante",
-          description:
-            "Vodka suave, perfecto para cócteles refrescantes o disfrutar solo.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
+          image: "/assets/ofertas/Febrero/smirnoff-tamarindo.webp",
+          title: "Smirnoff Red X-1 750 ml",
+          description: "Vodka con tamarindo, picante y dulce.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
-          image: "assets/tequilas/hornitos-plata.webp",
-          title: "Tequila Hornitos Plata - Auténtico Sabor Mexicano",
-          description:
-            "Tequila 100% puro de agave, ideal para disfrutar solo o en cócteles.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
+          image:
+            "/assets/ofertas/Febrero/Tequila-Patron-Anejo-Cristalino-750-ml.webp",
+          title: "Patrón Añejo Cristalino 700 ml",
+          description: "Tequila añejo filtrado, suave y elegante.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
-          image: "assets/tequilas/jose-cuervo-tradicional-plata.webp",
-          title: "Tequila José Cuervo Tradicional Plata",
-          description:
-            "Tequila de calidad premium, suave y con sabor único. ¡Perfecto para celebraciones!",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-4" },
+          image: "/assets/ofertas/Febrero/vb-freixenet-cordon-negro-750ml.webp",
+          title: "Freixenet Cordon Negro 750 ml",
+          description: "Cava brut, fresco y burbujeante.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-4" },
         },
         {
           id: "5",
-          image: "assets/rones/kraken.webp",
-          title: "Ron Kraken - Sabor Intenso",
-          description:
-            "Ron oscuro con un sabor profundo y único, ideal para cócteles intensos.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-5" },
+          image: "/assets/ofertas/Febrero/vb-freixenet-pinot-grigio-750ml.webp",
+          title: "Freixenet Pinot Grigio 750 ml",
+          description: "Vino blanco ligero y afrutado.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-5" },
         },
         {
           id: "6",
-          image: "assets/rones/bacardi-coco.webp",
-          title: "Ron Bacardi Coco - Sabor Tropical",
-          description:
-            "Ron Bacardi con un toque refrescante de coco, perfecto para cócteles tropicales.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
+          image: "/assets/ofertas/Febrero/vb-freixenet-prosecco-750ml.webp",
+          title: "Freixenet Prosecco 750 ml",
+          description: "Espumoso italiano, fresco y vibrante.",
+          button: { text: "¡Cotízalo Ahora!", link: "/producto-1" },
         },
-        {
-          id: "7",
-          image: "assets/licores/flamingo-curacao.webp",
-          title: "Licor Flamingo Curacao - Toque Exótico",
-          description:
-            "Licor con sabor exótico ideal para cócteles frescos y coloridos.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-2" },
-        },
-        {
-          id: "8",
-          image: "assets/licores/baileys-original.webp",
-          title: "Baileys Original - Licor de Crema Irlandesa",
-          description:
-            "Licor cremoso y suave, perfecto para disfrutar solo o en cócteles.",
-          button: { text: "¡Cotizalo Ahora!", link: "/producto-3" },
-        },
+        // {
+        //   id: "7",
+        //   image: "assets/licores/flamingo-curacao.webp",
+        //   title: "Flamingo Curaçao",
+        //   description: "Licor azul, ideal para cócteles tropicales.",
+        //   button: { text: "¡Cotízalo Ahora!", link: "/producto-2" },
+        // },
+        // {
+        //   id: "8",
+        //   image: "assets/licores/baileys-original.webp",
+        //   title: "Baileys Original",
+        //   description: "Crema irlandesa, suave y deliciosa.",
+        //   button: { text: "¡Cotízalo Ahora!", link: "/producto-3" },
+        // },
         // {
         //   id: "9",
         //   image: "https://via.placeholder.com/150",
@@ -258,3 +259,30 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
 
   <Footer />
 </Layout>
+
+<style>
+  .premium-categories {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    margin-top: 80px;
+  }
+  .premium-categories span {
+    font-size: 26px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #2c3137; /* Color del texto */
+    position: relative;
+    padding: 0 15px; /* Espaciado entre el texto y las líneas */
+    letter-spacing: 5px; /* Espaciado entre cada letra */
+  }
+  .premium-categories:before,
+  .premium-categories:after {
+    content: "";
+    flex: 1;
+    height: 2px; /* Grosor de las líneas */
+    background: #2c3137; /* Color de las líneas */
+    margin: 0 20px; /* Ajusta el espaciado entre el texto y las líneas */
+  }
+</style>

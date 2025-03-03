@@ -20,9 +20,9 @@ export const Nosotros: FC = () => {
                             boxAsLink={true}
                             target="_blank"
                         >
-                            <h3>MISION</h3>
+                            <h3>¿QUIENES SOMOS?</h3>
                             <p>
-                            Proveer una experiencia única y satisfactoria en la compra de vinos y licores, ofreciendo una amplia variedad de opciones, promociones exclusivas durante todo el año y un servicio personalizado que haga que cada visita sea memorable.
+                            Una empresa comercializadora de vinos y licores en la zona metropolitana del Valle de Toluca en el Estado de México.
                             </p>
                         </TextBox>
                     </FadeIn>
@@ -33,9 +33,9 @@ export const Nosotros: FC = () => {
                             boxAsLink={true}
                             target="_blank"
                         >
-                            <h3>VISIÓN</h3>
+                            <h3>MISIÓN</h3>
                             <p>
-                            Convertirnos en líderes del mercado regional, expandiendo nuestra presencia a más localidades y llevando nuestra pasión por los vinos y licores a más clientes, siempre con un enfoque en la calidad, la innovación y la satisfacción de quienes confían en nosotros.
+                            Proporcionar a nuestros clientes una experiencia única de compra, ofreciendo la mejor selección de vinos y licores, promociones todos los días del año con una atención y servicio personalizado.
                             </p>
                         </TextBox>
                     </FadeIn>
@@ -46,9 +46,9 @@ export const Nosotros: FC = () => {
                             boxAsLink={true}
                             target="_blank"
                         >
-                            <h3>COMPROMISO CON LA COMUNIDAD</h3>
+                            <h3>VISIÓN</h3>
                             <p>
-                            Nos enorgullece ser parte activa de nuestra comunidad, apoyando eventos locales, promoviendo el consumo responsable y colaborando con iniciativas que fomenten el desarrollo social y económico de la región.
+                            Ser la empresa líder en comercialización de vinos y licores a través de la apertura nuevas sucursales y con presencia en más localidades.
                             </p>
                         </TextBox>
                     </FadeIn>
@@ -61,7 +61,7 @@ export const Nosotros: FC = () => {
                         >
                             <h3>AGRADECIMIENTO</h3>
                             <p>
-                            Agradecemos la preferencia y confianza de nuestros clientes, quienes son el motor que nos impulsa a seguir creciendo. Nos comprometemos a ofrecerles siempre lo mejor en vinos y licores, acompañado de un servicio de excelencia.
+                            Agradecemos a nuestros clientes y amigos su preferencia y nos comprometemos a seguirles llevando la mejor selección de vinos y licores.
                             </p>
                         </TextBox>
                     </FadeIn>

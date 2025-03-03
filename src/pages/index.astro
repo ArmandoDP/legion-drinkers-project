@@ -9,6 +9,8 @@ import {
   ProductsSlider,
   SliderImage,
   BannerPrimero,
+  FondoDrinkers,
+  SlidePrincipal,
 } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Hero } from "@modules/Hero";
@@ -18,6 +20,12 @@ import Outro from "../components/organisms/Outro.astro";
 import Footer from "../components/organisms/Footer.astro";
 import CategoryProducts from "../components/organisms/CategoryProducts.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
+
+import AgeModal from "@components/AgeModal";
+import { createElement } from "react";
+import { renderToString } from "react-dom/server";
+
+const AgeModalString = renderToString(createElement(AgeModal));
 ---
 
 <Layout title="Legion Drinkers" description="YOUR META DESCRIPTION FOR SEO">
@@ -28,8 +36,8 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       data={[
         {
           subtitle: "Legion Drinkers",
-          title: "Promociones",
-          background: BannerPrimero.src,
+          title: "Promos",
+          background: SlidePrincipal.src,
           paragraph:
             "Descubre nuestras promociones exclusivas y encuentra tus productos favoritos con increíbles descuentos. Aprovecha esta oportunidad para disfrutar de calidad al mejor precio. ¡Actualizamos nuestras ofertas constantemente para ti!",
           button: {
@@ -48,41 +56,75 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
         //     link: "/products/tequila-1800-cristalino",
         //   },
         // },
-        // {
-        //   subtitle: "Legion Drinkers",
-        //   title: "Ofertas",
-        //   background: ProductsSlider.src,
-        //   paragraph:
-        //     "Aprovecha nuestras ofertas y encuentra tus bebidas favoritas a precios increíbles. Calidad y ahorro en un solo lugar, con promociones que se renuevan para ti. ¡No te lo pierdas! En LEGION DRINKERS sabemos lo que quieres.",
-        //   button: {
-        //     text: "VER OFERTAS!",
-        //     link: "/ofertas",
-        //   },
-        // },
+        {
+          subtitle: "Legion Drinkers",
+          title: "Ofertas",
+          background: SlidePrincipal.src,
+          paragraph:
+            "Aprovecha nuestras ofertas y encuentra tus bebidas favoritas a precios increíbles. Calidad y ahorro en un solo lugar, con promociones que se renuevan para ti. ¡No te lo pierdas! En LEGION DRINKERS sabemos lo que quieres.",
+          button: {
+            text: "VER OFERTAS!",
+            link: "/ofertas",
+          },
+        },
+        {
+          subtitle: "Legion Drinkers",
+          title: "Categorias",
+          background: SlidePrincipal.src,
+          paragraph:
+            "Explora nuestra amplia selección de bebidas divididas en categorías para que encuentres fácilmente lo que buscas. Desde destilados y licores hasta vinos y cervezas, tenemos algo para cada ocasión y preferencia. ¡Descubre tu favorita!",
+          button: {
+            text: "VER CATEGORIAS!",
+            link: "/categorias",
+          },
+        },
+        {
+          subtitle: "Legion Drinkers",
+          title: "Ubicaciones",
+          background: SlidePrincipal.src,
+          paragraph:
+            "Encuentra nuestras sucursales y puntos de venta más cercanos. En LEGION DRINKERS, estamos donde nos necesitas, ofreciéndote una gran variedad de bebidas a los mejores precios. ¡Visítanos y disfruta de una experiencia única!",
+          button: {
+            text: "VER UBICACIONES!",
+            link: "/ubicaciones",
+          },
+        },
+        {
+          subtitle: "Legion Drinkers",
+          title: "Quienes Somos?",
+          background: SlidePrincipal.src,
+          paragraph:
+            "En LEGION DRINKERS nos apasiona ofrecerte bebidas de calidad al mejor precio. Somos más que una tienda, somos una comunidad que comparte el gusto por los buenos momentos. Descubre nuestra historia y valores.",
+          button: {
+            text: "CONOCENOS!",
+            link: "/nosotros",
+          },
+        },
       ]}
     />
 
     <WAButton url="https://wa.link/uen192" />
     <!-- Featured products -->
-    <FeaturedProducts />
+    <!-- <FeaturedProducts /> -->
 
     <!-- <CategoryProducts /> -->
 
+    <AgeModal client:load />
     <!-- product spotlight section -->
-    <ProductSpotlight />
+    <!-- <ProductSpotlight /> -->
 
-    <Hero
+    <!-- <Hero
       heroType="textImage"
       client:visible
       data={{
         switchPlaces: true,
         image: {
-          src: "public/assets/branding/Codigo-Honor.jpg",
+          src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
           height: 500,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¿Quieres Alguno En Especifico?",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
           "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
@@ -93,12 +135,12 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
           },
         ],
       }}
-    />
+    /> -->
 
     <!-- Outro section -->
-    <Outro />
+    <!-- <Outro /> -->
 
     <!-- Footer -->
-    <Footer />
+    <!-- <Footer /> -->
   </main>
 </Layout>

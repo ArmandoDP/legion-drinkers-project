@@ -5,15 +5,13 @@ import {
   HeroSlider3,
   InfiniteImg1,
   InfiniteImg2,
-  promo1,
-  promo2,
-  promo3,
-  promo4,
+  BannerPrincipal,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import Footer from "../components/organisms/Footer.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
 import CategoryProducts from "@components/organisms/CategoryProducts.astro";
+import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
 
 export const metadata = {
   title: "Promociones de Tequila - Legión Drinkers | Enfría tu motor", // Título de la página
@@ -41,7 +39,7 @@ export const metadata = {
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: "assets/branding/Precio-mayoreo.jpg",
+        image: BannerPrincipal.src,
         content: {
           title: "PROMOCIONES",
           paragraph:
@@ -87,66 +85,50 @@ export const metadata = {
       data={[
         {
           id: "1",
-          image: promo4.src,
-          title: "Tequila 1800 Cristalino",
-          description:
-            "Aprovecha esta promoción y disfruta del suave Tequila 1800 Cristalino a precio especial.",
+          image: "/assets/promociones/promocion-enero-4.jpg",
+          title: "ENFRIA TU MOTOR",
           button: { text: "¡Cotizar Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: promo3.src,
-          title: "Don Julio Blanco",
-          description:
-            "No pierdas esta oferta exclusiva y disfruta de la pureza de Don Julio Blanco.",
+          image: "/assets/promociones/promocion-enero-3.jpg",
+          title: "LUBRICA MEJOR",
           button: { text: "¡Cotizar Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
-          image: promo2.src,
-          title: "Maestro Dobel Diamante",
-          description:
-            "Descubre Maestro Dobel Diamante con descuento especial. Ideal para tequila premium.",
+          image: "./assets/promociones/promocion-enero-2.jpg",
+          title: "CHECATE EL ACEITE",
           button: { text: "¡Cotizar Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
-          image: promo1.src,
-          title: "Buchanan's 12 Años",
-          description:
-            "Aprovecha y saborea Buchanan's 12 años con esta oferta limitada. ¡Calidad al mejor precio!",
+          image: "./assets/promociones/promocion-enero-1.jpg",
+          title: "¿TE FALTA GASOLINA?",
           button: { text: "¡Cotizar Ahora!", link: "/producto-4" },
         },
         {
           id: "1",
-          image: promo4.src,
-          title: "Tequila 1800 Cristalino",
-          description:
-            "Aprovecha esta promoción y disfruta del suave Tequila 1800 Cristalino a precio especial.",
+          image: "/assets/promociones/promocion-enero-4.jpg",
+          title: "ENFRIA TU MOTOR",
           button: { text: "¡Cotizar Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: promo3.src,
-          title: "Don Julio Blanco",
-          description:
-            "No pierdas esta oferta exclusiva y disfruta de la pureza de Don Julio Blanco.",
+          image: "/assets/promociones/promocion-enero-3.jpg",
+          title: "LUBRICA MEJOR",
           button: { text: "¡Cotizar Ahora!", link: "/producto-2" },
         },
         {
           id: "3",
-          image: promo2.src,
-          title: "Maestro Dobel Diamante",
-          description:
-            "Descubre Maestro Dobel Diamante con descuento especial. Ideal para tequila premium.",
+          image: "./assets/promociones/promocion-enero-2.jpg",
+          title: "CHECATE EL ACEITE",
           button: { text: "¡Cotizar Ahora!", link: "/producto-3" },
         },
         {
           id: "4",
-          image: promo1.src,
-          title: "Buchanan's 12 Años",
-          description:
-            "Aprovecha y saborea Buchanan's 12 años con esta oferta limitada. ¡Calidad al mejor precio!",
+          image: "./assets/promociones/promocion-enero-1.jpg",
+          title: "¿TE FALTA GASOLINA?",
           button: { text: "¡Cotizar Ahora!", link: "/producto-4" },
         },
         // {
@@ -189,7 +171,7 @@ export const metadata = {
       client:visible
       data={{
         image: {
-          src: promo4.src, // Ruta optimizada para la imagen
+          src: "/assets/promociones/promocion-enero-4.jpg", // Ruta optimizada para la imagen
           width: 700,
           height: 600,
           alt: "Promoción de Tequilas y Combos - Legión Drinkers", // Descripción clara para SEO
@@ -213,7 +195,7 @@ export const metadata = {
       data={{
         switchPlaces: true,
         image: {
-          src: promo3.src, // Asegúrate de reemplazar con la URL correcta
+          src: "/assets/promociones/promocion-enero-3.jpg", // Asegúrate de reemplazar con la URL correcta
           width: 700,
           height: 600,
           alt: "Promoción de bebidas alcohólicas con precios especiales - Lubrica Mejor",
@@ -236,7 +218,7 @@ export const metadata = {
       client:visible
       data={{
         image: {
-          src: promo2.src, // Reemplaza con la URL correcta
+          src: "/assets/promociones/promocion-enero-2.jpg", // Reemplaza con la URL correcta
           width: 700,
           height: 600,
           alt: "Promoción de Maestro Dobel Diamante con precio especial - Chécate el Aceite",
@@ -260,7 +242,7 @@ export const metadata = {
       data={{
         switchPlaces: true,
         image: {
-          src: promo1.src, // Reemplaza con la URL correcta de la imagen
+          src: "/assets/promociones/promocion-enero-1.jpg", // Reemplaza con la URL correcta de la imagen
           width: 700,
           height: 600,
           alt: "Promoción de cerveza Modelo con la frase '¿Te falta gasolina?' - Legión Drinkers",
@@ -281,7 +263,8 @@ export const metadata = {
 
   <WAButton url="https://wa.link/uen192" />
 
-  <CategoryProducts />
+  <FeaturedProducts />
+  <!-- <CategoryProducts /> -->
 
   <Footer />
 </Layout>

@@ -19,6 +19,9 @@ import LicorBanner from "./licor-banner.webp";
 import BrandyBanner from "./brandy-banner.webp";
 import VinoBanner from "./vino-banner.webp";
 import BannerPrimero from "./Tarjeta-Presentacion.jpg"
+import FondoDrinkers from "./FONDO_drinkers.webp"
+import BannerPrincipal from "./tarjeta_drinkers_banner.webp"
+import SlidePrincipal from "./tarjeta_drinkers-principal.webp"
 
 import ProductsSlider from "./ofertas-banner.webp"
 import SliderImage from "./slide-2.webp"
@@ -26,10 +29,6 @@ import SliderImage from "./slide-2.webp"
 import InfiniteImg1 from "./infinite-img-1.webp";
 import InfiniteImg2 from "./infinite-img-2.webp";
 
-import promo1 from "../../../public/assets/promociones/promocion-enero-1.jpg"
-import promo2 from "../../../public/assets/promociones/promocion-enero-2.jpg"
-import promo3 from "../../../public/assets/promociones/promocion-enero-3.jpg"
-import promo4 from "../../../public/assets/promociones/promocion-enero-4.jpg"
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
 import UbiStaCruz from "./ubicaciones/ubicacion-santa-cruz.jpg";
@@ -108,10 +107,6 @@ export {
     HeroSlider9,
     InfiniteImg1,
     InfiniteImg2,
-    promo1,
-    promo2,
-    promo3,
-    promo4,
     UbiCrespa,
     UbiStaCruz,
     UbiPartidas,
@@ -127,4 +122,7 @@ export {
     ProductsSlider,
     SliderImage,
     BannerPrimero,
+    FondoDrinkers,
+    BannerPrincipal,
+    SlidePrincipal,
 };

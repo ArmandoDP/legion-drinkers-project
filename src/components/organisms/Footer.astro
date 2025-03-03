@@ -1,9 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import { Logo } from "@components/Logo";
-import facebook from "../../../public/assets/shared/desktop/icon-facebook.svg";
-import twitter from "../../../public/assets/shared/desktop/icon-twitter.svg";
-import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg";
+// import facebook from "../../../public/assets/shared/desktop/icon-facebook.svg";
+// import twitter from "../../../public/assets/shared/desktop/icon-twitter.svg";
+// import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg";
+// import whatsapp from "../../../public/assets/shared/desktop/icon-whatsapp.svg";
+// import facebookColor from "../../../public/assets/shared/desktop/icon-facebook.svg";
 ---
 
 <footer class="footer">
@@ -13,13 +15,14 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
       <span>LEGION DRINKERSⓇ</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="/">Inicio</a></li>
       <li><a href="/promociones">Promos</a></li>
       <li><a href="/ofertas">Ofertas</a></li>
-      <li><a href="/productos">Categorias</a></li>
+      <li><a href="#categorias">Categorias</a></li>
       <li><a href="/ubicaciones">ubicaciones</a></li>
       <!-- <li><a href="/contacto">Contacto</a></li> -->
       <li><a href="/nosotros">¿Quiénes somos?</a></li>
+      <li><a href="/FAQS">FAQs</a></li>
     </ul>
     <!-- <ul class="nav-links-center">
       <li>
@@ -48,9 +51,19 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
     </div>
     <div class="social">
       <div class="icons">
-        <a href="#"><Image src={facebook} alt="Facebook icon" /></a>
-        <a href="#"><Image src={twitter} alt="Twitter icon" /></a>
-        <a href="#"><Image src={instagram} alt="Instagram icon" /></a>
+        <a href="https://www.facebook.com/share/12EzfqLicBs/?mibextid=wwXIfr">
+          <img
+            src="/assets/shared/desktop/icon-facebook.svg"
+            alt="Facebook icon"
+          />
+        </a>
+        <!--<a href="#"><Image src={twitter} alt="Twitter icon" /></a>-->
+        <a href="https://wa.link/uen192">
+          <img
+            src="/assets/shared/desktop/icon-whatsapp.svg"
+            alt="Whatsapp icon"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -180,7 +193,7 @@ import instagram from "../../../public/assets/shared/desktop/icon-instagram.svg"
   }
 
   .icons a img {
-    width: 24px;
+    width: 36px;
     transition: transform 0.3s ease;
   }
 

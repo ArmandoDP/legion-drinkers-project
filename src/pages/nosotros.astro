@@ -1,5 +1,5 @@
 ---
-import { HeroSlider1 } from "@static/images";
+import { HeroSlider1, BannerPrincipal } from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Nosotros as NosotrosModule } from "@modules/Nosotros";
 import { Contact as ContactModule } from "@modules/Contact";
@@ -17,7 +17,7 @@ import WAButton from "@components/banners/ButtonWhatsapp.astro";
       heroType="ParallaxImage"
       client:load
       data={{
-        image: "assets/branding/legion-brand.webp",
+        image: BannerPrincipal.src,
         content: {
           title: "¿QUIÉN ES LA LEGIÓN?",
           paragraph:

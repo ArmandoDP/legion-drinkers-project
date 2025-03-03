@@ -55,8 +55,8 @@ export const ContactBox = styled.div`
     text-align: left;
 
     img {
-            height: 34px;
-            width: 34px;
+            height: 40px;
+            width: 40px;
             border-radius: 2px;
         }
 
@@ -82,6 +82,7 @@ export const StyleBox = styled.div`
     border-radius: 40px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
     transition: transform 0.3s, box-shadow 0.3s;
+    
 
     &:hover {
         transform: scale(1.05);

@@ -5,7 +5,8 @@ import {
   HeroSlider3,
   InfiniteImg1,
   InfiniteImg2,
-  VodkaBanner,
+  WhiksyBanner,
+  BannerPrincipal,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import Footer from "../components/organisms/Footer.astro";
@@ -16,7 +17,6 @@ import Text from "../components/atoms/Text.astro";
 import Button from "../components/atoms/Button.astro";
 import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
-import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 ---
 
 <Layout
@@ -28,11 +28,11 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: VodkaBanner.src,
+        image: BannerPrincipal.src,
         content: {
-          title: "VODKA",
+          title: "WHISKY",
           paragraph:
-            "Descubre las mejores marcas de vodka en nuestras ofertas exclusivas. Desde clásicos hasta opciones premium, encuentra el vodka ideal para cualquier ocasión. ¡Aprovecha nuestras promociones y eleva tus momentos con el mejor sabor!",
+            "Explora nuestra exclusiva selección de whisky de las mejores marcas. Encuentra ofertas irresistibles en whiskies premium y disfruta de su sabor único en cada sorbo. ¡Haz de cada momento una experiencia especial con nuestras promociones!",
         },
       }}
     />
@@ -53,12 +53,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       <div class="product-spotlight-area">
         <div class="product-spotlight-2">
           <div class="flex flex-col">
-            <!-- <Text type="h3">ZX7 SPEAKER</Text>
-            <a href="/products/zx7-speaker"
-              ><Button class="mt-7" type="secondary-inverted">
-                SEE PRODUCT
-              </Button></a
-            > -->
+            <!-- <Text type="h3">Buchanan's 12 Años Deluxe</Text>
+            <a href="/products/buchanans-12-deluxe">
+              <Button className="mt-7" type="secondary-inverted">
+                VER PRODUCTO
+              </Button>
+            </a> -->
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 
     {
       data
-        .filter(({ category }) => category === "vodkas")
+        .filter(({ category }) => category === "whiskys")
         .map(async (item) => {
           return (
             <Hero
@@ -81,7 +81,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
                 },
                 title: `${item.name}`,
                 paragraph:
-                  "Descubre <strong>los mejores vodkas y ginebras premium</strong> en nuestra pagina. Encuentra nuestro vodka exclusivo, nuestra ginebra exclusiva ideal para cócteles y celebraciones. <strong>¡Explora nuestros productos ahora!</strong>",
+                  "Descubre los mejores whiskys premium en nuestra pagina. Encuentra nuestro whiskey exclusivo, ideal para degustar solo o en cócteles sofisticados. ¡Explora nuestros productos ahora!",
                 buttons: [
                   {
                     link: `/products/${item.slug}`, // Enlace dinámico
@@ -96,7 +96,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     }
 
     <div class="premium-categories">
-      <span>VODKAS DESTACADOS</span>
+      <span>WHISKYS DESTACADOS</span>
     </div>
 
     <Hero
@@ -105,57 +105,57 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       data={[
         {
           id: "1",
-          image: "/assets/vodkas/oso-negro-vodka.webp",
-          title: "OSO NEGRO 1 L",
+          image: "/assets/whiskys/black-&-white.webp",
+          title: "BLACK & WHITE 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
-          image: "/assets/vodkas/skyy.webp",
-          title: "SKYY 750 ml ",
+          image: "/assets/whiskys/old-parr-750ml.webp",
+          title: "OLD PARR 750 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "3",
-          image: "/assets/vodkas/smirnoff-normal.webp",
-          title: "SMIRNOFF RED X-1 750 ml",
+          image: "/assets/whiskys/jack-daniels-old-no7.webp",
+          title: "JACK DANIELS 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "4",
-          image: "/assets/vodkas/zaverich-vodka.webp",
-          title: "ZAVERICH PREMIUM 1 L",
+          image: "/assets/whiskys/jack-daniels-honey.webp",
+          title: "JACK DANIELS HONEY 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "5",
-          image: "/assets/vodkas/bombay-sapphire-vodka.webp",
-          title: "BOMBAY SAPPHIRE 700 ml",
+          image: "/assets/whiskys/jw-double-black.webp",
+          title: "JOHNNIE WALKER DOUBLE BLACK 750 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "6",
-          image: "/assets/vodkas/skyy-raspberry.webp",
-          title: "SKYY RASPBERRY",
+          image: "/assets/whiskys/passport-scotch.webp",
+          title: "PASSPORT SCOTCH 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "7",
-          image: "/assets/vodkas/absolut-raspberri.webp",
-          title: "ABSOLUT RASPBERRI 750 ml",
+          image: "/assets/whiskys/passport-honey.webp",
+          title: "PASSPORT HONEY 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "8",
-          image: "/assets/vodkas/absolut-citron.webp",
-          title: "ABSOLUT CITRON 750 ml",
+          image: "/assets/whiskys/william-lawson-whisky.webp",
+          title: "WILLIAM LAWSONS STD 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
@@ -180,20 +180,18 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 
     <FeaturedProducts />
 
-    <!-- <CategoryProducts /> -->
-
     <Hero
       heroType="textImage"
       client:visible
       data={{
         switchPlaces: true,
         image: {
-          src: "public/assets/branding/Codigo-Honor.jpg",
+          src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
           height: 500,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¿Quieres Alguno En Especifico?",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
           "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
@@ -218,11 +216,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     flex-direction: column;
     gap: 24px;
   }
+
   .product-spotlight-2 {
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: url("assets/branding/vodka-banner.jpg");
+    background: url("assets/branding/whiskey-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,6 +230,34 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     padding: 34px 124px;
     grid-column: 1 / 3;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .product-spotlight-2 {
+      background-size: contain; /* Asegura que la imagen se vea completa en pantallas más pequeñas */
+      height: 250px; /* Ajusta la altura */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .product-spotlight-2 {
+      height: 200px; /* Ajusta la altura en pantallas medianas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-spotlight-2 {
+      height: 150px; /* Ajusta la altura en pantallas pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-spotlight-2 {
+      height: 80px; /* Ajusta la altura para pantallas extra pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
   }
 
   .premium-categories {

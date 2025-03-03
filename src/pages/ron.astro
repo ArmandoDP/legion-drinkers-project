@@ -6,6 +6,7 @@ import {
   InfiniteImg1,
   InfiniteImg2,
   RonBanner,
+  BannerPrincipal,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 // import Footer from "../components/organisms/Footer.astro";
@@ -29,7 +30,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: RonBanner.src,
+        image: BannerPrincipal.src,
         content: {
           title: "RON",
           paragraph:
@@ -148,8 +149,8 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
         },
         {
           id: "7",
-          image: "/assets/rones/kraken-white.webp",
-          title: "KRAKEN WHITE 750 ml",
+          image: "/assets/rones/matusalem-clasico.webp",
+          title: "MATUSALEM CLASICO 750 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
@@ -189,12 +190,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: "public/assets/branding/Codigo-Honor.jpg",
+          src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
           height: 500,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¿Quieres Alguno En Especifico?",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
           "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
@@ -223,7 +224,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     width: 100%;
     height: 300px;
     border-radius: 35px;
-    background: url("assets/branding/cognac-banner.jpg");
+    background: url("assets/branding/ron-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -232,6 +233,34 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     padding: 34px 124px;
     grid-column: 1 / 3;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .product-spotlight-2 {
+      background-size: contain; /* Asegura que la imagen se vea completa en pantallas más pequeñas */
+      height: 250px; /* Ajusta la altura */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .product-spotlight-2 {
+      height: 200px; /* Ajusta la altura en pantallas medianas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-spotlight-2 {
+      height: 150px; /* Ajusta la altura en pantallas pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-spotlight-2 {
+      height: 80px; /* Ajusta la altura para pantallas extra pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
   }
 
   .premium-categories {

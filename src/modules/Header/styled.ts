@@ -5,7 +5,7 @@ import { FadeInKeyframes } from "@utils/animations/styled";
 export const HeaderStyled = styled.header`
     width: 100%;
 
-    padding: 20px 0;
+    padding: 10px 0;
 
     display: flex;
 

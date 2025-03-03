@@ -18,21 +18,6 @@ export const FullPageSliderStyled = styled.div`
     position: relative;
     overflow: hidden;
 
-    ${MediaQuery.max("xxl")}{
-        min-height: 115vh;
-    }
-
-    ${MediaQuery.max("xl")} {
-        min-height: 132vh;
-    }
-
-    ${MediaQuery.max("lg")} {
-        min-height: 100vh;
-    }
-    
-    ${MediaQuery.max("md")} {
-        min-height: 125vh;
-    }
 
     .swiper-pagination {
         position: absolute;
@@ -178,6 +163,12 @@ export const FullPageSliderSlideContent = styled.div`
             line-height: 50px;
             margin-bottom: 20px;
             margin-left: 0;
+        }
+        ${MediaQuery.max("xxl")} {
+            font-size: 140px;
+        }
+        ${MediaQuery.max("xl")} {
+            font-size: 40px;
         }
     }
 

@@ -6,6 +6,7 @@ import {
   InfiniteImg1,
   InfiniteImg2,
   HeroSlider6,
+  BannerPrincipal,
 } from "@static/images";
 import { ServiceCards } from "@modules/ServiceCards";
 import Footer from "../components/organisms/Footer.astro";
@@ -28,9 +29,9 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       heroType="ParallaxImage"
       client:visible
       data={{
-        image: HeroSlider6.src,
+        image: BannerPrincipal.src,
         content: {
-          title: "TEQUILAS",
+          title: "TEQUILA",
           paragraph:
             "Descubre nuestra selección de tequilas premium, perfectos para cualquier ocasión. Desde los sabores más suaves hasta los más intensos, encuentra el tequila ideal al mejor precio. ¡Explora nuestras ofertas y eleva tus momentos especiales!",
         },
@@ -107,28 +108,28 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
         {
           id: "1",
           image: "/assets/tequilas/1800-blanco.webp",
-          title: "1800 blanco 700ml",
+          title: "1800 blanco 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "2",
           image: "/assets/tequilas/1800-reposado.webp",
-          title: "1800 resposado 700ml",
+          title: "1800 resposado 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "3",
           image: "/assets/tequilas/cuervo-especial-fresa-picosa.webp",
-          title: "Cuervo Especial Fresa Picosa 700ml",
+          title: "Cuervo Especial Fresa Picosa 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "4",
           image: "/assets/tequilas/cuervo-reserva-familia-platino.webp",
-          title: "Cuervo Reserva de la Familia 700ml",
+          title: "Cuervo Reserva de la Familia 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
@@ -156,28 +157,28 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
         {
           id: "8",
           image: "/assets/tequilas/don-ramon-plata-platinum.webp",
-          title: "Don Ramon Plata Platinum 700ml",
+          title: "Don Ramon Plata Platinum 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "9",
           image: "/assets/tequilas/Tequila_Azul_Centenario.webp",
-          title: "Gran Centenario Azul 950ml",
+          title: "Gran Centenario Azul 950 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "10",
           image: "/assets/tequilas/gran-centenario-reposado.webp",
-          title: "Gran Centenario Reposado 950ml",
+          title: "Gran Centenario Reposado 950 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "11",
           image: "/assets/tequilas/Centenario_Baby_mango.webp",
-          title: "Gran Centenario Azul Baby Mango 700ml",
+          title: "Gran Centenario Azul Baby Mango 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
@@ -185,28 +186,28 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
           id: "12",
           image:
             "/assets/tequilas/gran-centenario-ultra-reposado-cristalino.webp",
-          title: "Gran Centenario Ultra Reposado Cristalino 695ml",
+          title: "Gran Centenario Ultra Reposado Cristalino 695 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "13",
           image: "/assets/tequilas/Tequila-Gran-Malo-Horchata-750-ml.webp",
-          title: "Gran Malo Horchata 750ml",
+          title: "Gran Malo Horchata 750 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "14",
           image: "/assets/tequilas/gran-malo-tamarindo.webp",
-          title: "Gran Malo Tamarindo 750ml",
+          title: "Gran Malo Tamarindo 750 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
         {
           id: "15",
           image: "/assets/tequilas/herradura-reposado.webp",
-          title: "Herradura Cristal Reposado 700ml",
+          title: "Herradura Cristal Reposado 700 ml",
           description: "",
           button: { text: "¡Cotizalo Ahora!", link: "/producto-1" },
         },
@@ -266,7 +267,7 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
 
     <FeaturedProducts />
 
-    <CategoryProducts />
+    <!-- <CategoryProducts /> -->
 
     <Hero
       heroType="textImage"
@@ -274,12 +275,12 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
       data={{
         switchPlaces: true,
         image: {
-          src: "public/assets/branding/Codigo-Honor.jpg",
+          src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
           height: 500,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¿Quieres Alguno En Especifico?",
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
         paragraph:
           "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
         buttons: [
@@ -319,6 +320,34 @@ import CategoryProducts from "@components/organisms/CategoryProducts.astro";
     padding: 34px 124px;
     grid-column: 1 / 3;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    .product-spotlight-2 {
+      background-size: contain; /* Asegura que la imagen se vea completa en pantallas más pequeñas */
+      height: 250px; /* Ajusta la altura */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .product-spotlight-2 {
+      height: 200px; /* Ajusta la altura en pantallas medianas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-spotlight-2 {
+      height: 150px; /* Ajusta la altura en pantallas pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-spotlight-2 {
+      height: 80px; /* Ajusta la altura para pantallas extra pequeñas */
+      background-size: contain; /* Asegura que la imagen se vea completa */
+    }
   }
   .premium-categories {
     display: flex;

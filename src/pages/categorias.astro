@@ -1,0 +1,65 @@
+---
+import { HeroSlider1, BannerPrincipal } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Nosotros as NosotrosModule } from "@modules/Nosotros";
+import { Contact as ContactModule } from "@modules/Contact";
+import { Hero } from "@modules/Hero";
+import Footer from "../components/organisms/Footer.astro";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import Outro from "@components/organisms/Outro.astro";
+import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
+---
+
+<Layout
+  title="Cybernetic | Homepage"
+  description="YOUR META DESCRIPTION FOR SEO"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:load
+      data={{
+        image: BannerPrincipal.src,
+        content: {
+          title: "CATEGORIAS",
+          paragraph:
+            "Explora nuestra amplia selección de bebidas divididas en categorías para que encuentres fácilmente lo que buscas. Desde destilados y licores hasta vinos y cervezas, tenemos algo para cada ocasión y preferencia. ¡Descubre tu favorita!",
+        },
+      }}
+    />
+
+    <FeaturedProducts />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: "assets/branding/Precio-mayoreo.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
+        },
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
+        paragraph:
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
+        buttons: [
+          {
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+    <!-- <ContactModule client:load /> -->
+
+    <!-- <NosotrosModule client:load /> -->
+    <!-- <Outro /> -->
+  </main>
+
+  <WAButton url="https://wa.link/uen192" />
+
+  <Footer />
+</Layout>

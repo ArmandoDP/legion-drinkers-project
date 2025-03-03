@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Theme } from "@styles/colors";
+import { MediaQuery } from "@styles/mediaQuery";
 
 export const LogoStyled = styled.div`
     position: relative;
@@ -34,6 +35,11 @@ export const LogoStyled = styled.div`
             height: 150px;
             width: 150px;
             object-fit: contain;
+        
+            ${MediaQuery.max("lg")} {
+                height: 100px;
+                width: 100px;
+            }
         }
     }
 `;
