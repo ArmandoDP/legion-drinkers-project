@@ -62,7 +62,7 @@ export const Navigation: FC = () => {
                         <a href="/ubicaciones">UBICACIONES</a>
                     </li>
                     <li>
-                        <a style={{ color: "#f9dc22" }} href="/nosotros">¿Quienes somos?</a>
+                        <a style={{ color: "#f9dc22" }} href="/nosotros">CONTACTO</a>
                     </li>
                 </S.NavigationList>
             </S.NavigationListWrapper>
