@@ -20,15 +20,30 @@ import Outro from "../components/organisms/Outro.astro";
 import Footer from "../components/organisms/Footer.astro";
 import CategoryProducts from "../components/organisms/CategoryProducts.astro";
 import WAButton from "@components/banners/ButtonWhatsapp.astro";
+import MetaConfig from "../layouts/MetaConfig.astro";
 
 import AgeModal from "@components/AgeModal";
 import { createElement } from "react";
 import { renderToString } from "react-dom/server";
 
 const AgeModalString = renderToString(createElement(AgeModal));
+
+const pageTitle = "Bienvenidos a Legion Drinkers";
+const pageDescription =
+  "Compra los mejores vinos, licores y destilados en México.";
+const pagePreview = SlidePrincipal.src;
 ---
 
-<Layout title="Legion Drinkers" description="YOUR META DESCRIPTION FOR SEO">
+<MetaConfig
+  title={pageTitle}
+  description={pageDescription}
+  preview={pagePreview}
+/>
+
+<Layout
+  title="Legion Drinkers"
+  description="Compra los mejores vinos, licores y destilados en México."
+>
   <main id="inicio" class="page-content">
     <Hero
       client:load

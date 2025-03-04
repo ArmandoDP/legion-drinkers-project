@@ -50,7 +50,7 @@ Use those components for media to keep best performance or in astro files use im
 
 2. search for ⚠️ CHANGEME ⚠️ in files & replace all instances
 
-3. Seo: search for ⚠️ YOUR META DESCRIPTION FOR SEO ⚠️ and change this with your meta description of page - do the same for all you'r pages
+3. Seo: search for ⚠️ Compra los mejores vinos, licores y destilados en México. ⚠️ and change this with your meta description of page - do the same for all you'r pages
 
 SITEMAP: Sitemap is created by astro, but you need yo configure it a little bit
 
