@@ -32,6 +32,31 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
         },
       }}
     />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: "assets/branding/Precio-mayoreo.jpg",
+          width: 700,
+          height: 500,
+          alt: "Catalogo Legion Drinkers",
+        },
+        title: "¡Llévate dos piezas y te damos un precio increíble!",
+        paragraph:
+          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
+        buttons: [
+          {
+            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
+            text: "Descargar Catálogo Completo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
     <ServiceCards
       description="LEGION DRINKERS"
       title="Las mejores ofertas solo las tiene la LEGION!!"
@@ -203,33 +228,9 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
     <FeaturedProducts />
 
     <!-- <CategoryProducts /> -->
-
-    <Hero
-      heroType="textImage"
-      client:visible
-      data={{
-        switchPlaces: true,
-        image: {
-          src: "assets/branding/Precio-mayoreo.jpg",
-          width: 700,
-          height: 500,
-          alt: "Catalogo Legion Drinkers",
-        },
-        title: "¡Llévate dos piezas y te damos un precio increíble!",
-        paragraph:
-          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
-        buttons: [
-          {
-            link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
-            text: "Descargar Catálogo Completo", // Texto del botón
-            variant: "secondary", // Variación del botón, si es necesario
-          },
-        ],
-      }}
-    />
   </main>
 
-  <WAButton url="https://wa.link/uen192" />
+  <WAButton url="https://wa.link/i3hd8c" />
 
   <Footer />
 </Layout>

@@ -5,6 +5,7 @@ import { MediaQuery } from "@styles/mediaQuery";
 export const CarouselSliderStyled = styled.div`
     width: 100%;
     min-height: 457px;
+    max-width: 100%;
     padding: 20px 20px;
     position: relative;
     overflow: hidden;
@@ -75,7 +76,6 @@ export const CarouselSliderStyled = styled.div`
 export const CarouselSliderSlide = styled.div<{ $bgImage?: string }>`
     height: 100%;
     position: relative;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@ export const ProductGroup = styled.div`
 
     ${MediaQuery.max("lg")} {
         gap: 15px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     ${MediaQuery.max("sm")} {
         grid-template-columns: 1fr;
@@ -192,7 +192,7 @@ export const ProductCard = styled.div`
     }
 
     img {
-        max-width: 340px;
+        max-width: 400px;
         margin-bottom: 15px;
         border-radius: 8px;
         

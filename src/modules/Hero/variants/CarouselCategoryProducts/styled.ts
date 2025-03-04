@@ -5,6 +5,7 @@ import { MediaQuery } from "@styles/mediaQuery";
 export const CarouselCategoryProductsStyled = styled.div`
     width: 100%;
     min-height: 457px;
+    max-width: 100%;
     padding: 20px 20px;
     position: relative;
     overflow: hidden;
@@ -12,6 +13,16 @@ export const CarouselCategoryProductsStyled = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    ${MediaQuery.max("lg")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("sm")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("xl")} {
+        padding: 0px;
+    }
 
     .swiper-pagination {
         position: absolute;
@@ -65,7 +76,6 @@ export const CarouselCategoryProductsStyled = styled.div`
 export const CarouselCategoryProductsSlide = styled.div<{ $bgImage?: string }>`
     height: 100%;
     position: relative;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +166,10 @@ export const ProductGroup = styled.div`
 
     ${MediaQuery.max("lg")} {
         gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    ${MediaQuery.max("sm")} {
+        grid-template-columns: 1fr;
     }
 `;
 
@@ -178,12 +192,21 @@ export const ProductCard = styled.div`
     }
 
     img {
-        max-width: 340px;
+        max-width: 400px;
         margin-bottom: 15px;
         border-radius: 8px;
         
         ${MediaQuery.max("lg")} {
             max-width: 290px;
+            margin: none;
+        }
+        ${MediaQuery.max("xxl")} {
+            max-width: 310px;
+            margin: none;
+        }
+        ${MediaQuery.max("sm")} {
+            max-width: 320px;
+            margin: none;
         }
     }
 

@@ -5,6 +5,7 @@ import { MediaQuery } from "@styles/mediaQuery";
 export const CarouselCategoryStyled = styled.div`
     width: 100%;
     min-height: 457px;
+    max-width: 100%;
     padding: 20px 20px;
     position: relative;
     overflow: hidden;
@@ -12,6 +13,16 @@ export const CarouselCategoryStyled = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    ${MediaQuery.max("lg")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("sm")} {
+        padding: 0px;
+    }
+    ${MediaQuery.max("xl")} {
+        padding: 0px;
+    }
 
     .swiper-pagination {
         position: absolute;
@@ -65,7 +76,6 @@ export const CarouselCategoryStyled = styled.div`
 export const CarouselCategorySlide = styled.div<{ $bgImage?: string }>`
     height: 100%;
     position: relative;
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +166,10 @@ export const CategoryGroup = styled.div`
 
     ${MediaQuery.max("lg")} {
         gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    ${MediaQuery.max("sm")} {
+        grid-template-columns: 1fr;
     }
 `;
 
@@ -169,7 +183,7 @@ export const CategoryCard = styled.div`
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
-    padding: 2px;
+    padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 
     &:hover {
@@ -178,17 +192,26 @@ export const CategoryCard = styled.div`
     }
 
     img {
-        max-width: 340px;
+        max-width: 400px;
         margin-bottom: 15px;
-         border-radius: 8px;
+        border-radius: 8px;
         
         ${MediaQuery.max("lg")} {
             max-width: 290px;
+            margin: none;
+        }
+        ${MediaQuery.max("xxl")} {
+            max-width: 310px;
+            margin: none;
+        }
+        ${MediaQuery.max("sm")} {
+            max-width: 320px;
+            margin: none;
         }
     }
 
     h3 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         margin: 10px 0;
         color: ${Theme.primary};
     }

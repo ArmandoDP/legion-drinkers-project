@@ -28,73 +28,52 @@ export const CarouselCategory: FC<CarouselCategoryProps> = ({ content }) => {
         return null;
     }
 
-    /**
-     * All slides are generated here based on the content prop
-     * @param slide - slide content
-     */
-
-    const groupedContent = [];
-    for (let i = 0; i < content.length; i += 4) {
-        groupedContent.push(content.slice(i, i + 4));
-    }
-    
-    
-
-    const slides = groupedContent.map((slide, index) => (
-        <S.CarouselCategorySlide key={index}>
-            <S.CategoryGroup>
-                {slide.map((category) => (
-                    <S.CategoryCard key={category.id}>
-                        <a href={category.link}>
-                            <img style={{ width: "200%", height: "400px", objectFit: "contain" }} src={category.image} alt={category.title} />
-                            <h3 style={{ color: "black" }}>{category.title}</h3>
-                            <p>VER MAS</p>
-                        </a>
-                    </S.CategoryCard>
-                ))}
-            </S.CategoryGroup>
-        </S.CarouselCategorySlide>
-    ));
 
     return (
-        <S.CarouselCategoryStyled>
-            <SwiperSlider
-                modules={[Pagination, Autoplay]}
-                options={{
-                    slidesPerView: 1,
-                    speed: 1000,
-                    spaceBetween: 20,
-                    effect: "slide",
-                    loop: true,
-                    grabCursor: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    autoplay: {
-                        delay: 4000,
-                    },
-                }}
-            >
-                {slides}
-            </SwiperSlider>
-            <div className="swiper-pagination"></div>
-            {/* {slides.length > 1 ? (
-                <>
-                    <S.CarouselCategoryTextToSlide>
-                        Swipe to slide
-                        <Icon iconData="arrowRight" alt="arrow icon" />
-                    </S.CarouselCategoryTextToSlide>
-                    <div className="swiper-pagination"></div>
-                </>
-            ) : (
-                <S.CarouselCategoryTextToSlide>
-                    Scroll down
-                    <Icon iconData="arrowDown" alt="arrow icon" />
-                </S.CarouselCategoryTextToSlide>
-            )} */}
-        </S.CarouselCategoryStyled>
-    );
+            <S.CarouselCategoryStyled>
+                <SwiperSlider
+                    modules={[Pagination, Autoplay]}
+                    options={{
+                        slidesPerView: 1, // 1 producto por slide en móvil
+                        speed: 1000,
+                        spaceBetween: 20,
+                        effect: "slide",
+                        loop: true,
+                        grabCursor: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        autoplay: {
+                            delay: 5000,
+                        },
+                        breakpoints: {
+                            768: { // A partir de 768px (tabletas y más grandes)
+                                slidesPerView: 2,
+                            },
+                            1024: { // A partir de 1024px (escritorio)
+                                slidesPerView: 4, // 4 productos por slide en escritorio
+                            },
+                        },
+                    }}
+                >
+                    {content.map((category, index) => (
+                        <S.CarouselCategorySlide key={index}>
+                            <S.CategoryGroup>
+                                <S.CategoryCard>
+                                    <a href={category.link}>
+                                        <img style={{ width: "200%", height: "400px", objectFit: "contain" }} src={category.image} alt={category.title} />
+                                        <h3 style={{ color: "black" }}>{category.title}</h3>
+                                        <p>VER MAS</p>
+                                    </a>
+                                </S.CategoryCard>
+                            </S.CategoryGroup>
+                        </S.CarouselCategorySlide>
+                    ))}
+                </SwiperSlider>
+                <div className="swiper-pagination"></div>
+            </S.CarouselCategoryStyled>
+        );
 };
 
 
