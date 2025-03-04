@@ -75,7 +75,7 @@ export const Contact: FC = () => {
                                 <a style={{ marginRight: "10px" }} href="https://www.facebook.com/share/12EzfqLicBs/?mibextid=wwXIfr"><img src="/assets/shared/desktop/icon-facebook.svg" alt="Facebook icon" /></a>
                                 {/* <a href="https://www.x.com/legion-drinkers"><Image src={twitter.src} alt="Twitter icon" /></a> */}
                                 {/* <a href="https://www.instagram.com/legion-drinkers"><Image src={instagram.src} alt="Instagram icon" /></a> */}
-                                <a href="https://wa.link/i3hd8c"><img src="/assets/shared/desktop/icon-whatsapp.svg" alt="Whatsapp icon" /></a>
+                                <a href="https://wa.link/8or624"><img src="/assets/shared/desktop/icon-whatsapp.svg" alt="Whatsapp icon" /></a>
                             </div>
                         </TextBox>
                     </FadeIn>
