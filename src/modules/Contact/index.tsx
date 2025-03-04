@@ -47,7 +47,7 @@ export const Contact: FC = () => {
                             </TextBox>
                         </S.StyleBox>
                     </FadeIn>
-                    <FadeIn delay={0.1}>
+                    {/* <FadeIn delay={0.1}>
                         <S.StyleBox>
                             <TextBox
                                 variant="background-text"
@@ -61,7 +61,7 @@ export const Contact: FC = () => {
                                 <h4>Buscar Sucursales</h4>
                             </TextBox>
                         </S.StyleBox>
-                    </FadeIn>
+                    </FadeIn> */}
                     <FadeIn delay={0.2}>
                         <TextBox
                             variant="background-text"
