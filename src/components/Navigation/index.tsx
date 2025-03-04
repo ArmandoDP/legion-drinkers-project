@@ -5,7 +5,8 @@ import { Hamburger } from "./components/Hamburger";
 export const Navigation: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const dropdownRef = useRef(null);
+    //const dropdownRef = useRef(null);
+    const dropdownRef = useRef<HTMLDivElement | null>(null);
 
     // Cierra el dropdown si se hace clic fuera del componente
     useEffect(() => {
