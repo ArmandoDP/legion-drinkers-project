@@ -1,6 +1,6 @@
 # 🍻 Legion Drinkers - Catálogo y Venta de Alcohol
 
-![Cybernetic Template](/src/static/images/tarjeta_drinkers-principal.webp")
+![Legion Drinkers](src/static/images/logo.png)
 
 ## 🚀 Características
 
