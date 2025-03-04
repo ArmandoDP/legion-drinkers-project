@@ -34,16 +34,16 @@ export const Contact: FC = () => {
                     </FadeIn>
                     <FadeIn delay={0.2}>
                         <S.StyleBox>
-                            <TextBox
-                                variant="background-text"
-                                bgText="Email"
-                                boxAsLink={true}
-                                href="legiondrinkers@gmail.com"
-                                target="_blank"
-                                >
-                                <h3>legiondrinkers@gmail.com</h3>
-                                <p>¡Escríbenos! Estamos aquí para responder tus preguntas, atender tus pedidos y brindarte información que necesitas. ¡Tu mensaje es importante para nosotros!</p>
-                                <h4>Enviar un correo</h4>
+                        <TextBox
+                            variant="background-text"
+                            bgText="Email"
+                            boxAsLink={true}
+                            href="mailto:legiondrinkers@gmail.com"
+                            target="_blank"
+                            >
+                            <h3>legiondrinkers@gmail.com</h3>
+                            <p>¡Escríbenos! Estamos aquí para responder tus preguntas, atender tus pedidos y brindarte información que necesitas. ¡Tu mensaje es importante para nosotros!</p>
+                            <h4>Enviar un correo</h4>
                             </TextBox>
                         </S.StyleBox>
                     </FadeIn>
