@@ -1,10 +1,10 @@
 ---
 import { siteUrl } from "../../astro.config.mjs";
-
+import { SlidePrincipal } from "@static/images";
 interface Props {
-    title: string;
-    description: string;
-    preview: string;
+  title: string;
+  description: string;
+  preview: string;
 }
 
 const { title, description, preview } = Astro.props;
@@ -13,23 +13,23 @@ const { title, description, preview } = Astro.props;
  * keep whole metadata in one place
  */
 const metaData = {
-    keywords:
-        "astro.build, astro, static site, react, webiste templates, website creation, react templates, next.js templates, astro templates, custom website, custom website templates",
-    default: {
-        url: siteUrl,
-        type: "website",
-        title: title,
-        description: description,
-        image: preview,
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: title,
-        description: description,
-        image: preview,
-        domain: siteUrl,
-        url: siteUrl,
-    },
+  keywords:
+    "Legion Drinkers, vinatería, alcoholes, licores, tequila, whisky, vinos, compra alcohol online, bebidas premium, comprar vino, tienda de vinos, entrega de alcohol en México, comprar licor online, tequila en línea, licores de importación, tienda de licores, tienda online de alcohol, alcohol cerca de mi, tequila cerca d emi, ofertas de alcohol, ofertas de alcohol cerca de mi, ofertas cerca de mi",
+  default: {
+    url: siteUrl,
+    type: "website",
+    title: title,
+    description: description,
+    image: SlidePrincipal.src,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: title,
+    description: description,
+    image: SlidePrincipal.src,
+    domain: siteUrl,
+    url: siteUrl,
+  },
 };
 ---
 
@@ -47,8 +47,8 @@ const metaData = {
 <meta name="keywords" content={metaData.keywords} />
 
 <meta
-    name="robots"
-    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  name="robots"
+  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 />
 
 <!-- default ones -->
