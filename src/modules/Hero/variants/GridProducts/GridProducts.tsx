@@ -13,6 +13,8 @@ export type GridProductsProps = {
         image: string;
         title: string;
         description?: string;
+        priceOld?: string;
+        priceNew?: string;
         button?: {
             text: string;
             link: string;
@@ -45,6 +47,10 @@ export const GridProducts: FC<GridProductsProps> = ({ content }) => {
                         <img src={product.image} alt={product.title} />
                         <h3 style={{ color: "black" }}>{product.title}</h3>
                         <p>{product.description}</p>
+                        <S.PriceSpace>
+                            <p style={{ textDecoration: 'line-through', fontSize: "16px" }}>{product.priceOld}</p>
+                            <p style={{ fontSize: "20px", color: "red" }}>{product.priceNew}</p>
+                        </S.PriceSpace>
                         {product.button && product.button.text && product.button.link && (
                             <a href={product.button.link}>
                                 <button style={{ backgroundColor: "#f9dc22", color:"black", border: "1px solid black", }}>{product.button.text}</button>

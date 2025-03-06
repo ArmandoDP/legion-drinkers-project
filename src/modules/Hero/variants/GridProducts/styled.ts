@@ -258,3 +258,13 @@ export const ProductCard = styled.div`
         }
     }
 `;
+
+export const PriceSpace = styled.div`
+    display: flex;
+    gap: 8px; /* Espacio entre los precios */
+    align-items: center; /* Alinear los precios correctamente */
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+`;

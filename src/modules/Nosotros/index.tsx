@@ -20,7 +20,7 @@ export const Nosotros: FC = () => {
                             boxAsLink={true}
                             target="_blank"
                         >
-                            <h3>CONTACTO</h3>
+                            <h3>¿QUIÉNES SOMOS?</h3>
                             <p>
                             Una empresa comercializadora de vinos y licores en la zona metropolitana del Valle de Toluca en el Estado de México.
                             </p>
