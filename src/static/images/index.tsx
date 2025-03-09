@@ -12,10 +12,6 @@ import HeroSlider6 from "./ejemplo4.jpg";
 import HeroSlider7 from "./ejemplo5.png";
 import HeroSlider8 from "./ejemplo6.gif";
 import HeroSlider9 from "./ejemplo7.gif";
-import WhiksyBanner from "./whisky-banner.webp";
-import VodkaBanner from "./vodka-banner-webp.png";
-import RonBanner from "./ron-banner.webp";
-import LicorBanner from "./licor-banner.webp";
 import BrandyBanner from "./brandy-banner.webp";
 import VinoBanner from "./vino-banner.webp";
 import BannerPrimero from "./Tarjeta-Presentacion.jpg"
@@ -28,6 +24,14 @@ import SliderImage from "./slide-2.webp"
 
 import InfiniteImg1 from "./infinite-img-1.webp";
 import InfiniteImg2 from "./infinite-img-2.webp";
+
+import CognacBanner from "./COGNAC-banner.webp";
+import VodkaBanner from "./VODKA-banner.webp";
+import TequilaBanner from "./TEQUILA-banner.webp";
+import MezcalBanner from "./MEZCAL-banner.webp";
+import WhiksyBanner from "./whisky-banner.webp";
+import RonBanner from "./ron-banner.webp";
+import LicorBanner from "./licor-banner.webp";
 
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
@@ -125,4 +129,7 @@ export {
     FondoDrinkers,
     BannerPrincipal,
     SlidePrincipal,
+    CognacBanner,
+    TequilaBanner,
+    MezcalBanner,
 };
