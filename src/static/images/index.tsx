@@ -33,6 +33,7 @@ import WhiksyBanner from "./whisky-banner.webp";
 import RonBanner from "./ron-banner.webp";
 import LicorBanner from "./licor-banner.webp";
 import FondoBotellas from "./FONDO_botellas.webp";
+import FondoPromos from "./FONDO_promos.webp";
 
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
@@ -134,4 +135,5 @@ export {
     TequilaBanner,
     MezcalBanner,
     FondoBotellas,
+    FondoPromos,
 };
