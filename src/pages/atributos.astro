@@ -21,20 +21,18 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       data={{
         image: FondoBotellas.src,
         content: {
-          title: "CATEGORIAS",
+          title: "Atributos",
           paragraph:
             "Explora nuestra amplia selección de bebidas divididas en categorías para que encuentres fácilmente lo que buscas. Desde destilados y licores hasta vinos y cervezas, tenemos algo para cada ocasión y preferencia. ¡Descubre tu favorita!",
         },
       }}
     />
 
-    <FeaturedProducts />
-
     <Hero
       heroType="textImage"
       client:visible
       data={{
-        switchPlaces: true,
+        switchPlaces: false,
         image: {
           src: "assets/branding/Precio-mayoreo.jpg",
           width: 700,
@@ -53,6 +51,33 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
         ],
       }}
     />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: false,
+        image: {
+          src: "assets/branding/Botellas-Frias.jpg",
+          width: 700,
+          height: 500,
+          alt: "Botellas frías - Legion Drinkers",
+        },
+        title: "Botellas frías, más suave, mejor sabor",
+        paragraph:
+          "Disfruta de tus bebidas favoritas a la temperatura ideal. Con nuestra selección de botellas frías, el sabor y la suavidad se potencian para que disfrutes al máximo cada momento. ¡Haz tu pedido ahora y brinda con calidad!",
+        buttons: [
+          {
+            link: "/promociones", // Enlace dinámico
+            text: "Ver Catálogo", // Texto del botón
+            variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
+    <FeaturedProducts />
+
     <!-- <ContactModule client:load /> -->
 
     <!-- <NosotrosModule client:load /> -->
