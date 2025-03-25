@@ -59,6 +59,9 @@ export const Navigation: FC = () => {
                         </S.DropdownWrapper>
                     </li>
                     <li>
+                        <a href="/atributos">ATRIBUTOS</a>
+                    </li>
+                    <li>
                         <a href="/ubicaciones">UBICACIONES</a>
                     </li>
                     <li>
