@@ -125,6 +125,10 @@ export const NormalizeCSS = css`
     strong {
         font-weight: 700;
     }
+    
+    promoRed {
+        color: red;
+    }
 
     a {
         text-decoration: none;
