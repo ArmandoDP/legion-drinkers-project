@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import {
+  CalendarioEnero1,
+  CalendarioEnero2,
+  FondoBotellas,
+} from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import Footer from "../components/organisms/Footer.astro";
+import WAButton from "@components/banners/ButtonWhatsapp.astro";
+---
+
+<Layout
+  title="Legion Drinkers"
+  description="Compra los mejores vinos, licores y destilados en México."
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: FondoBotellas.src,
+        content: {
+          title: "CALENDARIO",
+          paragraph:
+            "Inicia el año con toda la actitud de la Legión. Te presentamos nuestro calendario exclusivo de Enero, celebrando la pasión por la cultura de los destilados y el buen beber. Descarga y consulta nuestro calendario oficial de Enero 2026.",
+        },
+      }}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: CalendarioEnero1.src,
+          width: 600,
+          height: "auto",
+          alt: "Calendario Enero 2026 Legión Drinkers",
+          link: "https://maps.app.goo.gl/B7WwaCbB2TeJv8VAA?g_set=ic",
+        },
+        title: "¡Enero con la Legión!",
+        paragraph:
+          "<strong>Organiza tu mes</strong><br>Te compartimos la primera edición de nuestro calendario 2026. Un diseño pensado para nuestros clientes más leales, ideal para tenerlo siempre a la mano.",
+        buttons: [
+          {
+            text: "Descargar Calendario",
+            link: CalendarioEnero1.src,
+            variant: "secondary",
+          },
+        ],
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: false,
+        image: {
+          src: CalendarioEnero2.src,
+          width: 600,
+          height: "auto",
+          alt: "Calendario Enero 2026 Diseño 2 Legión Drinkers",
+        },
+        title: "Tu Compañero de Todo el Año",
+        paragraph:
+          "<strong>Estilo y Funcionalidad</strong><br>Porque sabemos que te gusta planificar con antelación, aquí tienes la segunda versión de nuestro calendario de Enero. ¡Colecciónalos todos!",
+        buttons: [
+          {
+            text: "Descargar Calendario",
+            link: CalendarioEnero2.src,
+            variant: "secondary",
+          },
+        ],
+      }}
+    />
+  </main>
+
+  <WAButton url="https://wa.link/8or624" />
+
+  <Footer />
+</Layout>

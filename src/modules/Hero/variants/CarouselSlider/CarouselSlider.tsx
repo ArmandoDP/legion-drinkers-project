@@ -47,7 +47,7 @@ export const CarouselSlider: FC<CarouselSliderProps> = ({ content }) => {
                             slidesPerView: 2,
                         },
                         1024: { // A partir de 1024px (escritorio)
-                            slidesPerView: 3, // 4 productos por slide en escritorio
+                            slidesPerView: 4, // 4 productos por slide en escritorio
                         },
                     },
                 }}

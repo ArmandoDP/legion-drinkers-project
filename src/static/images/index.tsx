@@ -35,6 +35,10 @@ import LicorBanner from "./licor-banner.webp";
 import FondoBotellas from "./FONDO_botellas.webp";
 import FondoPromos from "./FONDO_promos.webp";
 
+//calendarios
+import CalendarioEnero1 from "./calendarios/Enero/Calendario1.webp";
+import CalendarioEnero2 from "./calendarios/Enero/Calendario2.webp";
+
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
 import UbiStaCruz from "./ubicaciones/ubicacion-santa-cruz.jpg";
@@ -136,4 +140,6 @@ export {
     MezcalBanner,
     FondoBotellas,
     FondoPromos,
+    CalendarioEnero1,
+    CalendarioEnero2,
 };
