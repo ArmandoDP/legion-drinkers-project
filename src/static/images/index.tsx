@@ -38,6 +38,8 @@ import FondoPromos from "./FONDO_promos.webp";
 //calendarios
 import CalendarioEnero1 from "./calendarios/Enero/Calendario1.webp";
 import CalendarioEnero2 from "./calendarios/Enero/Calendario2.webp";
+import CalendarioFebrero1 from "./calendarios/Febrero/Calendario1.webp";
+import CalendarioFebrero2 from "./calendarios/Febrero/Calendario2.webp";    
 
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
@@ -142,4 +144,6 @@ export {
     FondoPromos,
     CalendarioEnero1,
     CalendarioEnero2,
+    CalendarioFebrero1,
+    CalendarioFebrero2,
 };

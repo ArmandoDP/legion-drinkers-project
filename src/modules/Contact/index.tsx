@@ -71,11 +71,22 @@ export const Contact: FC = () => {
                         >
                             <h3>SIGUENOS EN NUESTRAS REDES</h3>
                             <p>¿Tienes alguna consulta o sugerencia? ¡No dudes en escribirnos! ¡Tu opinión es fundamental para mejorar nuestro servicio!</p>
-                            <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
-                                <a style={{ marginRight: "10px" }} href="https://www.facebook.com/share/12EzfqLicBs/?mibextid=wwXIfr"><img src="/assets/shared/desktop/icon-facebook.svg" alt="Facebook icon" /></a>
-                                {/* <a href="https://www.x.com/legion-drinkers"><Image src={twitter.src} alt="Twitter icon" /></a> */}
-                                {/* <a href="https://www.instagram.com/legion-drinkers"><Image src={instagram.src} alt="Instagram icon" /></a> */}
-                                <a href="https://wa.link/8or624"><img src="/assets/shared/desktop/icon-whatsapp.svg" alt="Whatsapp icon" /></a>
+                            <div style={{ 
+                                display: "flex", 
+                                justifyContent: "center", 
+                                alignItems: "center", 
+                                marginTop: "40px", 
+                                gap: "15px" // controla el espacio entre los íconos
+                            }}>
+                                <a href="https://www.facebook.com/share/12EzfqLicBs/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/shared/desktop/icon-facebook.svg" alt="Facebook icon" />
+                                </a>
+                                <a href="https://www.instagram.com/legion.drinkers?igsh=ODBwdTRsZDdjc3dx&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/shared/desktop/instagram.svg" alt="Instagram icon" />
+                                </a>
+                                <a href="https://wa.link/8or624" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/shared/desktop/icon-whatsapp.svg" alt="Whatsapp icon" />
+                                </a>
                             </div>
                         </TextBox>
                     </FadeIn>
