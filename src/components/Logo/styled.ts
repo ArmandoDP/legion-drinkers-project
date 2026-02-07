@@ -32,13 +32,13 @@ export const LogoStyled = styled.div`
         }
 
         img {
-            height: 150px;
-            width: 150px;
+            height: 170px;
+            width: 170px;
             object-fit: contain;
         
             ${MediaQuery.max("lg")} {
-                height: 100px;
-                width: 100px;
+                height: 110px;
+                width: 110px;
             }
         }
     }
