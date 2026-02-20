@@ -32,8 +32,8 @@ export const LogoStyled = styled.div`
         }
 
         img {
-            height: 170px;
-            width: 170px;
+            height: 150px;
+            width: 150px;
             object-fit: contain;
         
             ${MediaQuery.max("lg")} {

@@ -34,6 +34,8 @@ import RonBanner from "./ron-banner.webp";
 import LicorBanner from "./licor-banner.webp";
 import FondoBotellas from "./FONDO_botellas.webp";
 import FondoPromos from "./FONDO_promos.webp";
+import Fondo2026 from "./Fondo_2026.jpg";
+import FondoDrinkers2 from "./FONDO_drinkers2.webp";
 
 //calendarios
 import CalendarioEnero1 from "./calendarios/Enero/Calendario1.webp";
@@ -135,6 +137,7 @@ export {
     SliderImage,
     BannerPrimero,
     FondoDrinkers,
+    FondoDrinkers2,
     BannerPrincipal,
     SlidePrincipal,
     CognacBanner,
@@ -146,4 +149,5 @@ export {
     CalendarioEnero2,
     CalendarioFebrero1,
     CalendarioFebrero2,
+    Fondo2026,
 };
