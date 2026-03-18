@@ -41,7 +41,9 @@ import FondoDrinkers2 from "./FONDO_drinkers2.webp";
 import CalendarioEnero1 from "./calendarios/Enero/Calendario1.webp";
 import CalendarioEnero2 from "./calendarios/Enero/Calendario2.webp";
 import CalendarioFebrero1 from "./calendarios/Febrero/Calendario1.webp";
-import CalendarioFebrero2 from "./calendarios/Febrero/Calendario2.webp";    
+import CalendarioFebrero2 from "./calendarios/Febrero/Calendario2.webp";
+import CalendarioMarzo1 from "./calendarios/Marzo/Calendario1.webp";
+import CalendarioMarzo2 from "./calendarios/Marzo/Calendario2.webp";
 
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
@@ -149,5 +151,7 @@ export {
     CalendarioEnero2,
     CalendarioFebrero1,
     CalendarioFebrero2,
+    CalendarioMarzo1,
+    CalendarioMarzo2,
     Fondo2026,
 };
