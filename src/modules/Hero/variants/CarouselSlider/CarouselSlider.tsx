@@ -57,7 +57,7 @@ export const CarouselSlider: FC<CarouselSliderProps> = ({ content }) => {
                         <S.ProductGroup>
                             <S.ProductCard>
                             <img 
-                                style={{ width: "100%", height: "100%", objectFit: "contain" }} 
+                                style={{ width: "100%", height: "100%", objectFit: "cover" }} 
                                 src={product.image} 
                                 alt={product.title} 
                             />

@@ -201,7 +201,7 @@ export const ProductCard = styled.div`
     }
 
     img {
-        max-width: 400px;
+        max-width: 550px;
         margin-bottom: 15px;
         border-radius: 8px;
         
