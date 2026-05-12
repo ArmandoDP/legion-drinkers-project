@@ -34,19 +34,43 @@ import FeaturedProducts from "@components/organisms/FeaturedProducts.astro";
       data={{
         switchPlaces: false,
         image: {
-          src: "assets/branding/Precio-mayoreoV2.jpg",
-          width: 700,
-          height: 500,
+          src: "assets/branding/Precio-mayoreoV3.webp",
+          width: 900,
+          height: 800,
           alt: "Catalogo Legion Drinkers",
         },
-        title: "¡Llévate tres piezas y te damos un precio increíble!",
+        title: "¡Lleva más, paga menos con nuestro Mayoreo!",
         paragraph:
-          "Descubre nuestro catálogo completo con productos seleccionados para cada ocasión. Desde lo clásico hasta lo único, ¡encuentra lo que estás buscando y más! ¡Haz clic en el botón y lleva tus elecciones al siguiente nivel!",
+          "Aprovecha precios increíbles en <strong>3 piezas iguales</strong> o <strong>4 piezas combinadas</strong> de tus botellas favoritas. ¡Descubre nuestro catálogo completo en <strong>Legión Drinkers</strong>, encuentra lo que buscas y lleva la celebración al siguiente nivel!", // Sección Mayoreo
         buttons: [
           {
             link: "catalogo/catalogo-legion-drinkers.pdf", // Enlace dinámico
             text: "Descargar Catálogo Completo", // Texto del botón
             variant: "secondary", // Variación del botón, si es necesario
+          },
+        ],
+      }}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: false,
+        image: {
+          src: "assets/branding/paquetesCaja.webp",
+          width: 700,
+          height: 500,
+          alt: "Paquetes de Mayoreo Legion Drinkers",
+        },
+        title: "¿Cuántos invitados van a tu fiesta?",
+        paragraph:
+          "Arma tu <strong>Media Caja (6 botellas)</strong> ideal para 25 invitados o sube a una <strong>Caja Completa (12 botellas)</strong> para 50 invitados. ¡En <strong>Legión Drinkers</strong> armas tus paquetes como quieras para tus cumpleaños, carnes asadas o eventos!",
+        buttons: [
+          {
+            link: "catalogo/catalogo-legion-drinkers.pdf",
+            text: "Descargar Catálogo de Mayoreo",
+            variant: "secondary",
           },
         ],
       }}

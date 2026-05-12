@@ -46,6 +46,8 @@ import CalendarioMarzo1 from "./calendarios/Marzo/Calendario1.webp";
 import CalendarioMarzo2 from "./calendarios/Marzo/Calendario2.webp";
 import CalendarioAbril1 from "./calendarios/Abril/Calendario1.webp";
 import CalendarioAbril2 from "./calendarios/Abril/Calendario2.webp";
+import CalendarioMayo1 from "./calendarios/Mayo/Calendario1.webp";
+import CalendarioMayo2 from "./calendarios/Mayo/Calendario2.webp";
 
 
 import UbiCrespa from "./ubicaciones/ubicacion-la-crespa.jpg";
@@ -157,5 +159,7 @@ export {
     CalendarioMarzo2,
     CalendarioAbril1,
     CalendarioAbril2,
+    CalendarioMayo1,
+    CalendarioMayo2,
     Fondo2026,
 };
